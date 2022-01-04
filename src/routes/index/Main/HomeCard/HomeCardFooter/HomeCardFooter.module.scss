@@ -1,0 +1,51 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HomeCardFooter__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
+}
+
+.HomeCardFooter__tooltip {
+  width: 140px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  text-align: right;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+  box-shadow: $box-shadow-l;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.HomeCardFooter__toltipItem {
+  display: block;
+  padding: 6px 16px 6px 12px;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  background-color: #fff;
+
+  &:hover {
+    color: $text-brand;
+    background-color: $brand-secondary-default;
+  }
+
+  &:active {
+    color: $text-brand;
+    background-color: #ceebe3;
+  }
+}
+
+.HomeCardFooter__status {
+  margin-top: 12px;
+  margin-bottom: 24px;
+
+  @include media-up(md) {
+    // margin-top: 0;
+    margin-bottom: 0;
+  }
+}

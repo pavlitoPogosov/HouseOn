@@ -1,0 +1,41 @@
+@import 'styles/_tokens.scss';
+
+.FinancesBlock__container {
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all $transition-primary;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.FinancesBlock__Title {
+  margin-bottom: 8px;
+}
+
+.FinancesBlock__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FinancesBlock__dollarSign {
+  color: #bfc5dc;
+  font-size: $font-size-14;
+  font-weight: $font-weight-700;
+  line-height: $line-height-24;
+}
+
+.FinancesBlock__amount {
+  font-size: $font-size-14;
+  font-weight: $font-weight-700;
+  line-height: $line-height-24;
+}
+
+.FinancesBlock__badge {
+  display: inline-block;
+  margin-left: 14px;
+}

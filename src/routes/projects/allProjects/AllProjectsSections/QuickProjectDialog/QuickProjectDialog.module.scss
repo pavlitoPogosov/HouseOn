@@ -1,0 +1,22 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.QuickProjectDialog__header {
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.QuickProjectDialog__icon {
+  margin-top: 24px;
+}
+
+.QuickProjectDialog__title {
+  margin-top: 24px;
+  font-size: $font-size-18;
+  font-weight: $font-weight-600;
+}
+
+.QuickProjectDialog__close {
+  background-color: white;
+  box-shadow: $box-shadow-m;
+}

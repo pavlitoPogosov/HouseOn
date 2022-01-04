@@ -1,0 +1,39 @@
+@import 'styles/_tokens.scss';
+
+.DaysRows__container {
+  margin-top: 20px;
+}
+
+.DaysRows__row {
+  display: flex;
+  height: 32px;
+
+  & + .DaysRows__row {
+    margin-top: 16px;
+  }
+}
+
+.DaysRows__day {
+  width: 26px;
+  margin-right: 16px;
+  white-space: nowrap;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-14;
+
+  div {
+    &:first-of-type {
+      margin-bottom: 4px;
+      color: $text-secondary;
+    }
+
+    &:last-of-type {
+      color: $text-tretiary;
+    }
+  }
+}
+
+.DaysRows__event {
+  width: 100%;
+  max-width: none;
+}

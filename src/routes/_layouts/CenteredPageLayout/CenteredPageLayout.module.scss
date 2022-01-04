@@ -1,0 +1,71 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.CenteredPageLayout__wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: $background-common-light;
+}
+
+.CenteredPageLayout__content {
+  flex-grow: 1;
+}
+
+.CenteredPageLayout__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  margin-bottom: 42px;
+
+  padding: 0 15px;
+
+  @media screen and (min-width: 672px) {
+    padding-right: calc((100vw - 648px) / 2);
+    padding-left: calc((100vw - 648px) / 2);
+  }
+
+  @media screen and (min-width: 736px) {
+    padding: 0 32px;
+  }
+}
+
+.CenteredPageLayout__headerControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-up(lg) {
+    margin-left: 60px;
+  }
+
+  @include media-up(xl) {
+    margin-left: 120px;
+  }
+
+  @include media-up(xxl) {
+    margin-left: 140px;
+  }
+}
+
+.CenteredPageLayout__searchInput {
+  width: 100%;
+  max-width: 204px;
+  margin-right: 10px;
+}
+
+.CenteredPageLayout__main {
+  width: 100%;
+  max-width: 672px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-bottom: 42px;
+  padding-left: 15px;
+
+  @include media-up(md) {
+    padding-bottom: 62px;
+  }
+}

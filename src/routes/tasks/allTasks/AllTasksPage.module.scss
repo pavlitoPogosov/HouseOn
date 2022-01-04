@@ -1,0 +1,79 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.AllTasksPage__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+
+  @include media-up(md) {
+    margin-bottom: 52px;
+  }
+}
+
+.AllTasksPage__btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  order: 1;
+}
+
+.AllTasksPage__section {
+  margin-bottom: 36px;
+
+  @media screen and (min-width: 1441px) {
+    display: block;
+  }
+
+  @include media-up(md) {
+    grid-template-columns: repeat(2, 3fr);
+  }
+
+  @include media-up(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.AllTasksPage__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.AllTasksPage__title {
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $border-gray-secondary;
+
+  @include media-up(md) {
+    margin-bottom: 16px;
+  }
+}
+
+.AllTasksPage__task {
+  @include media-up(xxl) {
+    & + .AllTasksPage__task {
+      margin-top: 8px;
+    }
+  }
+}
+
+.nav__task_button {
+  display: flex;
+  align-items: center;
+  height: min-content;
+  padding: 12px 32px !important;
+  font-size: $font-size-16;
+  font-weight: $font-weight-500;
+
+  @include media-down(md) {
+    width: 40px;
+    height: 40px;
+    padding: 16px !important;
+
+    span {
+      margin-right: 0 !important;
+    }
+  }
+}

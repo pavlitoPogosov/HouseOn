@@ -1,0 +1,32 @@
+@import 'styles/_tokens.scss';
+
+.MemberCard__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: border-color $transition-primary;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: $box-shadow-m;
+
+  &.active {
+    border-color: $brand-primary-default;
+  }
+}
+
+.MemberCard__content {
+  display: flex;
+  align-items: center;
+}
+
+.MemberCard__avatar {
+  min-width: 40px;
+  margin-right: 12px;
+}
+
+.MemberCard__title {
+  font-weight: $font-weight-600;
+}

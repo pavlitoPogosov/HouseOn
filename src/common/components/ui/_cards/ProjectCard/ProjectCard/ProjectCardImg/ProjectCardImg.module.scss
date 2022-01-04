@@ -1,0 +1,31 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ProjectCardImg__container {
+  position: relative;
+  height: 132px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  &.quickProject {
+    height: 36px;
+  }
+}
+
+.ProjectCardImg__quickIcon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.ProjectCardImg__badge {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 12px;
+}

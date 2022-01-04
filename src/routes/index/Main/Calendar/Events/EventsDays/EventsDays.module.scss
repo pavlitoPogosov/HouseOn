@@ -1,0 +1,68 @@
+@import 'styles/_tokens.scss';
+
+.EventsDays__cell {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EventsDats__cellInner {
+  padding: 4px 12px;
+
+  white-space: nowrap;
+  color: $text-secondary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-14;
+
+  span {
+    &:nth-child(1) {
+      color: $text-secondary;
+    }
+
+    &:nth-child(2) {
+      margin: 0 4px;
+      color: $text-tretiary;
+    }
+
+    &:nth-child(3) {
+      color: $text-tretiary;
+    }
+  }
+
+  &.active {
+    color: $text-brand;
+    border-radius: 100px;
+    background-color: $brand-secondary-default;
+
+    span {
+      color: $text-brand;
+    }
+  }
+}
+
+.EventsDays__cellLine {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 1px;
+  background-color: $border-gray-secondary;
+
+  &.right {
+    right: 0;
+    left: auto;
+  }
+}
+
+.EventsDays__activeLine {
+  position: absolute;
+  z-index: $zindex-dropdown;
+  top: 26px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(calc(-50% + 1px));
+  border-left: 1px dotted $brand-primary-default;
+}

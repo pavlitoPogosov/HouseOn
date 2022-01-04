@@ -1,0 +1,30 @@
+@import 'styles/_tokens.scss';
+
+.MapWithToggler {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+  color: $text-brand;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+}
+
+.MapWithToggler__mapIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-top: -2px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background-color: $brand-secondary-default;
+
+  path,
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+}

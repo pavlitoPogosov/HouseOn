@@ -1,0 +1,103 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+@mixin common_media() {
+  @media screen and (min-width: 475px) {
+    @content;
+  }
+}
+
+.CodeConfirmModal__content {
+  width: 100%;
+  max-width: 424px;
+  margin: 0 20px;
+  padding: 0 24px 24px;
+
+  @media screen and (min-width: 340px) {
+    margin: 0 24px;
+    padding: 0 28px 28px;
+  }
+
+  @include common_media() {
+    margin: 0;
+  }
+}
+
+.CodeConfirmModal__phone {
+  margin-top: 8px;
+  color: $text-tretiary;
+  font-size: $font-size-16;
+  font-weight: $font-weight-400;
+  line-height: $line-height-20;
+
+  span {
+    color: darken($text-tretiary, 24%);
+    font-weight: $font-weight-600;
+  }
+
+  @include common_media() {
+    br {
+      display: none;
+    }
+
+    span {
+      font-weight: $font-weight-400;
+    }
+  }
+}
+
+.CodeConfirmModal__btn {
+  cursor: pointer;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+
+  @include common_media() {
+    font-weight: $font-weight-400;
+    line-height: $line-height-18;
+  }
+}
+
+.CodeConfirmModal__editBtn {
+  @extend .CodeConfirmModal__btn;
+
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: $text-brand;
+
+  @include common_media() {
+    margin-top: 2px;
+  }
+}
+
+.CodeConfirmModal__footer {
+  position: absolute;
+  z-index: $zindex-tooltip;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.CodeConfirmModal__closeWrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 16px;
+
+  button {
+    @include buttonReset();
+    cursor: pointer;
+  }
+}
+
+.CodeConfirmModal__sendAgain {
+  display: flex;
+  align-items: center;
+
+  margin-top: 22px;
+}
+
+.CodeConfirmModal__spinner {
+  margin-left: 8px;
+  color: $text-brand;
+}

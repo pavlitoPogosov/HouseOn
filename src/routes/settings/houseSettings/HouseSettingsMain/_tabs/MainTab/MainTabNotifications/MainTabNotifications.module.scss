@@ -1,0 +1,72 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.MainTabNotifications__container {
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+.MainTabNotifications__title {
+  margin-bottom: 16px;
+}
+
+.MainTabNotifications__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+    margin-top: 56px;
+  }
+}
+
+.MainTabNotifications__controlBtn {
+  width: 100%;
+  min-width: 112px;
+  margin-top: 12px;
+
+  @include media-up(sm) {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.MainTabNotifications__block {
+  margin-bottom: 24px;
+}
+
+.MainTabNotifications__blockTitle {
+  margin-bottom: 16px;
+  font-weight: $font-weight-600;
+}
+
+.MainTabNotifications__inner {
+  display: grid;
+  row-gap: 12px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  @include media-up(sm) {
+    column-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.MainTabNotifications__blockPermission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.MainTabNotifications__blockPermissionTitle {
+  font-weight: $font-weight-600;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

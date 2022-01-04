@@ -1,0 +1,18 @@
+.EventsSection__buttons {
+  display: flex;
+  margin-top: 16px;
+}
+
+.EventsSection__button {
+  width: 100%;
+
+  &.buttonViewMore {
+    margin-left: 12px;
+  }
+}
+
+.EventsSection__card {
+  & + .EventsSection__card {
+    margin-top: 12px;
+  }
+}

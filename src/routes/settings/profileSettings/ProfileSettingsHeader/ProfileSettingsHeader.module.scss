@@ -1,0 +1,82 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ProfileSettingsHeader__languageSelect {
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.ProfileSettingsHeader__languageSelectDropdown {
+  z-index: 2;
+}
+
+.ProfileSettingsHeader__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+
+  @include media-down(md) {
+    margin-bottom: 48px;
+  }
+}
+
+.ProfileSettingsHeader__avatarWrapper {
+  min-width: 78px;
+  margin-right: 22px;
+}
+
+.ProfileSettingsHeader__username {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  // 642 - container width, 100 avatar with margin, 24 - icon size, 30 - paddings
+  max-width: calc(100vw - 100px - 30px);
+
+  @media screen and (min-width: 642px) {
+    // 642 - container width, 100 avatar with margin
+    max-width: calc(642px - 100px);
+  }
+}
+
+.ProfileSettingsHeader__icon {
+  min-width: 24px;
+}
+
+.ProfileSettingsHeader__editIcon {
+  @extend .ProfileSettingsHeader__icon;
+  cursor: pointer;
+  color: $text-secondary;
+}
+
+.ProfileSettingsHeader__input {
+  @include heading_h3;
+  @include ellipsis;
+
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  @media screen and (min-width: 642px) {
+    @include heading_h2;
+  }
+}
+
+.ProfileSettingsHeader__hiddenDiv {
+  @include heading_h2;
+  position: fixed;
+  z-index: -1;
+  width: fit-content;
+  white-space: pre;
+  opacity: 0;
+}
+
+.ProfileSettingsHeader__inputContainer {
+  margin-bottom: 4px;
+}

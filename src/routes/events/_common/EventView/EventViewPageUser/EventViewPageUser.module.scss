@@ -1,0 +1,89 @@
+@import 'styles/_vars.scss';
+
+.EventViewPageUser__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @include media-up(md) {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+  }
+}
+
+.EventViewPageUser__message {
+  @include scrollbar;
+  @include mltext;
+  position: relative;
+  overflow-y: auto;
+  order: 1;
+  max-height: 420px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 20px 30px #e6ebf0;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+
+  @include media-up(md) {
+    order: 0;
+    width: 100%;
+    height: 136px;
+    margin-right: 40px;
+    //height: max-content;
+    //min-height: 40px;
+  }
+}
+
+.EventViewPageUser__avatarWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 28px;
+
+  @include media-up(md) {
+    width: 136px;
+    min-width: 136px;
+    height: 136px;
+    margin-bottom: 0;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 20px 30px #e6ebf0;
+  }
+}
+
+.EventViewPageUser__avatarTriangleWrapper {
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include media-up(md) {
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+  }
+}
+
+.EventViewPageUser__avatarTriangle {
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid #fff;
+  border-left: 16px solid transparent;
+
+  @include media-up(md) {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+.EventViewPageUser__username {
+  margin-top: 8px;
+}

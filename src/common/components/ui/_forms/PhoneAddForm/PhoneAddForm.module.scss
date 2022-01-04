@@ -1,0 +1,69 @@
+@import 'styles/vars.scss';
+
+.PhoneAddForm__inputContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  grid-template-areas: 'name phone';
+  grid-template-areas: 'name phone icon';
+  grid-template-columns: 1fr 1fr 32px;
+
+  @include media-down(sm) {
+    grid-template-columns: 1fr 32px;
+    grid-template-areas: 'name icon' 'phone phone';
+
+    .PhoneAddForm__phone {
+      grid-column: 1;
+    }
+  }
+}
+
+.PhoneAddForm__comment_small {
+  margin-right: 44px;
+}
+
+.PhoneAddForm__phone {
+  grid-area: phone;
+}
+
+.PhoneAddForm__name {
+  grid-area: name;
+  @include media-down(sm) {
+    grid-column: 1;
+  }
+}
+
+.PhoneAddForm__formContainer {
+  //margin-top: 32px;
+}
+
+.PhoneAddForm__closeIcon {
+  min-width: 32px;
+  margin-top: 20px;
+  grid-area: icon;
+}
+
+.PhoneAddForm__linksWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+
+  @include media-up(md) {
+    margin-top: 34px;
+  }
+}
+
+.PhoneAddForm__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  margin-right: 4px;
+  border-radius: 50%;
+
+  background-color: #e6f4f1;
+}

@@ -1,0 +1,76 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.PeriodicitySelect__container {
+  display: flex;
+  align-items: center;
+}
+
+.PeriodicitySelect__label {
+  margin-right: 12px;
+}
+
+.PeriodicityDropdown__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+  height: 30px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid $border-gray-secondary;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  &:first-of-type {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 375px) {
+    width: 100px;
+  }
+}
+
+.PeriodicityDropdown__chevronIcon {
+  transition: transform $transition-primary;
+
+  &.rotate {
+    transform: rotate(-180deg);
+  }
+}
+
+.PeriodicityDropdown__dropdown {
+  @include scrollbar;
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+  max-height: 112px;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+  box-shadow: $box-shadow-xl;
+}
+
+.PeriodicityDropdown__dropdownOption {
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all $transition-primary;
+  background-color: #fff;
+
+  &.selected {
+    background-color: $brand-secondary-hover;
+  }
+
+  &:not(.selected) {
+    &:hover {
+      color: $text-brand;
+      background-color: $brand-secondary-default;
+    }
+  }
+}

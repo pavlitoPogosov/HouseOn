@@ -1,0 +1,73 @@
+@import 'styles/_tokens.scss';
+
+.DropZone__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  border: 1px dashed $brand-primary-default;
+  border-radius: $border-radius-8;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $brand-secondary-default;
+  }
+}
+
+// sizes
+
+.DropZone__s {
+  height: 28px;
+  padding: 6px 21px;
+}
+
+.DropZone__m {
+  height: 64px;
+  padding: 12px 21px;
+}
+
+.DropZone__l {
+  height: 88px;
+  padding: 16px 21px;
+}
+
+// misc
+
+.DropZone__active {
+  background-color: $brand-secondary-default;
+}
+
+.DropZone__text {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.DropZone__disabled {
+  cursor: auto;
+  pointer-events: none;
+  color: $text-tretiary;
+  border-color: $text-tretiary;
+
+  .DropZone__link {
+    color: $text-tretiary;
+
+    &::after {
+      background-color: $text-tretiary;
+    }
+  }
+
+  .DropZone__text {
+    color: $text-tretiary;
+  }
+}
+
+.DropZone__link {
+  margin-top: -2px;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}

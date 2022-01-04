@@ -1,0 +1,43 @@
+@import 'src/styles/_tokens.scss';
+@import 'src/styles/_vars.scss';
+
+// common
+
+.Input {
+  @include inputStylesCommon;
+}
+
+.Input__primary {
+  @include inputStylesPrimary;
+}
+
+.Input__secondary {
+  @include inputStylesSecondary;
+}
+
+.Input__withIcon {
+  padding-right: 42px;
+}
+
+.Input__wrapper {
+  position: relative;
+}
+
+.Input__icon {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 12px;
+  padding: 2px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+
+  &.secondIcon {
+    right: 38px;
+  }
+}
+
+.Input__disabled {
+  pointer-events: none;
+}

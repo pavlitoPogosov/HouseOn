@@ -1,0 +1,109 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HomeCard__container {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
+  border-radius: $border-radius-12;
+  box-shadow: $box-shadow-m;
+
+  @include media-up(md) {
+    flex-direction: row;
+    min-height: 268px;
+  }
+}
+
+.HomeCard__imgWrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 260px;
+
+  border-radius: $border-radius-12;
+  background-color: #f9fafb;
+
+  img {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  @include media-up(md) {
+    width: 312px;
+    height: auto;
+  }
+}
+
+.HomeCard__badge {
+  position: absolute;
+  z-index: 1;
+  top: 11px;
+
+  &:nth-child(1) {
+    left: 12px;
+  }
+}
+
+.HomeCard__dropzone {
+  width: 100%;
+  max-width: 222px;
+  background-color: transparent;
+}
+
+.HomeCard__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px 12px 12px;
+  border-bottom-right-radius: $border-radius-12;
+  border-bottom-left-radius: $border-radius-12;
+  background-color: #fff;
+
+  @include media-up(sm) {
+    padding: 16px 24px 24px;
+  }
+
+  @include media-up(md) {
+    max-width: calc(100% - 312px);
+    height: auto;
+    padding: 20px 24px 24px;
+    border-top-right-radius: $border-radius-12;
+
+    border-bottom-left-radius: 0;
+  }
+}
+
+.HomeCard__titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HomeCard__location {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  color: $text-primary;
+
+  span {
+    margin-left: 4px;
+    color: $text-secondary;
+    font-size: $font-size-12;
+    font-weight: $font-weight-500;
+    line-height: $line-height-16;
+  }
+
+  @include media-up(md) {
+    margin-top: 4px;
+  }
+}
+
+.HomeCard__badgeShort {
+  margin-left: 10px;
+  white-space: nowrap;
+}

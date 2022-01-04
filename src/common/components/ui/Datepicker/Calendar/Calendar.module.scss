@@ -1,0 +1,104 @@
+@import 'styles/_tokens.scss';
+
+.Calendar__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.month {
+    width: 224px;
+  }
+
+  &.year {
+    width: 228px;
+  }
+
+  &.marginTop {
+    margin-top: 16px;
+  }
+}
+
+.Calendar__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: $text-secondary;
+  font-size: $font-size-12;
+
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.Calendar__dayCell {
+  @extend .Calendar__cell;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  &.otherMonth {
+    color: rgba($text-tretiary, 0.4);
+  }
+
+  &.between {
+    color: $text-brand;
+    border-radius: 0;
+    background-color: $brand-secondary-default;
+  }
+
+  &.activeStart {
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      content: '';
+      background-color: $brand-secondary-default;
+    }
+  }
+
+  &.activeEnd {
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 0;
+      content: '';
+      background-color: $brand-secondary-default;
+    }
+  }
+
+  &.active {
+    color: #fff;
+    background-color: $text-brand;
+  }
+
+  &.disabled {
+    cursor: auto;
+    color: rgba($text-tretiary, 0.4);
+    background-color: $surface-tretiary;
+  }
+}
+
+.Calendar__monthCell {
+  @extend .Calendar__cell;
+  width: 57px;
+  height: 44px;
+  border-radius: $border-radius-4;
+
+  &:hover:not(.active) {
+    color: $text-brand;
+    background-color: $brand-secondary-default;
+  }
+
+  &.active {
+    color: #fff;
+    background-color: $text-brand;
+  }
+}

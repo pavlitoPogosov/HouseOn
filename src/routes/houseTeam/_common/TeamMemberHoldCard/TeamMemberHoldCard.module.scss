@@ -1,0 +1,32 @@
+.TeamMemberHoldCard {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__select {
+    background: transparent;
+  }
+}

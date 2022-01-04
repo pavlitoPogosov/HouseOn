@@ -1,0 +1,29 @@
+@import 'styles/_vars.scss';
+
+.PhoneSelectForm__title {
+  margin-bottom: 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $text-tretiary;
+
+  &.marginTop {
+    margin-top: 16px;
+  }
+}
+
+.PhoneSelectForm__phone {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.PhoneSelectForm__phone_content {
+  pointer-events: none;
+}
+
+.PhoneSelectForm__empty_message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  white-space: normal;
+}

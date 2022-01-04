@@ -1,0 +1,1078 @@
+{
+  "app.addNew": {
+    "defaultMessage": "Add new"
+  },
+  "app.back": {
+    "defaultMessage": "Back"
+  },
+  "app.button.apply": {
+    "defaultMessage": "Apply"
+  },
+  "app.button.back": {
+    "defaultMessage": "Back"
+  },
+  "app.button.cancel": {
+    "defaultMessage": "Cancel"
+  },
+  "app.button.clear": {
+    "defaultMessage": "Clear"
+  },
+  "app.button.edit": {
+    "defaultMessage": "Edit"
+  },
+  "app.button.learnMore": {
+    "defaultMessage": "Learn more"
+  },
+  "app.button.next": {
+    "defaultMessage": "Next"
+  },
+  "app.button.save": {
+    "defaultMessage": "Save"
+  },
+  "app.button.send": {
+    "defaultMessage": "Send"
+  },
+  "app.button.skip": {
+    "defaultMessage": "Skip"
+  },
+  "app.button.uploadFile": {
+    "defaultMessage": "Upload file"
+  },
+  "app.cancel": {
+    "defaultMessage": "Cancel"
+  },
+  "app.choose": {
+    "defaultMessage": "Choose.."
+  },
+  "app.delete": {
+    "defaultMessage": "Delete"
+  },
+  "app.dialog.cancelRemove": {
+    "defaultMessage": "No, don’t remove"
+  },
+  "app.dialog.remove": {
+    "defaultMessage": "Yes, remove"
+  },
+  "app.dialog.save": {
+    "defaultMessage": "Save"
+  },
+  "app.download": {
+    "defaultMessage": "Download"
+  },
+  "app.enterButton": {
+    "defaultMessage": "Enter"
+  },
+  "app.error.text": {
+    "defaultMessage": "Something went wrong. Please, try again"
+  },
+  "app.modal.create": {
+    "defaultMessage": "Create"
+  },
+  "app.modal.save": {
+    "defaultMessage": "Save"
+  },
+  "app.notificationsSettings": {
+    "defaultMessage": "Notifications Settings"
+  },
+  "app.privacyPolicy": {
+    "defaultMessage": "Privacy Policy"
+  },
+  "app.route.privacyPolicy": {
+    "defaultMessage": "Privacy policy"
+  },
+  "app.route.projects": {
+    "defaultMessage": "Projects"
+  },
+  "app.route.tasks": {
+    "defaultMessage": "Tasks"
+  },
+  "app.search": {
+    "defaultMessage": "Search"
+  },
+  "app.termsService": {
+    "defaultMessage": "Terms of Service"
+  },
+  "app.viewAll": {
+    "defaultMessage": "View all"
+  },
+  "auth.alreadyMember": {
+    "defaultMessage": "Already a member?"
+  },
+  "auth.button.signIn": {
+    "defaultMessage": "Sign in with"
+  },
+  "auth.button.signUp": {
+    "defaultMessage": "Sign up with"
+  },
+  "auth.changePassword": {
+    "defaultMessage": "Change your password"
+  },
+  "auth.checkEmail": {
+    "defaultMessage": "Check your e-mail"
+  },
+  "auth.confirmPhone": {
+    "defaultMessage": "Confirm phone"
+  },
+  "auth.createAccountButton": {
+    "defaultMessage": "Create Account"
+  },
+  "auth.createPasswordLabel": {
+    "defaultMessage": "Create password"
+  },
+  "auth.editNumberButton": {
+    "defaultMessage": "Edit number",
+    "description": "Button for edit number"
+  },
+  "auth.emailPhoneLabel": {
+    "defaultMessage": "Email or Phone"
+  },
+  "auth.enterPassword": {
+    "defaultMessage": "Enter new password"
+  },
+  "auth.forgotPassword": {
+    "defaultMessage": "Forgot your password?"
+  },
+  "auth.logIn": {
+    "defaultMessage": "Log in"
+  },
+  "auth.newPasswordLabel": {
+    "defaultMessage": "New password"
+  },
+  "auth.notMember": {
+    "defaultMessage": "Not a member?"
+  },
+  "auth.passwordChange": {
+    "defaultMessage": "Password is changed"
+  },
+  "auth.passwordLabel": {
+    "defaultMessage": "Password"
+  },
+  "auth.passwordRecovery.errorText": {
+    "defaultMessage": "Failed to send email. Please, try again",
+    "description": "Error text about failed to send email"
+  },
+  "auth.passwordRecovery.errorTitle": {
+    "defaultMessage": "Oops",
+    "description": "Error title about failed to send email"
+  },
+  "auth.passwordRecovery.pageTitle": {
+    "defaultMessage": "Password recovery {symbol} HouseOn",
+    "description": "Password recovery page"
+  },
+  "auth.passwordReset.pageTitle": {
+    "defaultMessage": "Password reset {symbol} HouseOn"
+  },
+  "auth.repeatPasswordLabel": {
+    "defaultMessage": "Repeat password"
+  },
+  "auth.requestSentLink": {
+    "defaultMessage": "Enter an e-mail so we can send you a link to change the password",
+    "description": "User’s request to enter an e-mail to send a link with password recovery"
+  },
+  "auth.savePasswordButton": {
+    "defaultMessage": "Save password"
+  },
+  "auth.sentLink": {
+    "defaultMessage": "We’ve sent a link to your e-mail. Pass through the link to change the password",
+    "description": "Notification about sent link to user e-mail"
+  },
+  "auth.sentLinkButton": {
+    "defaultMessage": "Ok, thanks",
+    "description": "Button after sent link to user e-mail"
+  },
+  "auth.sentVerificationCode": {
+    "defaultMessage": "We sent a verification code to",
+    "description": "Notification of sending a code to the phone"
+  },
+  "auth.separatorLinks": {
+    "defaultMessage": "and our default"
+  },
+  "auth.signIn": {
+    "defaultMessage": "Sign in"
+  },
+  "auth.signIn.pageTitle": {
+    "defaultMessage": "Log in {symbol} HouseOn"
+  },
+  "auth.signIn.title": {
+    "defaultMessage": "Log in to HouseOn"
+  },
+  "auth.signInMessage": {
+    "defaultMessage": "Sing in to the system by new password."
+  },
+  "auth.signUp": {
+    "defaultMessage": "Sign up"
+  },
+  "auth.signUp.pageTitle": {
+    "defaultMessage": "Sign up {symbol} HouseOn"
+  },
+  "auth.signUpLogin.text": {
+    "defaultMessage": "By clicking Next you automatically are okay with our"
+  },
+  "auth.signUpLogin.title": {
+    "defaultMessage": "Sign up to HouseOn"
+  },
+  "auth.signUpPassword.title": {
+    "defaultMessage": "Sign up to HouseOn"
+  },
+  "chat.aside.sort.groupChat": {
+    "defaultMessage": "Group chat"
+  },
+  "chat.aside.sort.groups": {
+    "defaultMessage": "Groups"
+  },
+  "chat.aside.sort.personalChat": {
+    "defaultMessage": "Personal chat"
+  },
+  "chat.chooseGroupOfPeople": {
+    "defaultMessage": "Choose a group of people from the list on the left"
+  },
+  "chat.dialog.addMember": {
+    "defaultMessage": "Add member"
+  },
+  "chat.dialog.cancelRemove": {
+    "defaultMessage": "No, don’t remove"
+  },
+  "chat.dialog.confirm.remove.text": {
+    "defaultMessage": "Are you sure you want to delete chat “{name}”?"
+  },
+  "chat.dialog.createTitle": {
+    "defaultMessage": "New group chat"
+  },
+  "chat.dialog.deleteFromChatConfirm": {
+    "defaultMessage": "Are you sure you want to remove {memberNameToDelete} from the chat “${selectedChatName}”?"
+  },
+  "chat.dialog.members": {
+    "defaultMessage": "Members"
+  },
+  "chat.dialog.nameLabel": {
+    "defaultMessage": "Name"
+  },
+  "chat.dialog.namePlaceholder": {
+    "defaultMessage": "Type name..."
+  },
+  "chat.dialog.newPersonalChat": {
+    "defaultMessage": "New personal chat"
+  },
+  "chat.dialog.notStarted": {
+    "defaultMessage": "Chat has not started yet, please be the first to write a message"
+  },
+  "chat.dialog.sort.admins": {
+    "defaultMessage": "Admins"
+  },
+  "chat.dialog.sort.all": {
+    "defaultMessage": "All"
+  },
+  "chat.dialog.sort.guests": {
+    "defaultMessage": "Guests"
+  },
+  "chat.dialog.title": {
+    "defaultMessage": "About the chat"
+  },
+  "chat.header.members": {
+    "defaultMessage": "{members, plural, =0 {No members yet} =1 {{members} member} other {{members} members}}"
+  },
+  "chat.header.translate": {
+    "defaultMessage": "Translate to {selectedLanguage}"
+  },
+  "event.card.author": {
+    "defaultMessage": "Author:"
+  },
+  "event.card.button.invite": {
+    "defaultMessage": "Invite guests"
+  },
+  "event.card.create": {
+    "defaultMessage": "Create new event"
+  },
+  "event.card.invite.link": {
+    "defaultMessage": "Copy link in order to send it to your guest"
+  },
+  "event.card.modal.invite.title": {
+    "defaultMessage": "Invite new guests to «{birthday}»"
+  },
+  "event.card.title": {
+    "defaultMessage": "Event"
+  },
+  "event.dialog.confirm.remove.text": {
+    "defaultMessage": "Are you sure you want to delete event “{event}”?"
+  },
+  "event.form.addNumbers": {
+    "defaultMessage": "Add numbers"
+  },
+  "event.form.address.additionalInfo.label": {
+    "description": "Additional info (not necessary):"
+  },
+  "event.form.address.additionalInfo.placeholder": {
+    "description": "Example: “Don’t miss a sign on the road"
+  },
+  "event.form.address.additionalPictures.label": {
+    "description": "Additional pictures"
+  },
+  "event.form.address.files.label": {
+    "description": "Drop a pictures (up to 3) which would help to find you out"
+  },
+  "event.form.address.label": {
+    "description": "Address"
+  },
+  "event.form.address.placeholder": {
+    "description": "Example: Residences at 706 Mission, San Francisco"
+  },
+  "event.form.address.success.text": {
+    "defaultMessage": "You can see this information on the home ownership page"
+  },
+  "event.form.address.success.title": {
+    "defaultMessage": "Information saved"
+  },
+  "event.form.address.title": {
+    "defaultMessage": "Address & additional info"
+  },
+  "event.form.alert.save": {
+    "defaultMessage": "Do you want to save the entered information as the main for your home?"
+  },
+  "event.form.button.createEvent": {
+    "defaultMessage": "Create event"
+  },
+  "event.form.button.preview": {
+    "defaultMessage": "Preview"
+  },
+  "event.form.contacts.button.addFromContacts": {
+    "defaultMessage": "Add from contacts"
+  },
+  "event.form.contacts.link.add": {
+    "defaultMessage": "Add another one"
+  },
+  "event.form.contacts.link.addFromContacts": {
+    "defaultMessage": "Add from contacts"
+  },
+  "event.form.contacts.title": {
+    "defaultMessage": "Contact numbers"
+  },
+  "event.form.date.from.label": {
+    "defaultMessage": "From"
+  },
+  "event.form.date.label": {
+    "defaultMessage": "Date"
+  },
+  "event.form.date.sort.allDay": {
+    "defaultMessage": "All Day"
+  },
+  "event.form.date.to.label": {
+    "defaultMessage": "To"
+  },
+  "event.form.description.label": {
+    "defaultMessage": "Description"
+  },
+  "event.form.description.placeholder": {
+    "defaultMessage": "Example: “Don’t miss a sign on the road”"
+  },
+  "event.form.house.houseIdField": {
+    "defaultMessage": "Create in:"
+  },
+  "event.form.house.newEvent": {
+    "defaultMessage": "New event"
+  },
+  "event.form.housesAddress": {
+    "defaultMessage": "Use house address"
+  },
+  "event.form.navigationLink.cancel": {
+    "defaultMessage": "Not now"
+  },
+  "event.form.navigationLink.save": {
+    "defaultMessage": "Save information"
+  },
+  "event.form.title": {
+    "defaultMessage": "Title & description"
+  },
+  "event.form.title.label": {
+    "defaultMessage": "Title"
+  },
+  "event.form.title.placeholder": {
+    "defaultMessage": "Example: Maria’s Birthday"
+  },
+  "event.header.sort.date": {
+    "defaultMessage": "Sort by: Date"
+  },
+  "event.header.title": {
+    "defaultMessage": "Events"
+  },
+  "event.invitation.alert.text": {
+    "defaultMessage": "This is a preview of the event invitation page."
+  },
+  "event.invitation.button.add": {
+    "defaultMessage": "Add event to my calendar"
+  },
+  "event.invitation.button.direction": {
+    "defaultMessage": "Get directions"
+  },
+  "event.invitation.button.howGetThere": {
+    "defaultMessage": "How to get there?"
+  },
+  "event.invitation.description": {
+    "defaultMessage": "Read the information below and notify the host of your decision"
+  },
+  "event.invitation.field.additionalInfo": {
+    "defaultMessage": "Additional info"
+  },
+  "event.invitation.field.additionalPictures": {
+    "defaultMessage": "Additional pictures"
+  },
+  "event.invitation.field.address": {
+    "defaultMessage": "Address"
+  },
+  "event.invitation.field.phoneNumbers": {
+    "defaultMessage": "Phone numbers"
+  },
+  "event.invitation.invite.title": {
+    "defaultMessage": "{inviteFrom} invited you to «{inviteTo}»"
+  },
+  "houseData.button.addDocument": {
+    "defaultMessage": "Add document"
+  },
+  "houseData.button.inbox": {
+    "defaultMessage": "Inbox"
+  },
+  "houseData.createBy": {
+    "defaultMessage": "Created by:"
+  },
+  "houseData.creator.title": {
+    "defaultMessage": "Creator"
+  },
+  "houseData.files.title": {
+    "defaultMessage": "Files"
+  },
+  "houseData.folder.title": {
+    "defaultMessage": "Folder"
+  },
+  "houseData.form.description.label": {
+    "defaultMessage": "Description"
+  },
+  "houseData.form.folder.label": {
+    "defaultMessage": "Choose folder"
+  },
+  "houseData.form.project.label": {
+    "defaultMessage": "Choose project"
+  },
+  "houseData.form.section.label": {
+    "defaultMessage": "Choose section"
+  },
+  "houseData.form.success": {
+    "defaultMessage": "You can put files in any sections later"
+  },
+  "houseData.form.tag.label": {
+    "defaultMessage": "Typing tag"
+  },
+  "houseData.form.title.create": {
+    "defaultMessage": "Add document"
+  },
+  "houseData.form.title.success": {
+    "defaultMessage": "Your files have been placed in the \"Inbox\" project"
+  },
+  "houseData.lastActivities.empty": {
+    "defaultMessage": "No activities yet"
+  },
+  "houseData.lastActivities.title": {
+    "defaultMessage": "Last activities"
+  },
+  "houseData.layoutScheme.title": {
+    "defaultMessage": "Layout schemes"
+  },
+  "houseData.project.title": {
+    "defaultMessage": "Project"
+  },
+  "houseData.projects.found": {
+    "defaultMessage": "{projects, plural, =1 {Found {htmlProjects} project} other {Found {htmlProjects} projects}}",
+    "description": "Need to translate word `found` and `project/projects` (singular and plural)"
+  },
+  "houseData.search.placeholder": {
+    "defaultMessage": "Type a name of a file.."
+  },
+  "houseData.section.mobileHint": {
+    "defaultMessage": "Choose section from the list to view full information"
+  },
+  "houseData.section.title": {
+    "defaultMessage": "Section"
+  },
+  "houseData.storage.available": {
+    "defaultMessage": "{size} GB available to you"
+  },
+  "houseData.storage.left": {
+    "defaultMessage": "{size} GB left in storage"
+  },
+  "houseData.tags.title": {
+    "defaultMessage": "Tags"
+  },
+  "houseData.title": {
+    "defaultMessage": "HouseData — the one place for all your data needs"
+  },
+  "houseData.visibility.title": {
+    "defaultMessage": "Visibility"
+  },
+  "houseTeam.advice": {
+    "defaultMessage": "Choose someone from the list to view full information"
+  },
+  "houseTeam.assignWork.title": {
+    "defaultMessage": "Assign to work"
+  },
+  "houseTeam.button.addTeamMember": {
+    "defaultMessage": "Add a team member"
+  },
+  "houseTeam.button.deleteMember": {
+    "defaultMessage": "Delete member"
+  },
+  "houseTeam.button.save": {
+    "defaultMessage": "Save a team member"
+  },
+  "houseTeam.description": {
+    "defaultMessage": "This is a page where you can keep your house team information"
+  },
+  "houseTeam.dialog.newTeamMember.created.description": {
+    "defaultMessage": "Now you can share invite link with your team member. In case you’ll need to copy the link again it will be in the House Team list and widget on the home ownership page"
+  },
+  "houseTeam.dialog.newTeamMember.created.title": {
+    "defaultMessage": "A team memeber is created"
+  },
+  "houseTeam.dialog.newTeamMember.title": {
+    "defaultMessage": "New team member"
+  },
+  "houseTeam.duration.hours": {
+    "defaultMessage": "Hours"
+  },
+  "houseTeam.duration.months": {
+    "defaultMessage": "Months"
+  },
+  "houseTeam.form.citizenship.label": {
+    "defaultMessage": "Citizenship"
+  },
+  "houseTeam.form.currency.label": {
+    "defaultMessage": "Currency"
+  },
+  "houseTeam.form.duration.label": {
+    "defaultMessage": "Duration"
+  },
+  "houseTeam.form.duration.placeholder": {
+    "defaultMessage": "Choose duration"
+  },
+  "houseTeam.form.email.label": {
+    "defaultMessage": "E-mail"
+  },
+  "houseTeam.form.email.placeholder": {
+    "defaultMessage": "Type an e-mail"
+  },
+  "houseTeam.form.files.label": {
+    "defaultMessage": "Files"
+  },
+  "houseTeam.form.name.label": {
+    "defaultMessage": "Full name"
+  },
+  "houseTeam.form.name.placeholder": {
+    "defaultMessage": "Type a first name and surname"
+  },
+  "houseTeam.form.payment.label": {
+    "defaultMessage": "Payment"
+  },
+  "houseTeam.form.payment.placeholder": {
+    "defaultMessage": "Payment for work"
+  },
+  "houseTeam.form.phone.label": {
+    "defaultMessage": "Phone"
+  },
+  "houseTeam.form.project.label": {
+    "defaultMessage": "Project"
+  },
+  "houseTeam.form.residence.label": {
+    "defaultMessage": "Residence"
+  },
+  "houseTeam.form.residence.placeholder": {
+    "defaultMessage": "Example: “South Hope Street, 333, Los Angeles, Los Angeles County, California”"
+  },
+  "houseTeam.form.role.label": {
+    "defaultMessage": "Member role"
+  },
+  "houseTeam.identityFiles.title": {
+    "defaultMessage": "Additional files to prove the identity"
+  },
+  "houseTeam.invite.pending": {
+    "defaultMessage": "Pending to respond"
+  },
+  "houseTeam.member.atWork": {
+    "defaultMessage": "At work"
+  },
+  "houseTeam.member.payment": {
+    "defaultMessage": "Payment: {payment}/{paymentFormat}"
+  },
+  "houseTeam.member.vacationing": {
+    "defaultMessage": "Vacationing"
+  },
+  "houseTeam.modal.alert.notAllDelete": {
+    "defaultMessage": "Please, do not delete all of them"
+  },
+  "houseTeam.modal.hint.notAllDelete": {
+    "defaultMessage": "There are often more ways to fix a problem than to fire everyone"
+  },
+  "houseTeam.noMember.advice": {
+    "defaultMessage": "Add a new team member and perform your house managing successfully."
+  },
+  "houseTeam.payment.title": {
+    "defaultMessage": "Payment"
+  },
+  "houseTeam.personalInformation.title": {
+    "defaultMessage": "Personal information"
+  },
+  "houseTeam.projects.basic.title": {
+    "defaultMessage": "Basic projects"
+  },
+  "houseTeam.projects.quick.title": {
+    "defaultMessage": "Quick projects"
+  },
+  "houseTeam.reward.title": {
+    "defaultMessage": "Reward"
+  },
+  "houseTeam.title": {
+    "defaultMessage": "House Team"
+  },
+  "houseTeam.workingHours.title": {
+    "defaultMessage": "Working hours"
+  },
+  "index.banner.information.button": {
+    "defaultMessage": "Fill the information"
+  },
+  "index.banner.information.description": {
+    "defaultMessage": "Fill in the missing information and start using all the features of HouseOn"
+  },
+  "index.banner.information.title": {
+    "defaultMessage": "Breathe life into your home ownership"
+  },
+  "index.banner.projects.button": {
+    "defaultMessage": "View all projects"
+  },
+  "index.banner.projects.description": {
+    "defaultMessage": "HouseOn offers a set of task in order to manage your house process <br /> successfully and reduce time and your finance waste"
+  },
+  "index.banner.projects.title": {
+    "defaultMessage": "Projects"
+  },
+  "index.banner.projects.title-2": {
+    "defaultMessage": "Manage your house by the system"
+  },
+  "index.event.addNew": {
+    "defaultMessage": "Add a new event"
+  },
+  "index.event.create": {
+    "defaultMessage": "Create an event"
+  },
+  "index.event.creator": {
+    "defaultMessage": "Creator:"
+  },
+  "index.event.guestsCount": {
+    "defaultMessage": "{count, plural, =0 {{count} guests} =1 {+{count} guest} other {+{count} guests}}",
+    "description": "It is necessary to translate the words: guest (singular and plural)"
+  },
+  "index.event.link.today": {
+    "defaultMessage": "Today events"
+  },
+  "index.event.viewMore": {
+    "defaultMessage": "View 1 more"
+  },
+  "index.finance.expenses.title": {
+    "defaultMessage": "Possible expenses"
+  },
+  "index.finance.manage.button": {
+    "defaultMessage": "Manage finances"
+  },
+  "index.finance.manage.description": {
+    "defaultMessage": "View statistics and tips based on other households to cooperate your finances successfully"
+  },
+  "index.finance.manage.title": {
+    "defaultMessage": "Track and manage spending"
+  },
+  "index.finance.requests.button": {
+    "defaultMessage": "Check"
+  },
+  "index.finance.requests.title": {
+    "defaultMessage": "You have 4 requests"
+  },
+  "index.finance.spent.title": {
+    "defaultMessage": "Spent this month"
+  },
+  "index.finance.title": {
+    "defaultMessage": "Finances"
+  },
+  "index.houseTeam.addMember.button": {
+    "defaultMessage": "Add a member"
+  },
+  "index.houseTeam.addMember.description": {
+    "defaultMessage": "Add staff to manage processes in the house"
+  },
+  "index.houseTeam.addMember.title": {
+    "defaultMessage": "Set your house team"
+  },
+  "index.houseTeam.title": {
+    "defaultMessage": "Team"
+  },
+  "projects.button.showMore": {
+    "defaultMessage": "Show more"
+  },
+  "projects.form.describe.title": {
+    "defaultMessage": "Describe"
+  },
+  "projects.form.description.label": {
+    "defaultMessage": "What are you going to do"
+  },
+  "projects.form.description.placeholder": {
+    "defaultMessage": "Type.."
+  },
+  "projects.form.inform.title": {
+    "defaultMessage": "Inform"
+  },
+  "projects.form.place.label": {
+    "defaultMessage": "Place of meeting"
+  },
+  "projects.form.place.placeholder": {
+    "defaultMessage": "Type.."
+  },
+  "projects.form.team.title": {
+    "defaultMessage": "Who you watch with"
+  },
+  "projects.form.teamMember.label": {
+    "defaultMessage": "House team"
+  },
+  "projects.form.time.label": {
+    "defaultMessage": "Time of beginning"
+  },
+  "projects.form.timeAndPlace.title": {
+    "defaultMessage": "Time and place"
+  },
+  "projects.houseData.alert.text": {
+    "defaultMessage": "There is a place where all data about the house collects. You can open access to data or add some files so your house team could see it."
+  },
+  "projects.houseData.banner.description": {
+    "defaultMessage": "You can upload recommended files to these folders or turn off those you don’t need and link existing folders from HouseData"
+  },
+  "projects.houseData.banner.title": {
+    "defaultMessage": "{houseMember} has already prepared a place to keep all data"
+  },
+  "projects.houseData.button.select": {
+    "defaultMessage": "Select from HouseData"
+  },
+  "projects.houseData.title": {
+    "defaultMessage": "House Data"
+  },
+  "projects.info.button.start": {
+    "defaultMessage": "Start the project"
+  },
+  "projects.info.description": {
+    "defaultMessage": "This is a project that will allow you to keep everything in order so that you have it in predictable places."
+  },
+  "projects.info.title": {
+    "defaultMessage": "Home ownership care"
+  },
+  "projects.quick.banner.title": {
+    "defaultMessage": "Switch on basic projects to start main operation in the house"
+  },
+  "projects.quick.title": {
+    "defaultMessage": "Quick projects"
+  },
+  "projects.started.dialog.hint": {
+    "defaultMessage": "Three tasks of the project has started automatically. You can change it or start more tasks in the project page"
+  },
+  "projects.started.dialog.hint-2": {
+    "defaultMessage": "If you want to make it later, the {houseMember} can take it for awhile."
+  },
+  "projects.started.dialog.title": {
+    "defaultMessage": "The project has started!"
+  },
+  "projects.tasks.button.create": {
+    "defaultMessage": "Create a task"
+  },
+  "projects.tasks.offered.title": {
+    "defaultMessage": "Offered by Albert"
+  },
+  "projects.tasks.title": {
+    "defaultMessage": "Tasks in the project"
+  },
+  "settings.dangerZone.button.delete": {
+    "defaultMessage": "Delete house"
+  },
+  "settings.dangerZone.form.areaMetrics.label": {
+    "defaultMessage": "Total floor space"
+  },
+  "settings.dangerZone.form.deadline.label": {
+    "defaultMessage": "Deadline"
+  },
+  "settings.dangerZone.form.name.label": {
+    "defaultMessage": "Name house"
+  },
+  "settings.dangerZone.form.ownership.label": {
+    "defaultMessage": "Type of ownership"
+  },
+  "settings.dangerZone.hint": {
+    "defaultMessage": "You can delete your house, but be aware that all your data will be lost forever"
+  },
+  "settings.dangerZone.pictures.hint": {
+    "defaultMessage": "There can be a picture of your house"
+  },
+  "settings.dangerZone.title": {
+    "defaultMessage": "Danger zone"
+  },
+  "settings.member.title": {
+    "defaultMessage": "Members"
+  },
+  "settings.member.user.title": {
+    "defaultMessage": "User"
+  },
+  "settings.notifications.title": {
+    "defaultMessage": "Notifications"
+  },
+  "settings.tabs.alert.failed.text": {
+    "defaultMessage": "Failed to save comments. Please, try again"
+  },
+  "settings.tabs.alert.failed.title": {
+    "defaultMessage": "Oops!"
+  },
+  "settings.tabs.alert.success.title": {
+    "defaultMessage": "Success"
+  },
+  "settings.tabs.comment.alert.hint.text": {
+    "defaultMessage": "Here you can write comments that indicate specific information for the staff"
+  },
+  "settings.tabs.comment.alert.success.text": {
+    "defaultMessage": "Comments saved"
+  },
+  "settings.tabs.direction.alert.success.text": {
+    "defaultMessage": "Direction saved"
+  },
+  "settings.tabs.direction.form.additional.label": {
+    "defaultMessage": "Additional info (not necessary):"
+  },
+  "settings.tabs.direction.form.address.label": {
+    "defaultMessage": "Type your house address"
+  },
+  "settings.tabs.direction.form.pictures.label": {
+    "defaultMessage": "Drop a pictures (up to 3) which would help to find you out"
+  },
+  "subscription.banner.alert.period.description": {
+    "defaultMessage": "{daysLeft, plural, =0 {Your subscription has expired. Connect a suitable plan below to continue using the product} other {You can wait until the end of the trial period or activate any subscription right now from the options below}}"
+  },
+  "subscription.banner.alert.period.title": {
+    "defaultMessage": "{daysLeft, plural, =0 {Your trial period finished} =1 {Your trial period will end in {daysLeft} day} other {Your trial period will end in ${daysLeft} days}}"
+  },
+  "subscription.button": {
+    "defaultMessage": "Subscriptions"
+  },
+  "subscription.plan.button.subscribe": {
+    "defaultMessage": "Subscribe"
+  },
+  "subscription.plan.button.unsubscribe": {
+    "defaultMessage": "Unsubscribe"
+  },
+  "subscription.plan.left.text": {
+    "defaultMessage": "{daysLeft, plural, =1 {Left {daysLeftHtml} day} other {Left {daysLeftHtml} days}}",
+    "description": "Need to translate word `Left` and `Day/Days` (singular and plural)"
+  },
+  "subscription.plan.title": {
+    "defaultMessage": "Subscription plan"
+  },
+  "suppoert.hint": {
+    "defaultMessage": "You are using V1.0 apps. If you have any questions requests or suggestions write to us at house@on.com or submit the form below."
+  },
+  "support.button.back": {
+    "defaultMessage": "Go to the site"
+  },
+  "support.form.email.placeholder": {
+    "defaultMessage": "Your email..."
+  },
+  "support.form.message.label": {
+    "defaultMessage": "Message"
+  },
+  "support.form.message.placeholder": {
+    "defaultMessage": "Type message..."
+  },
+  "support.form.name.label": {
+    "defaultMessage": "Your name..."
+  },
+  "support.form.name.placeholder": {
+    "defaultMessage": "Your name..."
+  },
+  "support.title": {
+    "defaultMessage": "About the app"
+  },
+  "tasks.banner.text": {
+    "defaultMessage": "{countDays} Days"
+  },
+  "tasks.banner.title": {
+    "defaultMessage": "According to analysis based on the experience of other households this task will take {countDays} days"
+  },
+  "tasks.button.detail": {
+    "defaultMessage": "Details"
+  },
+  "tasks.careWardrobe.title": {
+    "defaultMessage": "Care of wardrobe items"
+  },
+  "tasks.checklist.alert": {
+    "defaultMessage": "This is a checklist recommended by {houseOwner}. You can make your own list or change current"
+  },
+  "tasks.checklist.button.viewRecommended": {
+    "defaultMessage": "View recommended"
+  },
+  "tasks.checklist.title": {
+    "defaultMessage": "Checklist"
+  },
+  "tasks.comments.title": {
+    "defaultMessage": "Comments"
+  },
+  "tasks.deadline.title": {
+    "defaultMessage": "Deadline"
+  },
+  "tasks.form.deadline.label": {
+    "defaultMessage": "Deadline"
+  },
+  "tasks.form.describe.label": {
+    "defaultMessage": "Describe"
+  },
+  "tasks.form.describe.placeholder": {
+    "defaultMessage": "Example: “Clean up the floor pleasel”"
+  },
+  "tasks.highPriority": {
+    "defaultMessage": "High priority"
+  },
+  "tasks.houseData.alert.aboutHouseData": {
+    "defaultMessage": "There is HouseData which is linked to the project. You can close access to some of them or fill with data"
+  },
+  "tasks.houseData.alert.hintAboutTask": {
+    "defaultMessage": "There is a place where all data about the house collects. You can open access to data or add some files so your house team could see it."
+  },
+  "tasks.houseData.button.more": {
+    "defaultMessage": "Select more from HouseData"
+  },
+  "tasks.houseData.title": {
+    "defaultMessage": "HouseData"
+  },
+  "tasks.lastActivities.empty": {
+    "defaultMessage": "No activities yet"
+  },
+  "tasks.lastActivities.title": {
+    "defaultMessage": "Last activities"
+  },
+  "tasks.lastActivities.viewAll": {
+    "defaultMessage": "View all"
+  },
+  "tasks.link.ownership": {
+    "defaultMessage": "Home ownership care"
+  },
+  "tasks.modal.sort.countFiltered": {
+    "defaultMessage": "Show {count} tasks"
+  },
+  "tasks.modal.sort.createBy.value": {
+    "defaultMessage": "No matter"
+  },
+  "tasks.modal.sort.createdBy.title": {
+    "defaultMessage": "Created by"
+  },
+  "tasks.modal.sort.filters": {
+    "defaultMessage": "Filters"
+  },
+  "tasks.modal.sort.houseTeam.title": {
+    "defaultMessage": "HouseTeam"
+  },
+  "tasks.modal.sort.houseTeam.value": {
+    "defaultMessage": "No matter"
+  },
+  "tasks.modal.sort.states.title": {
+    "defaultMessage": "States"
+  },
+  "tasks.modal.sort.states.value": {
+    "defaultMessage": "All"
+  },
+  "tasks.periodicity.title": {
+    "defaultMessage": "Periodicity"
+  },
+  "tasks.project.label": {
+    "defaultMessage": "Project"
+  },
+  "tasks.project.placeholder": {
+    "defaultMessage": "Type or choose from the list"
+  },
+  "tasks.requiredHouseTeam.title": {
+    "defaultMessage": "Required house team"
+  },
+  "tasks.sort.option.createdBy.prefix": {
+    "defaultMessage": "Created by:"
+  },
+  "tasks.sort.option.houseTeam.prefix": {
+    "defaultMessage": "House team:"
+  },
+  "tasks.sort.option.show.prefix": {
+    "defaultMessage": "Show:"
+  },
+  "tasks.started": {
+    "defaultMessage": "Started {date} by"
+  },
+  "tasks.tabs.month.title": {
+    "defaultMessage": "На месяц"
+  },
+  "tasks.tabs.today.title": {
+    "defaultMessage": "На сегодня"
+  },
+  "tasks.tabs.week.title": {
+    "defaultMessage": "На неделю"
+  },
+  "tasks.team.title": {
+    "defaultMessage": "Required house team"
+  },
+  "wizard.safety.personalDataInformation.text": {
+    "defaultMessage": "We care about the safety of our users and do not store your personal data and information about the house."
+  },
+  "wizard.safety.processes.text": {
+    "defaultMessage": "All processes take place without your participation. The system adjusts to you and helps to automate routine processes"
+  },
+  "wizard.safety.tooltip.text": {
+    "defaultMessage": "We care about the safety of our users and do not store your personal data and information about the house."
+  },
+  "wizard.safety.why": {
+    "defaultMessage": "Why is it safe?"
+  },
+  "wizard.step.advanced.button.start": {
+    "defaultMessage": "Start this project"
+  },
+  "wizard.step.advanced.button.thanks": {
+    "defaultMessage": "<span>Thanks! &thinsp;</span> Let’s manage my house"
+  },
+  "wizard.step.advanced.description": {
+    "defaultMessage": "You can go to your house or switch up a project “General cleaning”"
+  },
+  "wizard.step.advanced.title": {
+    "defaultMessage": "Your house is made!"
+  },
+  "wizard.step.area.form.space.label": {
+    "defaultMessage": "Total floor space"
+  },
+  "wizard.step.area.form.space.placeholder": {
+    "defaultMessage": "About 50m"
+  },
+  "wizard.step.area.text": {
+    "defaultMessage": "In order to customize our recommendations for home care and other <br /> activities, write an approximate floor space"
+  },
+  "wizard.step.area.title": {
+    "defaultMessage": "Enter the approximate&thinsp;area <br /> to set up the system"
+  },
+  "wizard.step.area.tooltip.hint": {
+    "defaultMessage": "Write the approximate area of the house so that the system can estimate the time and effort needed to manage the house"
+  },
+  "wizard.step.area.tooltip.link": {
+    "defaultMessage": "Don`t know your area?"
+  },
+  "wizard.step.name.description": {
+    "defaultMessage": "We need any name of your house which you can create, so that we can <br /> make a home profile in the system"
+  },
+  "wizard.step.name.form.houseName.label": {
+    "defaultMessage": "Name your house"
+  },
+  "wizard.step.name.form.houseName.placeholder": {
+    "defaultMessage": "Winter House"
+  },
+  "wizard.step.name.title": {
+    "defaultMessage": "Create a name to&thinsp;make <br /> a house in system"
+  },
+  "wizard.step.name.tooltip.hint": {
+    "defaultMessage": "We ask you to come up with a name for the house so that we can name your house in the system. We do not ask for exact data and coordinates of the house, any word will suit us"
+  }
+}

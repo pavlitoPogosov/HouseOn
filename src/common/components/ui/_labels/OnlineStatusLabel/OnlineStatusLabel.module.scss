@@ -1,0 +1,14 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.OnlineStatusLabel__container {
+  display: inline-flex;
+  align-items: center;
+  width: min-content;
+  height: 100%;
+}
+
+.OnlineStatusLabel__dot {
+  display: flex;
+  border-radius: 50%;
+}

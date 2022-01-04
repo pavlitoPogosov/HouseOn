@@ -1,0 +1,32 @@
+@import 'styles/_tokens.scss';
+
+.Spinner {
+  display: block;
+  cursor: auto;
+  shape-rendering: auto;
+}
+
+.Spinner__xl {
+  width: 80px;
+  height: 80px;
+}
+
+.Spinner__lg {
+  width: 50px;
+  height: 50px;
+}
+
+.Spinner__md {
+  width: 30px;
+  height: 30px;
+}
+
+.Spinner__sm {
+  width: 20px;
+  height: 20px;
+}
+
+.Spinner__xs {
+  width: 16px;
+  height: 16px;
+}

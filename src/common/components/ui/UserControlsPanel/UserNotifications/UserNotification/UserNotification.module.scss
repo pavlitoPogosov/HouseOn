@@ -1,0 +1,97 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.UserNotification__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.UserNotification__header_col {
+  display: flex;
+}
+
+.UserNotification__avatarWrapper {
+  position: relative;
+  height: 44px;
+  margin-right: 20px;
+}
+
+.UserNotification__isOnline {
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background: $accent-blue-primary;
+}
+
+.UserNotification__avatar_task {
+  color: $text-secondary;
+  background: #e8eaef;
+}
+
+.UserNotification__avatar_app {
+  color: #fff;
+  background: $text-brand;
+}
+
+.UserNotification__avatar {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.UserNotification__avatar_sm {
+  width: 28px;
+  height: 28px;
+}
+
+.UserNotification__avatar_md {
+  width: 44px;
+  height: 44px;
+}
+
+.UserNotification__header_date {
+  white-space: pre;
+  color: $text-tretiary;
+  font-weight: 500;
+
+  @include media-down(xs) {
+    font-size: 12px;
+  }
+}
+
+.UserNotification__content {
+  width: 100%;
+  margin-top: 14px;
+  padding-right: calc(52px - 16px);
+  padding-left: 64px;
+}
+
+.UserNotification__message {
+  padding: 14px 16px;
+  color: $text-secondary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: 0 8px 8px 8px;
+}
+
+.UserNotification__comment {
+  display: flex;
+}
+
+.UserNotification__comment_avatar {
+  margin-right: 10px;
+}
+
+.UserNotificationIcon__colorfulIcon {
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+}

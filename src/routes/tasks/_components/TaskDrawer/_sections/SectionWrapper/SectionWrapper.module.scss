@@ -1,0 +1,13 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.SectionWrapper__container {
+  margin-bottom: 40px;
+}
+
+.SectionWrapper__titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.TeamMemberShortenedCard__card {
+  display: flex;
+  align-items: center;
+}
+
+.TeamMemberShortenedCard__cardAvatar {
+  margin-right: 12px;
+}
+
+.TeamMemberShortenedCard__cardText {
+  width: fit-content;
+  max-width: 240px;
+}
+
+.TeamMemberShortenedCard__cardIcon {
+  margin-left: 40px;
+  color: $text-secondary;
+}

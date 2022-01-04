@@ -1,0 +1,46 @@
+.InstructionAddForm__container {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+  height: 100%;
+
+  form {
+    flex-grow: 1;
+  }
+}
+
+.InstructionAddForm__inputWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.InstructionAddForm__input {
+  flex-grow: 1;
+}
+
+.InstructionAddForm__closeIcon {
+  margin-left: 12px;
+
+  &.marginTop {
+    margin-top: -20px;
+  }
+}
+
+.InstructionAddForm__addLink {
+  margin-top: 34px;
+}
+
+.InstructionAddForm__addLinkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  margin-right: 4px;
+  border-radius: 50%;
+
+  background-color: #e6f4f1;
+}

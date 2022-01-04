@@ -1,0 +1,32 @@
+.Status {
+  display: flex;
+  width: max-content;
+  padding: 4px 16px;
+  border-radius: 20px;
+
+  &__icon {
+    margin-right: 4px;
+  }
+
+  &__color {
+    &_yellow {
+      color: #ffb600;
+      background-color: #fff8e6;
+    }
+
+    &_green {
+      color: #4fa925;
+      background-color: #edffe3;
+    }
+
+    &_blue {
+      color: #2aabed;
+      background-color: #e7f8ff;
+    }
+
+    &_gray {
+      color: #646a8c;
+      background-color: #e8ebef;
+    }
+  }
+}

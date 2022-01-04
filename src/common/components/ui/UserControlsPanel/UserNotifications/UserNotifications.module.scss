@@ -1,0 +1,86 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+$padding-left-and-right: 16px;
+$padding-top-and-bottom: 20px;
+$header-height: 60px;
+
+.UserNotifications__wrapper {
+  position: relative;
+}
+
+.UserNotifications__container {
+  @include scrollbar;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 400px;
+  max-height: calc(100vh - 60px - #{$header-height} - 39px);
+  margin-top: 5px;
+  border-radius: $border-radius-8;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: $box-shadow-xl;
+
+  @include media-down(md) {
+    width: 100%;
+    height: calc(100vh - 37px);
+    max-height: none;
+    box-shadow: none;
+  }
+}
+
+.UserNotifications__headerText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: $header-height;
+  padding: $padding-top-and-bottom $padding-left-and-right;
+  background: #fff;
+}
+
+.UserNotifications__title {
+  color: $text-primary;
+}
+
+.UserNotifications__allIsRead {
+  cursor: pointer;
+  color: $text-brand;
+}
+
+.UserNotifications__swichWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.UserNotifications__swich {
+  height: 16px;
+}
+
+.UserNotifications__swichText {
+  margin-right: 7px;
+  color: $text-secondary;
+}
+
+.UserNotifications_date {
+  padding: 7px $padding-left-and-right;
+  color: $text-secondary;
+  background: $surface-secondary;
+}
+
+.UserNotifications__notificatinos {
+  padding: 24px $padding-left-and-right;
+}
+
+.UserNotifications__notification {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $border-gray-secondary;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+}

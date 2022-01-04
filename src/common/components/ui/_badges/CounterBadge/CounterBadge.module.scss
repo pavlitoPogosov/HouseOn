@@ -1,0 +1,52 @@
+@import 'styles/_tokens.scss';
+
+.CounterBadge__container {
+  border-radius: $border-radius-20;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+}
+
+.CounterBadge__primary {
+  color: #fff;
+  background-color: #7ebf2f;
+}
+
+.CounterBadge__secondary {
+  color: #7ebf2f;
+  background-color: #e1f8c6;
+}
+
+.CounterBadge__red {
+  color: $brand-orange-default;
+  background-color: #fce5e6;
+}
+
+.CounterBadge__gray {
+  color: #fff;
+  background-color: $text-tretiary;
+}
+
+.CounterBadge__lightGray {
+  color: $text-tretiary;
+  background-color: $surface-secondary;
+}
+
+.CounterBadge__green {
+  color: #fff;
+  background: $brand-primary-default;
+}
+
+// size
+
+.CounterBadge__s {
+  padding: 2px 6px;
+}
+
+.CounterBadge__m {
+  padding: 2px 8px;
+}
+
+.CounterBadge__l {
+  padding: 2px 12px;
+}

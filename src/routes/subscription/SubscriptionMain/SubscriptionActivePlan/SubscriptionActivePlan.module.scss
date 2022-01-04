@@ -1,0 +1,64 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.SubscriptionActivePlan__container {
+  margin-bottom: 10px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: $box-shadow-l;
+
+  @include media-up(sm) {
+    margin-bottom: 16px;
+  }
+}
+
+.SubscriptionActivePlan__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.SubscriptionActivePlan__description {
+  margin-top: 22px;
+  margin-bottom: 16px;
+
+  @include media-up(sm) {
+    max-width: 320px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
+}
+
+.SubscriptionActivePlan__title {
+  margin-right: 16px;
+}
+
+.SubscriptionActivePlan__date {
+  font-weight: $font-weight-600;
+}
+
+.SubscriptionActivePlan__btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.SubscriptionActivePlan__btn {
+  width: 100%;
+  min-width: 224px;
+  height: 48px;
+
+  &:first-of-type {
+    margin-bottom: 16px;
+
+    @include media-up(sm) {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-up(sm) {
+    width: auto;
+  }
+}

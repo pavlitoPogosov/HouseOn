@@ -1,0 +1,63 @@
+// docs have recommendation to include this styles
+@import 'draft-js/dist/Draft.css';
+
+@import './vars';
+@import './fonts';
+
+html {
+  box-sizing: border-box;
+  color: $text-primary;
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-16;
+  font-weight: $font-weight-400;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

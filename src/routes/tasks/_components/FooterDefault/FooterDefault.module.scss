@@ -1,0 +1,32 @@
+@import "styles/_tokens";
+@import "styles/_vars";
+
+.FooterDefault {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 61px;
+  padding: 16px 40px;
+  box-shadow: 0 -2px 12px rgba(119, 132, 157, 0.1);
+
+  &__button {
+    @include media-down($sm) {
+      width: 100%;
+
+      &:first-child {
+        order: 2;
+      }
+
+      &:last-child {
+        order: 1;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  @include media-down($sm) {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 24px;
+  }
+}

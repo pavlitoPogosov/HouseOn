@@ -1,0 +1,42 @@
+@import 'styles/_tokens.scss';
+
+.CreatedEntityLink__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.CreatedEntityLink__avatar {
+  width: 96px;
+  height: 96px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background-color: $background-day-tetriary;
+}
+
+.CreatedEntityLink__text {
+  margin-top: 8px;
+}
+
+.CreatedEntityLink__inputWrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.CreatedEntityLink__inputContainer {
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.CreatedEntityLink__input {
+  height: 32px;
+  color: $text-tretiary;
+}
+
+.CreatedEntityLink__btn {
+  align-self: flex-end;
+  margin-left: 12px;
+}

@@ -1,0 +1,11 @@
+@import 'styles/_vars.scss';
+
+.TabContainer__container {
+  @include media-up(md) {
+    max-width: 514px;
+  }
+}
+
+.TabContainer__spinner {
+  margin: 36px auto 0 auto;
+}

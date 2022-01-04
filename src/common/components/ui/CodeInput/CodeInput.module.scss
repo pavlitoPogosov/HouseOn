@@ -1,0 +1,36 @@
+@import 'styles/_tokens.scss';
+
+.CodeInput__input {
+  // use !important in order to overwrite lib styles
+  width: auto !important;
+
+  input {
+    color: $text-primary;
+    border: none !important;
+    border-radius: $border-radius-4 !important;
+    background: $surface-primary;
+    font-family: inherit !important;
+    font-size: $font-size-16;
+    font-weight: $font-weight-400;
+    line-height: $line-height-24;
+    caret-color: $text-primary !important;
+
+    & + input {
+      margin-left: 4px;
+    }
+  }
+}
+
+.CodeInput__error {
+  margin-top: 10px;
+
+  @media screen and (min-width: 475px) {
+    margin-top: 4px;
+  }
+}
+
+.CodeInput__inputError {
+  input {
+    background: rgba(253, 64, 64, 0.07);
+  }
+}

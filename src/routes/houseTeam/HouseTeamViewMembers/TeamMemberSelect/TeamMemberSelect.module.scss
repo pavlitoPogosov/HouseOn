@@ -1,0 +1,63 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.TeamMemberSelect__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $border-gray-secondary;
+
+  &_notMargin {
+    margin-top: 0;
+  }
+
+  @include media-up(sm) {
+    margin-bottom: 16px;
+  }
+}
+
+.TeamMemberSelect__card {
+  & + .TeamMemberSelect__card {
+    margin-top: 12px;
+  }
+}
+
+.TeamMemberSelect__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &_sort {
+    min-width: 200px;
+  }
+
+  @include media-up(sm) {
+    margin-bottom: 16px;
+  }
+}
+
+.TeamMemberSelect__search {
+  flex-grow: 1;
+  max-width: 420px;
+  margin-left: 24px;
+}
+
+.TeamMemberSelect__userControls {
+  margin-bottom: 36px;
+}
+
+.TeamMemberSelect__items {
+  @include scrollbar();
+
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+.TeamMemberSelect__disableMargin {
+  margin-top: 0;
+}

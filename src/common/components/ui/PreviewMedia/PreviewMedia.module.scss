@@ -1,0 +1,52 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.PreviewMedia__container {
+  display: flex;
+}
+
+.image_preview__container,
+.video_preview__container {
+  width: 320px;
+  height: 180px;
+}
+
+.image_preview__container {
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image_viewer__img {
+  width: auto;
+  box-shadow: $box-shadow-s;
+}
+
+.video_preview__container {
+  cursor: pointer;
+}
+
+.video_preview__thumb {
+  display: flex;
+}
+
+.video_preview__player {
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 4px;
+  box-shadow: $box-shadow-s;
+}
+
+.video_viewer__container {
+}
+
+.video_viewer__player_container {
+  z-index: 1;
+}
+
+.video_viewer__player {
+}

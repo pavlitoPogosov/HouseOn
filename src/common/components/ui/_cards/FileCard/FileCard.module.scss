@@ -1,0 +1,102 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.FileCard__container {
+  display: flex;
+  background-color: transparent;
+}
+
+.FileCard__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.FileCard__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.FileCard__content_top {
+  display: flex;
+  width: 100%;
+}
+
+.FileCard__content_text {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.FileCard__title {
+  @include mltext;
+  margin-bottom: 8px;
+}
+
+.FileCard__description {
+  @include mltext;
+  font-weight: $font-weight-500;
+}
+
+.FileCard__content__disabler {
+  display: flex;
+  margin-right: 16px;
+  color: $text-primary;
+
+  &.disabled {
+    color: $text-tretiary;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.FileCard__tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+
+  > div:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.FileCard__extension {
+  text-transform: capitalize;
+}
+
+.FileCard__dot {
+  margin-right: 4px;
+  color: $brand-grey-hover;
+}
+
+.FileCard__tag_filled {
+  padding: 2px 6px;
+  text-transform: capitalize;
+  border-color: $surface-button-sircle;
+  background-color: $surface-button-sircle;
+  font-weight: $font-weight-400;
+}

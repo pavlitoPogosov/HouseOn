@@ -1,0 +1,90 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ChatInput__wrapper {
+  padding: 16px 24px;
+}
+
+.ChatInput__container {
+  margin: 0 -15px -42px -15px;
+  background-color: #fff;
+
+  @include media-up(xl) {
+    margin: 0 -26px -42px -26px;
+  }
+}
+
+.ChatInput__label_download {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  transform: translateY(-50%);
+  color: $text-secondary;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+
+  input {
+    display: none;
+  }
+
+  &:hover {
+    background-color: darken(#fff, 4%);
+  }
+}
+
+.ChatInput__button_send {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  padding: 4px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  background-color: $brand-primary-default;
+
+  &:hover {
+    background-color: $brand-primary-hover;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $brand-primary-pressed;
+  }
+}
+
+.ChatInput__inputContainer {
+  margin-bottom: 0;
+}
+
+.ChatInput__input {
+  height: 36px;
+  min-height: 36px;
+  max-height: 36px;
+  padding: 8px 52px 8px 16px;
+}
+
+.ChatInput__files {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.ChatInput__fileCard {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}

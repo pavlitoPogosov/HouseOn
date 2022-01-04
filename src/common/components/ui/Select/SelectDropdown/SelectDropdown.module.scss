@@ -1,0 +1,37 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.SelectDropdown__container {
+  @include scrollbar;
+  position: absolute;
+  z-index: 1;
+  overflow-y: auto;
+  max-height: 160px;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+  box-shadow: $box-shadow-l;
+}
+
+.SelectDropdown__option {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  background-color: #fff;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &.hover {
+    background-color: #e6f4f1;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ceebe3;
+  }
+}

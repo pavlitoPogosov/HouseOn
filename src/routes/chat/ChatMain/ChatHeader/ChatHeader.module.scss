@@ -1,0 +1,104 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+.ChatHeader__container {
+  display: flex;
+  margin-top: 32px;
+  padding-bottom: 8px;
+}
+
+.ChatHeader__avatarWrapper {
+  display: flex;
+}
+
+.ChatHeader__avatarIcon {
+  margin-right: 8px;
+}
+
+.ChatHeader__avatar {
+  min-width: 48px;
+  margin-right: 16px;
+}
+
+.ChatHeader__emptyAvatar {
+  background-color: $surface-primary;
+}
+
+.ChatHeader__content {
+  margin-top: 4px;
+}
+
+.ChatHeader__contentHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ChatHeader__name {
+  margin-right: 12px;
+  margin-bottom: 4px;
+}
+
+.ChatHeader__householdAvatar {
+  min-width: 18px;
+  margin-right: 6px;
+}
+
+.ChatHeader__household {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 120px;
+  height: 22px;
+  margin-top: -2px;
+  margin-bottom: 2px;
+  padding: 2px 4px 2px 4px;
+  color: $text-secondary;
+  border-radius: 80px;
+  background-color: #e8ebef;
+  font-size: $font-size-10;
+  font-weight: $font-weight-600;
+  line-height: $line-height-12;
+
+  span {
+    @include ellipsis;
+  }
+
+  @include media-up(lg) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.ChatHeader__membersLink {
+  cursor: pointer;
+  white-space: nowrap;
+  color: $text-brand;
+}
+
+.ChatHeader__dot {
+  margin: 0 4px;
+}
+
+.ChatHeader__languageSelect {
+  @include caption_r;
+  cursor: pointer;
+  white-space: nowrap;
+  color: $text-tretiary;
+}
+
+.ChatHeader__languageTooltip {
+  overflow-y: auto;
+  width: 110px;
+  max-height: none;
+  color: $text-primary;
+}
+
+.ChatHeader__chevronDownIcon {
+  transition: transform $transition-primary;
+
+  &.rotate {
+    transform: rotate(-180deg);
+  }
+}

@@ -1,0 +1,26 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.LabelWithExtra__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.LabelWithExtra__text {
+  white-space: normal;
+}
+
+.LabelWithExtra__extra_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  padding: 4px 6px;
+  border-radius: 8px;
+}
+
+.LabelWithExtra__extra {
+}

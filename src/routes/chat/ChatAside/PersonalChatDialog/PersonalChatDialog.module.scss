@@ -1,0 +1,6 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.PersonalChatDialog__TeamSelectDialog_blackout {
+  z-index: $zindex-popover;
+}

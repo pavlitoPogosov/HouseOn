@@ -1,0 +1,25 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ChatPage__aside_content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: calc(100vh - 86px);
+}
+
+.ChatPage__aside_main {
+  @include media-down(md) {
+    padding: 16px !important;
+  }
+}
+
+.ChatPage__aside {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.ChatPage__aside_logo {
+  padding-right: 32px;
+  padding-left: 32px;
+}

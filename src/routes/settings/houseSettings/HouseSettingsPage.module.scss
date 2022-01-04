@@ -1,0 +1,9 @@
+@import 'styles/_vars.scss';
+
+.HouseSettingsPage__aside {
+  max-width: 352px;
+
+  @include media-up(xxl) {
+    max-width: 452px;
+  }
+}

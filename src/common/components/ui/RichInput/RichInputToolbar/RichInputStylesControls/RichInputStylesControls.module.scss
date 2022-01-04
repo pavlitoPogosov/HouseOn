@@ -1,0 +1,10 @@
+.RichInputControls__control {
+  & + .RichInputControls__control {
+    margin-left: 2px;
+  }
+}
+
+.RichInputControls__italic {
+  margin-top: -4px;
+  font-style: italic;
+}

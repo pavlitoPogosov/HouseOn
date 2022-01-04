@@ -1,0 +1,7 @@
+.TeamSection__card {
+  display: block;
+
+  & + .TeamSection__card {
+    margin-top: 12px;
+  }
+}

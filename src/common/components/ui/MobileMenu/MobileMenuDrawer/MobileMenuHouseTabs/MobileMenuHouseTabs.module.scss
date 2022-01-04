@@ -1,0 +1,28 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.MobileMenuHouseTabs__container {
+  margin-bottom: 16px;
+}
+
+.MobileMenuHouseTabs__tabsContainer {
+  & + .MobileMenuHouseTabs__tabsContainer {
+    margin-top: 8px;
+  }
+
+  .MobileMenuHouseTabs__tab:first-of-type {
+    margin-right: 4px;
+  }
+
+  .MobileMenuHouseTabs__tab:last-of-type {
+    margin-left: 4px;
+  }
+}
+
+.MobileMenuHouseTabs__tab {
+  width: calc(50% - 4px);
+
+  &.active {
+    background-color: $brand-primary-default;
+  }
+}

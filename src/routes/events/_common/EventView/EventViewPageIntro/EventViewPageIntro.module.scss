@@ -1,0 +1,29 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.EventViewPageIntro__container {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 64px auto;
+  text-align: center;
+
+  @include media-up(md) {
+    margin: 0 auto 44px auto;
+  }
+}
+
+.EventViewPageIntro__title {
+  margin-bottom: 12px;
+}
+
+.EventViewPageIntro__description {
+  color: $text-secondary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+}
+
+.EventViewPageIntro__btn {
+  width: 242px;
+  margin: 44px auto 0 auto;
+}

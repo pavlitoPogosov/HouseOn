@@ -1,0 +1,25 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ProjectCard__container {
+  display: block;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  border: 1px solid transparent;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+
+  &.active {
+    border-color: $brand-primary-default;
+  }
+}
+
+.ProjectCard__quick_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}

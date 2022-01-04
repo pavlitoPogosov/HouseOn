@@ -1,0 +1,13 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HelpTextTooltip__container {
+  max-width: 322px;
+  padding-bottom: 40px;
+  text-align: left;
+  color: $text-primary;
+}
+
+.HelpTextTooltip__content {
+  padding-top: 32px;
+}

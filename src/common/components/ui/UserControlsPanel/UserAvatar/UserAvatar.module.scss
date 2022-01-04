@@ -1,0 +1,30 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.UserAvatar__container {
+  display: flex;
+}
+
+.UserAvatar__name {
+  @include ellipsis;
+  margin-bottom: 2px;
+  color: $text-primary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-18;
+}
+
+.UserAvatar__role {
+  color: $text-secondary;
+  font-size: $font-size-10;
+  font-weight: $font-weight-600;
+  line-height: $line-height-12;
+}
+
+.UserAvatar__imgWrapper {
+  margin-right: 8px;
+}
+
+.UserAvatar__imgWrapper_marginLeft {
+  margin-left: 12px;
+}

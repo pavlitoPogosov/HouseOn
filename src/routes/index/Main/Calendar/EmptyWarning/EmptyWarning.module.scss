@@ -1,0 +1,38 @@
+@import 'styles/_tokens.scss';
+
+.EmptyWarning__container {
+  position: absolute;
+  z-index: $zindex-fixed;
+  top: 202px;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: max-content;
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(79.9% 79.9% at 50% 50%, #fafafa 0%, rgba(250, 250, 250, 0) 100%);
+  filter: drop-shadow(0 4px 4px #fafafa);
+}
+
+// TODO seperate common circle styles in special mixin
+.EmptyWarning__icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.EmptyWarning__text {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.EmptyWarning__link {
+  height: 32px !important;
+  padding: 8px 12px !important;
+  border-radius: 100px;
+  font-size: $font-size-12;
+}

@@ -1,0 +1,38 @@
+@import 'styles/_vars.scss';
+
+.Events__parent {
+  overflow: hidden;
+}
+
+.Events__container {
+  display: grid;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  align-items: start;
+  padding-bottom: 12px;
+
+  @include media-up(lg) {
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+}
+
+.Events__event {
+  z-index: 10;
+}
+
+.Events__more {
+  position: absolute;
+  z-index: $zindex-dropdown;
+  bottom: 0;
+  left: 15px;
+  cursor: pointer;
+  color: $text-brand;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

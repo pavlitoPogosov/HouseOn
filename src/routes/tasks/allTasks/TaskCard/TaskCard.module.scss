@@ -1,0 +1,142 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.TaskCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 24px 16px;
+  background: #fff;
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    @include media-down($xl) {
+      margin-right: 0;
+      margin-left: 0 !important;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 310px;
+  }
+
+  &__checkboxContainer {
+    margin-right: 4px;
+    margin-bottom: 0;
+  }
+
+  &__checkbox {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    width: 215px;
+    margin-right: 45px;
+    padding-left: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-left: 1px solid $border-gray-secondary;
+  }
+
+  &__status {
+    width: 140px;
+    max-width: 140px;
+    margin-right: 30px;
+  }
+
+  &__team {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 230px;
+  }
+
+  &__created {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    margin-left: auto;
+
+    &_text {
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      color: $text-tretiary;
+    }
+
+    &_date {
+      color: $text-brand;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 0;
+    color: $text-brand !important;
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  &__mr {
+    margin-right: 8px;
+  }
+
+  &__ml {
+    margin-left: 8px;
+  }
+
+  &__highlight {
+    color: #008e6c;
+  }
+
+  &__projectType {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 234px;
+  }
+
+  @include media-down($xl) {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  &__details {
+    cursor: pointer;
+
+    &_text {
+      display: flex;
+      align-items: center;
+    }
+
+    &_icon {
+      width: 16px;
+      height: 16px;
+      path {
+        stroke: $text-brand;
+      }
+    }
+  }
+}

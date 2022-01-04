@@ -1,0 +1,43 @@
+@import 'styles/_vars.scss';
+
+.HouseTeamViewMembersPage__main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 12px 15px 0;
+  background-color: $background-common-light;
+
+  @include media-up(lg) {
+    padding: 18px 20px;
+  }
+
+  @include media-up(xl) {
+    padding-top: 20px;
+    padding-right: 34px;
+    padding-bottom: 28px;
+    padding-left: 24px;
+  }
+}
+
+.HouseTeamViewMembersPage__aside {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+
+  padding: 12px 15px 42px 15px;
+  background-color: #f7f9fb;
+
+  @include media-up(lg) {
+    min-width: 352px;
+    max-width: 352px;
+    padding: 18px 20px;
+    background-color: $background-day-tetriary;
+  }
+
+  @include media-up(xl) {
+    min-width: 452px;
+    max-width: 452px;
+    padding: 23px 32px 20px 32px;
+  }
+}

@@ -1,0 +1,188 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.TaskProjectCard__container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: $border-radius-12;
+  background-color: white;
+  cursor: pointer;
+
+  > div:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &.task {
+    flex-direction: row;
+    justify-content: space-between;
+
+    > div:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    @include media-down(lg) {
+      flex-direction: column;
+
+      > div:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.TaskProjectCard__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__button {
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  margin-right: 8px;
+  padding: 7.5px;
+
+  &.task {
+    margin-right: 4px;
+
+    @include media-down(lg) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.header__title {
+  font-weight: $font-weight-600;
+
+  &.task {
+    margin-right: 24px;
+  }
+}
+
+.header__divider {
+  display: flex;
+  width: 0;
+  height: 24px;
+  margin: 0 8px;
+  border-right: 1px solid $border-gray-secondary;
+}
+
+.TaskProjectCard__content {
+  display: flex;
+  flex-direction: column;
+
+  &.task {
+    flex-direction: row;
+
+    @include media-down(lg) {
+      flex-direction: column;
+    }
+  }
+}
+
+.TaskProjectCard__statuses_container {
+  display: flex;
+  flex: 1 1 auto;
+  margin-bottom: 16px;
+
+  &.task {
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -4px 0;
+
+    @include media-down(lg) {
+      margin: 0 0 16px 0;
+    }
+  }
+}
+
+.TaskProjectCard__status {
+  height: max-content;
+
+  &.task {
+    margin-right: 24px;
+    padding: 4px 14px;
+
+    @include media-down(lg) {
+      margin-right: 12px;
+    }
+  }
+}
+
+.TaskProjectCard__status_extra {
+  margin-right: 24px;
+  padding: 4px 14px;
+  border-color: $surface-button-sircle;
+  background-color: $surface-button-sircle;
+}
+
+.TaskProjectCard__status.task,
+.TaskProjectCard__status_extra {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.TaskProjectCard__footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > div:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  &.task {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__team_text {
+  margin: 0 4px;
+  white-space: nowrap;
+}
+
+.footer__team_member {
+  display: inline-flex;
+  align-items: center;
+}
+
+.member__description {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.member__link {
+  padding: 0;
+  border: none;
+  font-size: $font-size-12;
+  font-weight: $font-weight-400;
+
+  &::after {
+    display: none;
+  }
+}
+
+.TaskProjectCard__tooltip {
+  position: relative;
+  padding: 8px 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: $border-radius-8;
+  background-color: $brand-primary-default;
+  font-size: $font-size-13;
+  font-weight: $font-weight-400;
+  line-height: $line-height-16;
+
+  span {
+    &:first-of-type {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.tooltip__dot {
+  color: $text-tretiary;
+}

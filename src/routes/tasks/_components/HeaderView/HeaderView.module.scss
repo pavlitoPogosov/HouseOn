@@ -1,0 +1,112 @@
+@import 'styles/_vars';
+@import 'styles/_tokens';
+
+.HeaderView {
+  display: flex;
+  align-items: center;
+  padding: 16px 40px;
+  background: white;
+  box-shadow: 0 2px 12px rgba(119, 132, 157, 0.1);
+
+  &_sticky {
+    position: sticky;
+    z-index: 99;
+    top: 0;
+  }
+
+  &__stickyText {
+    margin-left: 12px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      &_small {
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  &__active {
+    @include media-down($md) {
+      padding: 5px;
+    }
+  }
+
+  &__buttonText {
+    @include media-down($md) {
+      display: none;
+    }
+  }
+
+  &__iconButton {
+    &_green {
+      color: #fff;
+      border-color: $brand-primary-default;
+      background-color: $brand-primary-default;
+
+      &:hover,
+      &:focus {
+        border-color: $brand-primary-hover;
+        background-color: $brand-primary-hover;
+      }
+
+      &:active {
+        border-color: $brand-primary-pressed;
+        background-color: $brand-primary-pressed;
+      }
+
+      &:disabled {
+        border-color: $brand-primary-disabled;
+        background-color: $brand-primary-disabled;
+      }
+    }
+
+    &_gray {
+      color: #646a8c;
+      border-color: #eaecf2;
+      background-color: #eaecf2;
+
+      &:hover,
+      &:focus {
+        border-color: darken(#fff, 3%);
+        background-color: darken(#fff, 3%);
+      }
+
+      &:active {
+        border-color: darken(#fff, 6%);
+        background-color: darken(#fff, 6%);
+      }
+
+      &:disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__mr {
+    margin-right: 4px;
+  }
+
+  &__iconGray {
+    stroke: $text-secondary;
+    path {
+      stroke: $text-secondary;
+    }
+  }
+
+  @include media-down($md) {
+    padding: 16px 12px;
+  }
+}

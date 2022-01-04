@@ -1,0 +1,47 @@
+@import 'styles/_tokens.scss';
+
+.Accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $transition-primary;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+
+  &:not(.disableHover) {
+    &:hover {
+      background: rgba(244, 245, 251, 0.7);
+    }
+  }
+}
+
+.header__checkbox_container {
+  margin: 0;
+}
+
+.Accordion__title {
+  margin-right: 12px;
+}
+
+.Accordion__headerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  transition: transform $transition-primary;
+  border-radius: 50%;
+  background-color: #f4f5fb;
+
+  &.up {
+    transform: rotate(-180deg);
+  }
+}
+
+.Accordion__toggleable {
+  padding: 16px 12px;
+  background-color: #fff;
+}

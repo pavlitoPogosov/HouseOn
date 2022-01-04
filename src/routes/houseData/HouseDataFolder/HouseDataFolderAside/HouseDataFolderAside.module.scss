@@ -1,0 +1,17 @@
+@import 'styles/_vars.scss';
+
+.HouseDataFolderAside__emptyMessage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 252px auto 0 auto;
+}
+
+.HouseDataFolderAside__emptyImage {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background-color: #e8ebef;
+}

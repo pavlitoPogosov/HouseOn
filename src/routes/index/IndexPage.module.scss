@@ -1,0 +1,21 @@
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+.IndexPage__aside {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include media-up(lg) {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @include media-up(xl) {
+    max-width: 340px;
+  }
+
+  @include media-up(xxl) {
+    max-width: 452px;
+    padding-right: 32px;
+  }
+}

@@ -1,0 +1,74 @@
+@import 'styles/_tokens.scss';
+
+.PlanCard__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 240px;
+  max-width: 272px;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+  box-shadow: $box-shadow-l;
+}
+
+.PlanCard__imageWrapper {
+  position: relative;
+  height: 164px;
+  margin-bottom: 30px;
+  background-color: $background-common-light;
+}
+
+.PlanCard__badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 10px 16px;
+  transform: translateX(-50%);
+  border-radius: 0 0 10px 10px;
+  background: $brand-secondary-default;
+  font-weight: $font-weight-600 !important;
+
+  span {
+    margin: 0 4px;
+    color: $text-brand;
+  }
+}
+
+.PlanCard__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 24px 24px 24px;
+}
+
+.PlanCard__title {
+  margin-bottom: 8px;
+}
+
+.PlanCard__description {
+  margin-bottom: 12px;
+  font-weight: $font-weight-600;
+}
+
+.PlanCard__price {
+  margin-top: auto;
+  margin-bottom: 24px;
+  color: $text-secondary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+}
+
+.PlanCard__priceSign {
+  color: $text-brand;
+}
+
+.PlanCard__priceAmount {
+  color: $text-brand;
+  font-size: $font-size-18;
+}
+
+.PlanCard__btn {
+  width: 100% !important;
+  height: 44px !important;
+}

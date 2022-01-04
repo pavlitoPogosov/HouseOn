@@ -1,0 +1,20 @@
+.InviteForWorker__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  max-width: 342px;
+
+  padding: 0 15px;
+  text-align: center;
+}
+
+.InviteForWorker__avatar {
+  margin-bottom: 24px;
+}
+
+.InviteForWorker__btn {
+  margin-top: 42px;
+}

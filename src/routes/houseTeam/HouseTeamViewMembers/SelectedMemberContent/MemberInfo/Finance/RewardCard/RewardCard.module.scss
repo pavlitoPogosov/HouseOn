@@ -1,0 +1,76 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.RewardCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  background: $surface-primary;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+
+    &_icon {
+      margin-right: 8px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__from {
+    display: flex;
+    align-items: center;
+
+    &_text {
+      color: $text-secondary;
+    }
+
+    &_user {
+      color: $text-success;
+    }
+  }
+
+  &__created {
+    display: flex;
+    align-items: center;
+
+    &_text {
+      display: flex;
+      align-items: center;
+      color: $text-secondary;
+    }
+
+    &_icon {
+      width: 16px;
+      min-width: 16px;
+      height: 16px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &_date {
+      color: $text-secondary;
+      font-weight: 600;
+    }
+  }
+}

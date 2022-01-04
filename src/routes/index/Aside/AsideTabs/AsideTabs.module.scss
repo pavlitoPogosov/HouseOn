@@ -1,0 +1,16 @@
+@import 'styles/_vars.scss';
+
+.AsideTabs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+
+  @include media-up(xl) {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  @include media-up(xxl) {
+    grid-gap: 12px;
+  }
+}

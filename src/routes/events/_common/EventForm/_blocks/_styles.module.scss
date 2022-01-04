@@ -1,0 +1,148 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+// house block
+
+.EventForm__houseBlockWrapper {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.EventForm__houseBlockAvatar {
+  min-width: 56px;
+  margin-right: 12px;
+}
+
+.EventForm__houseBlockEmptyAvatar {
+  background-color: darken($surface-primary, 4%);
+}
+
+// commmon
+.EventForm__title {
+  margin-bottom: 16px;
+}
+
+.EventForm__block {
+  margin-bottom: 32px;
+
+  @include media-up(sm) {
+    margin-bottom: 48px;
+  }
+}
+
+.EventForm__textArea {
+  min-height: 136px;
+}
+
+.EventForm__controls {
+  margin-top: 70px;
+
+  @include media-up(sm) {
+    margin-top: 92px;
+  }
+}
+
+.EventForm__controlsInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  div {
+    button {
+      margin-left: 8px;
+    }
+  }
+}
+
+.EventForm__datesControlsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+  }
+}
+
+.EventForm__textArea {
+  min-height: 136px;
+}
+
+.EventForm__dateInput {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.EventForm__timeWrapper {
+  display: flex;
+
+  @include media-up(sm) {
+    margin-left: auto;
+  }
+}
+
+.EventForm__timeInput {
+  width: 100%;
+
+  &:last-of-type {
+    margin-left: 12px;
+  }
+
+  @include media-up(sm) {
+    width: 128px;
+
+    &:first-of-type {
+      margin-left: 24px;
+    }
+  }
+
+  @include media-up(md) {
+    width: 148px;
+  }
+}
+
+.EventForm__link {
+  margin-right: 16px;
+}
+
+.EventForm__alert {
+  margin-top: 32px;
+}
+
+.EventForm__alertFooter {
+  display: flex;
+  align-items: center;
+}
+
+// phone block
+
+.EventForm__phone {
+  padding: 0;
+
+  & + .EventForm__phone {
+    margin-top: 16px;
+  }
+}
+
+.EventForm__contactsBtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.EventForm__contactsLink {
+  font-size: $font-size-12 !important;
+
+  &.marginRight {
+    margin-right: 16px;
+  }
+
+  @include media-up(sm) {
+    font-size: $font-size-14 !important;
+  }
+}
+
+.EventForm__contactsBtn {
+  width: 152px;
+  font-size: $font-size-12 !important;
+}

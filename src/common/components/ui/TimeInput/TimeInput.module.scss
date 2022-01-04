@@ -1,0 +1,80 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.TimeInput {
+  @include inputStylesCommon;
+  @include inputStylesPrimary;
+  cursor: pointer;
+}
+
+.TimeInput__disabled {
+  pointer-events: none;
+}
+
+.TimeInput__dropdown {
+  @include hideScrollbar;
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  display: flex;
+  max-width: 240px;
+
+  max-height: 120px;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+  box-shadow: $box-shadow-m;
+}
+
+.TimeInput__dropdownColumn {
+  @include hideScrollbar;
+  overflow-y: scroll;
+  flex-grow: 1;
+
+  & + .TimeInput__dropdownColumn {
+    border-left: 1px solid $border-gray-secondary;
+  }
+}
+
+.TimeInput__cell {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $transition-primary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+
+  &:hover,
+  &.hover {
+    background-color: #e6f4f1;
+  }
+
+  &.active {
+    background-color: #ceebe3;
+  }
+}
+
+.TimeInput__icons {
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  bottom: 4px;
+
+  div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    user-select: none;
+  }
+
+  &_disabled {
+    div {
+      cursor: auto;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import 'styles/_vars.scss';
+
+.DateInput__wrapper {
+  position: relative;
+  cursor: pointer;
+
+  &.disabledWrapper {
+    cursor: auto;
+
+    .DateInput__icon {
+      cursor: auto;
+      color: $text-tretiary;
+    }
+  }
+}
+
+.DateInput__icon {
+  color: $text-brand;
+}

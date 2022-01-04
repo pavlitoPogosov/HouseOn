@@ -1,0 +1,23 @@
+export const TeamMemberAmpluaList = [
+  { text: 'Butler', value: 'houseTeam.amplua.butler' },
+  { text: 'House manager', value: 'houseTeam.amplua.houseManager' },
+  { text: 'Estate manager', value: 'houseTeam.amplua.estateManager' },
+  { text: 'Housekeeper', value: 'houseTeam.amplua.houseKeeper' },
+  { text: 'Laundress', value: 'houseTeam.amplua.laundress' },
+  { text: 'Valet', value: 'houseTeam.amplua.valet' },
+  { text: 'Nanny', value: 'houseTeam.amplua.nanny' },
+  { text: 'Handyperson', value: 'houseTeam.amplua.handyperson' },
+  { text: 'Chauffer', value: 'houseTeam.amplua.chauffer' },
+  { text: 'Chef', value: 'houseTeam.amplua.chef' },
+  { text: 'Gardener', value: 'houseTeam.amplua.gardener' },
+  { text: 'Property guardian', value: 'houseTeam.amplua.propertyGuardian' },
+  { text: 'Personal assistant', value: 'houseTeam.amplua.personalAssistant' },
+  { text: 'Security & Bodyguard', value: 'houseTeam.amplua.securityBodyguard' },
+  { text: 'Caregiver', value: 'houseTeam.amplua.caregiver' },
+  { text: 'Family office', value: 'houseTeam.amplua.familyOffice' },
+  { text: 'Summer Household Staff', value: 'houseTeam.amplua.summerHouseholdStaff' },
+  { text: 'Personal Trainer', value: 'houseTeam.amplua.personalTrainer' },
+  { text: 'Flight Crew', value: 'houseTeam.amplua.flightCrew' },
+  { text: 'Yacht Crew', value: 'houseTeam.amplua.yachtCrew' },
+  { text: 'Household horse groomer', value: 'houseTeam.amplua.householdHorseGroomer' }
+];

@@ -1,0 +1,9 @@
+@import 'styles/_tokens.scss';
+
+.LastActivitiesSection__emptyMessage {
+  font-weight: $font-weight-500;
+}
+
+.LastActivitiesSection__blackout {
+  z-index: $zindex-modal;
+}

@@ -1,0 +1,17 @@
+@import 'styles/_vars.scss';
+
+.PhoneInput {
+  @include inputStylesCommon;
+}
+
+.PhoneInput__primary {
+  @include inputStylesPrimary;
+}
+
+.PhoneInput__secondary {
+  @include inputStylesSecondary;
+}
+
+.PhoneInput__disabled {
+  pointer-events: none;
+}

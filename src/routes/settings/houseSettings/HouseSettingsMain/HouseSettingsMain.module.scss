@@ -1,0 +1,67 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HouseSettingsMain__container {
+  padding-bottom: 26px;
+
+  @include media-up(md) {
+    padding-bottom: 42px;
+  }
+}
+
+.HouseSettingsMain__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 44px;
+
+  margin-bottom: 48px;
+}
+
+.HouseSettingsMain__title {
+  display: flex;
+  align-items: center;
+}
+
+.HouseSettingsMain__backIcon {
+  margin-right: 12px;
+
+  @include media-up(sm) {
+    margin-right: 16px;
+  }
+}
+
+.HouseSettingsMain__tabsWrapper {
+  display: flex;
+  overflow-x: auto;
+  justify-content: flex-start;
+  max-width: calc(100vw - 15px);
+  margin-right: -15px;
+  margin-bottom: 36px;
+  padding-bottom: 12px;
+
+  &::after {
+    display: block;
+    width: 1px;
+    height: 1px;
+    margin-right: 15px;
+    content: '';
+  }
+
+  @include media-up(sm) {
+    overflow-x: hidden;
+    max-width: 514px;
+    padding-bottom: 0;
+    border-bottom: 1px solid $border-gray-secondary;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.HouseSettingsMain__tab {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

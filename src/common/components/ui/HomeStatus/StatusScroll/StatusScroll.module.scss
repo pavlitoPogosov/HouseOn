@@ -1,0 +1,29 @@
+@import 'styles/_tokens.scss';
+
+.StatusScroll__container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 24px;
+
+  &.overflow {
+    width: fit-content;
+    margin-right: 0;
+    margin-right: -24px;
+    padding-right: 24px;
+  }
+}
+
+.StatusScroll__status {
+  min-width: 264px;
+  border: 1px solid $border-gray-secondary;
+  border-radius: $border-radius-8;
+  background: #f9fafb;
+
+  & + .StatusScroll__status {
+    margin-left: 16px;
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+}

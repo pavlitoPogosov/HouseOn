@@ -1,0 +1,14 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.PeriodicityTabsDropdown__container {
+  display: flex;
+  align-items: center;
+}
+
+.PeriodicityTabsDropdown__save {
+  @include caption_m;
+  margin-left: 12px;
+  cursor: pointer;
+  color: $text-brand;
+}

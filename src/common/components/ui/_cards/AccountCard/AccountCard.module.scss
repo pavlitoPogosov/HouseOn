@@ -1,0 +1,53 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.AccountCard__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: $box-shadow-m;
+
+  @include media-up(sm) {
+    padding: 8px 16px;
+  }
+}
+
+.AccountCard__avatarWrapper {
+  @include ellipsis;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.AccountCard__avatar {
+  min-width: 40px;
+  margin-right: 12px;
+}
+
+.AccountCard__name {
+  @include ellipsis;
+}
+
+.AccountCard__iconsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.AccountCard__icon {
+  color: $text-secondary;
+  box-shadow: 0 4px 30px rgba(192, 199, 212, 0.25);
+
+  & + .AccountCard__icon {
+    margin-left: 8px;
+  }
+
+  &.pencilIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

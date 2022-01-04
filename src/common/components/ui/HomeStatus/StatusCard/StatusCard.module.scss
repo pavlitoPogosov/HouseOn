@@ -1,0 +1,106 @@
+@import 'styles/_tokens.scss';
+
+.StatusCard__container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px;
+}
+
+.StatusCard__text {
+  margin-bottom: 12px;
+  color: $text-secondary;
+  font-size: $font-size-14;
+  line-height: $line-height-20;
+}
+
+.StatusCard__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
+  font-size: $font-size-12;
+  line-height: $line-height-16;
+}
+
+.StatusCard__actions {
+  display: flex;
+  align-items: center;
+}
+
+.StatusCard__note {
+  color: $text-tretiary;
+}
+
+.StatusCard__divider {
+  width: 1px;
+  height: 8px;
+  margin: 0 12px;
+  background-color: $text-tretiary;
+}
+
+.StatusCard__btn {
+  cursor: pointer;
+  color: $text-secondary;
+  font-weight: $font-weight-600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  & + .StatusCard__btn {
+    margin-left: 12px;
+  }
+}
+
+.StatusCard__iconsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.StatusCard__count {
+  margin-right: 12px;
+  color: $text-tretiary;
+}
+
+.StatusCard__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  user-select: none;
+
+  transition: opacity $transition-primary;
+  color: #fff;
+  border-radius: 50%;
+  background-color: $text-tretiary;
+
+  &.disabled {
+    cursor: auto;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+.StatusCard__leftIcon {
+  @extend .StatusCard__icon;
+}
+
+.StatusCard__rightIcon {
+  @extend .StatusCard__icon;
+  margin-left: 6px;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}

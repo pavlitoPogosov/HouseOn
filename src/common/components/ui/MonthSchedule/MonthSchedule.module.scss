@@ -1,0 +1,139 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.MonthSchedule__container {
+  display: flex;
+  flex-wrap: wrap;
+  transition: box-shadow $transition-primary;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+
+  &:not(.mobile) {
+    &:hover {
+      box-shadow: $box-shadow-m;
+    }
+  }
+
+  &.mobile {
+    background-color: transparent;
+  }
+}
+
+.MonthSchedule__row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid $border-gray-secondary;
+}
+
+.MonthSchedule__cell {
+  width: calc(100% / 7);
+
+  & + .MonthSchedule__cell {
+    border-left: 1px solid $border-gray-secondary;
+  }
+}
+
+.MonthSchedule__weekDay {
+  @extend .MonthSchedule__cell;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 12px 0;
+  color: $text-secondary;
+  font-size: $font-size-12;
+
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.MonthSchedule__date {
+  @extend .MonthSchedule__cell;
+  height: 84px;
+  padding: 12px 8px;
+}
+
+.MonthSchedule__dateNumber {
+  margin-bottom: 12px;
+  color: $text-secondary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-500;
+  line-height: $line-height-16;
+
+  &.otherMonth {
+    color: $text-tretiary;
+  }
+}
+
+.MonthSchedule__accordion {
+  width: 100%;
+
+  & + .MonthSchedule__accordion {
+    margin-top: 16px;
+  }
+}
+
+.MonthSchedule__accordionContent {
+  background-color: transparent;
+}
+
+.MonthSchedule__accordionTitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid $border-gray-secondary;
+}
+
+.MonthSchedule__accordionIcon {
+  transition: transform $transition-primary;
+
+  &.rotate {
+    transform: rotate(-180deg);
+  }
+}
+
+.MonthSchedule__accordionContent {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.MonthSchedule__accordionRow {
+  display: flex;
+  justify-content: space-between;
+
+  & + .MonthSchedule__accordionRow {
+    margin-top: 16px;
+  }
+}
+
+.MonthSchedule__dateCell {
+  width: 32px;
+  margin-right: 16px;
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: $font-size-10;
+    font-weight: $font-weight-600;
+    line-height: $line-height-14;
+
+    &:first-of-type {
+      margin-bottom: 4px;
+      color: $text-secondary;
+    }
+
+    &:last-of-type {
+      color: $text-tretiary;
+    }
+  }
+}
+
+.MonthSchedule__contentCell {
+  flex-grow: 1;
+}

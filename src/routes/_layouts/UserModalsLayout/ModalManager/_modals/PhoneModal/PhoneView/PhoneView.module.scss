@@ -1,0 +1,8 @@
+.PhoneView__phone {
+  padding-right: 0;
+  padding-left: 0;
+
+  & + .PhoneView__phone {
+    margin-top: 4px;
+  }
+}

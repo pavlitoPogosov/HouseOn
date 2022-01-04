@@ -1,0 +1,19 @@
+@import 'styles/_tokens.scss';
+
+.HomeStatus__usualContainer {
+  transition: box-shadow $transition-primary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: $border-radius-8;
+  background: #f9fafb;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.HomeStatus__scrollContainer {
+  overflow-x: scroll;
+  max-width: calc(100vw - 54px);
+  margin-right: -24px;
+  padding-bottom: 6px;
+}

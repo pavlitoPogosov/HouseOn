@@ -1,0 +1,78 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.CheckList__container {
+  div[data-rbd-placeholder-context-id='0'] {
+    display: none !important;
+    //height: 32px !important;
+    //max-height: 32px !important;
+    //flex: 1 1 auto !important;
+    //width: 1px !important;
+  }
+}
+
+.CheckList__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.CheckList__option {
+  margin-bottom: 10px;
+}
+
+.CheckList__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.CheckList__link {
+  @include body_m;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color $transition-primary;
+  color: $brand-primary-default;
+
+  &:hover {
+    color: $brand-primary-hover;
+  }
+}
+
+.CheckList__chevronIcon {
+  transition: transform $transition-primary;
+
+  &.rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.CheckList__linkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background-color: $brand-secondary-default;
+}
+
+.CheckList__addButton {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+
+  &_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: $brand-grey-default;
+  }
+}

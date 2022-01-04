@@ -1,0 +1,49 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.TeamSelectDialog__blackout {
+  z-index: $zindex-modal;
+}
+
+.TeamSelectDialog__container {
+  overflow-x: hidden;
+  padding-bottom: 44px;
+}
+
+.TeamSelectDialog__header {
+  box-shadow: $box-shadow-m;
+}
+
+.TeamSelectDialog__team_container {
+  padding: 24px 24px 0 24px;
+}
+
+.TeamSelectDialog__footer {
+  padding: 24px !important;
+  box-shadow: $box-shadow-m;
+
+  @include media-down(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.TeamSelectDialog__cancel {
+  font-size: $font-size-16;
+
+  @include media-down(md) {
+    order: 2;
+    width: 100%;
+    margin: 16px 0;
+    padding: 12px 0;
+  }
+}
+
+.TeamSelectDialog__save {
+  font-size: $font-size-16;
+
+  @include media-down(md) {
+    order: 1;
+    width: 100%;
+  }
+}

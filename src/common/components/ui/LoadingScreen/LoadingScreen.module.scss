@@ -1,0 +1,19 @@
+@import 'styles/_tokens.scss';
+
+.LoadingScreen__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background: $background-common-light;
+}
+
+.LoadingScreen__spinner {
+  color: $text-brand;
+}
+
+.LoadingScreen__title {
+  margin-top: 2px;
+  font-weight: $font-weight-500 !important;
+}

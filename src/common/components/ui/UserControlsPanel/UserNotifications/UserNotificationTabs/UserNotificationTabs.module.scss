@@ -1,0 +1,33 @@
+@import 'styles/_vars.scss';
+
+.UserNotificationTabs__container {
+  max-width: 100vw;
+  margin-bottom: 20px;
+  padding: 0 16px;
+
+  @include media-up(sm) {
+    margin-bottom: 16px;
+  }
+}
+
+.UserNotificationTabs__tabsContainer {
+  & + .UserNotificationTabs__tabsContainer {
+    margin-top: 8px;
+  }
+
+  .UserNotificationTabs__tab:first-of-type {
+    margin-right: 4px;
+  }
+
+  .UserNotificationTabs__tab:last-of-type {
+    margin-left: 4px;
+  }
+}
+
+.UserNotificationTabs__tab {
+  width: calc(50% - 4px);
+
+  &.active {
+    background-color: $brand-primary-default;
+  }
+}

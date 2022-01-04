@@ -1,0 +1,16 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HouseDataSection__alert {
+  margin-bottom: 8px;
+}
+
+.HouseDataSection__folderCard {
+  & + .HouseDataSection__folderCard {
+    margin-top: 12px;
+  }
+}
+
+.HouseDataSection__link {
+  margin-top: 16px;
+}

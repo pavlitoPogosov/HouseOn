@@ -1,0 +1,40 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.WorkingPeriodCell__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  max-width: 120px;
+  white-space: nowrap;
+  border-radius: $border-radius-8;
+  font-size: $font-size-12;
+  line-height: $line-height-16;
+}
+
+.WorkingPeriodCell__restDay {
+  @extend .WorkingPeriodCell__container;
+  padding: 10px 0;
+  color: $text-secondary;
+  border: 1px solid $border-gray-secondary;
+  background-color: #fff;
+
+  @include media-up(md) {
+    color: $text-tretiary;
+  }
+}
+
+.WorkingPeriodCell__work {
+  @extend .WorkingPeriodCell__container;
+  padding: 4px 0;
+  color: $text-brand;
+  background-color: $brand-secondary-default;
+
+  span {
+    display: block;
+    margin-bottom: 2px;
+  }
+}

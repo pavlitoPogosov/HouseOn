@@ -1,0 +1,16 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.CheckListAdd {
+  margin-bottom: 10px;
+}
+
+.CheckListAdd__input {
+  @include body_l;
+  width: 100%;
+  margin-right: 12px;
+  margin-bottom: -4px;
+  padding: 0;
+  border: none;
+  outline: none;
+}

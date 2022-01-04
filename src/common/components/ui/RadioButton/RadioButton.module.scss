@@ -1,0 +1,81 @@
+@import 'styles/_tokens.scss';
+
+.RadioButton__container {
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &_disabled {
+    cursor: default;
+  }
+}
+
+.RadioButton__input {
+  display: none;
+
+  width: 0.01px;
+  height: 0.01px;
+  opacity: 0;
+
+  &:disabled ~ .RadioButton__text {
+    color: $text-secondary;
+  }
+
+  &:disabled,
+  &:checked:disabled ~ .RadioButton__radio {
+    border-color: #e8ebef;
+    background-color: #e8ebef;
+  }
+
+  &:hover:checked:not(:disabled) ~ .RadioButton__radio {
+    border-color: #89c2b4;
+    background-color: #89c2b4;
+  }
+
+  &:not(:disabled):not(:checked):hover ~ .RadioButton__radio {
+    border-color: $text-brand;
+    background-color: #e6f4f1;
+  }
+
+  &:checked ~ .RadioButton__radio {
+    border-color: $text-brand;
+    background-color: $text-brand;
+
+    .RadioButton__radioCircle {
+      display: block;
+    }
+  }
+}
+
+.RadioButton__radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  transition: all ease-in-out 0.3s;
+
+  border: 1px solid #dfe2f0;
+  border-radius: 50%;
+}
+
+.RadioButton__radioCircle {
+  display: none;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.RadioButton__text {
+  margin-bottom: -2px;
+  text-align: left;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+}

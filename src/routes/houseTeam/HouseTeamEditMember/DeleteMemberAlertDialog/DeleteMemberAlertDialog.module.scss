@@ -1,0 +1,17 @@
+@import 'styles/_tokens.scss';
+
+.DeleteMemberAlertDialog__container {
+  text-align: center;
+}
+
+.DeleteMemberAlertDialog__picture {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 8px auto;
+  border-radius: 50%;
+  background-color: $surface-primary;
+}
+
+.DeleteMemberAlertDialog__title {
+  margin-bottom: 8px;
+}

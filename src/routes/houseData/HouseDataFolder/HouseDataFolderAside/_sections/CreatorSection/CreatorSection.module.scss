@@ -1,0 +1,17 @@
+@import 'styles/_tokens.scss';
+
+
+.CreatorSection__creatorWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.CreatorSection__creatorAvatar {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.CreatorSection__emptyAvatar {
+  background-color: $surface-tretiary;
+}

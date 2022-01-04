@@ -1,0 +1,48 @@
+@import 'styles/_tokens.scss';
+
+.AsideLayoutRight__wrapper {
+  display: flex;
+}
+
+.AsideLayoutRight__main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 20px 32px;
+  background-color: $background-common-light;
+
+  &.mobile {
+    padding: 12px 15px 42px 15px;
+  }
+}
+
+.AsideLayoutRight__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AsideLayoutRight__searchWrapper {
+  display: flex;
+}
+
+.AsideLayoutRight__search {
+  width: 100%;
+  max-width: 204px;
+  margin-right: 10px;
+}
+
+.AsideLayoutRight__aside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 452px;
+  min-height: 100vh;
+  padding: 20px 32px;
+  background-color: $background-day-tetriary;
+}
+
+.AsideLayoutRight__mobileControlsPanel {
+  flex-grow: 1;
+}

@@ -1,0 +1,90 @@
+@import 'styles/_tokens.scss';
+
+.Checkbox__container {
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  &.checked {
+    .Checkbox {
+      border-color: $brand-primary-default;
+      background-color: $brand-primary-default;
+    }
+
+    .Checkbox__icon {
+      opacity: 1;
+    }
+
+    &:hover {
+      .Checkbox {
+        border-color: $brand-primary-hover;
+        background-color: $brand-primary-hover;
+      }
+    }
+  }
+
+  &.notChecked {
+    &:hover {
+      .Checkbox {
+        border-color: $brand-primary-hover;
+      }
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    .Checkbox {
+      border-color: #e8ebef;
+      background-color: #e8ebef;
+    }
+
+    &.checked .Checkbox__icon {
+      opacity: 1;
+      color: $text-secondary;
+    }
+  }
+}
+
+.Checkbox__input {
+  width: 0.01px;
+  height: 0.01px;
+  opacity: 0;
+
+  // TODO focus-visible
+  &:focus ~ .Checkbox {
+    box-shadow: 0 0 0 3px $accent-blue-secondary;
+  }
+}
+
+.Checkbox {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  transition: all $transition-primary;
+  border: 1px solid $text-tretiary;
+  border-radius: $border-radius-4;
+  background-color: #fff;
+}
+
+.Checkbox__icon {
+  transition: opacity $transition-primary;
+  opacity: 0;
+  color: #fff;
+}
+
+.Checkbox__text {
+  margin-bottom: -2px;
+  color: $text-secondary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}

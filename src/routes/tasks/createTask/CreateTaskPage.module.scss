@@ -1,0 +1,70 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.CreateTaskPage__avatar {
+  box-shadow: $box-shadow-l;
+}
+
+.CreateTaskPage__icon {
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.CreateTaskPage__section {
+  margin-bottom: 28px;
+
+  @include media-up(md) {
+    margin-bottom: 56px;
+  }
+}
+
+.CreateTaskPage__deadlineSection {
+  @extend .CreateTaskPage__section;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    display: flex;
+  }
+}
+
+.CreateTaskPage__deadlineSwitch {
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+.CreateTaskPage__dateInput {
+  width: 100%;
+}
+
+.CreateTaskPage__title {
+  margin-bottom: 16px;
+}
+
+.CreateTaskPage__dropzone {
+  height: 52px;
+}
+
+.CreateTaskPage__flexTitle {
+  @extend .CreateTaskPage__title;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CreateTaskPage__houseDataAlert {
+  margin-bottom: 16px;
+}
+
+.CreateTaskPage__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 88px;
+}

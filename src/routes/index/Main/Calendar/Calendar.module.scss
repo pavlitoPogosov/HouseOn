@@ -1,0 +1,44 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Calendar__container {
+  position: relative;
+  max-width: calc(100vw - 30px);
+  margin-top: 52px;
+
+  @include media-up(md) {
+    max-width: none;
+  }
+}
+
+.Calendar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.marginBottom {
+    margin-bottom: 36px;
+  }
+}
+
+.Calendar__tabs {
+  margin-left: 20px;
+}
+
+.Calendar__controls {
+  display: flex;
+  align-items: center;
+}
+
+.Calendar__datepickerContainer {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.Calendar__disabledDatepicker {
+  pointer-events: none;
+}
+
+.Calendar__EmptyTeamWarning_container {
+  margin: 24px 0;
+}

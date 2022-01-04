@@ -1,0 +1,170 @@
+@import 'styles/_tokens.scss';
+
+.Sidebar__container {
+  position: relative;
+  min-height: 100vh;
+  background-color: $brand-primary-dark-default;
+  
+  &.desktop {
+    width: 68px;
+    padding: 66px 12px 0;
+  }
+
+  &.tablet {
+    display: flex;
+    width: 322px;
+    padding: 24px 32px 64px 32px;
+  }
+}
+
+.Sidebar__inner {
+  display: flex;
+  flex-direction: column;
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    &::before {
+      display: none;
+    }
+  }
+  
+  &.desktop {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 20px;
+  }
+
+  &.tablet {
+    flex-grow: 1;
+  }
+}
+
+.Sidebar__item {
+  & + .Sidebar__item {
+    margin-top: 20px;
+  }
+}
+
+.Sidebar__itemLink {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .Sidebar__icon {
+      background-color: $brand-primary-dark-hover; 
+    }  
+  }
+
+  &:active {
+    .Sidebar__icon {
+      background-color: $brand-primary-dark-pressed;
+    }    
+  }
+}
+
+.Sidebar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  transition: all $transition-primary;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.Sidebar__icon_active {
+  background-color: $brand-primary-dark-hover;
+}
+
+.Sidebar__itemTootlipWrapper {
+  padding-left: 72px;
+}
+
+.Sidebar__itemTootlip {
+  position: relative;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 8px;
+  background-color: $brand-primary-default;
+  font-size: $font-size-12;
+  font-weight: $font-weight-500;
+  line-height: $line-height-16;
+}
+
+.Sidebar__itemArrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: -4px;
+  transform: translateY(-50%);
+  color: $brand-primary-default;
+}
+
+.Sidebar__divider {
+  width: 100%;
+  height: 1px;
+  margin: 8px 0;
+  background-color: $brand-primary-dark-hover;
+}
+
+.Sidebar__closeIcon {
+  margin-bottom: 36px;
+  cursor: pointer;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  g {
+    opacity: 1;
+  }
+}
+
+.Sidebar__itemText {
+  margin-bottom: -4px;
+  margin-left: 20px;
+}
+
+.Sidebar__houseDataBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 122px;
+  margin-top: auto;
+  padding: 15px 20px 18px 15px;
+}
+
+.Sidebar__houseDataBlockHeader {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Sidebar__houseDataBlockTitle {
+  max-width: 132px;
+}
+
+.Sidebar__houseDataProgressText {
+  font-size: $font-size-12;
+  font-weight: $font-weight-700;
+  line-height: $line-height-16;
+}
+
+.Sidebar__houseDataBlockFooter {
+  position: relative;
+  z-index: 1;
+
+  svg {
+    margin-top: -2px;
+    margin-left: 4px;
+  }
+}

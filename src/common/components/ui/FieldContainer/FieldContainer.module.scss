@@ -1,0 +1,101 @@
+@import 'src/styles/_tokens.scss';
+
+.FieldContainer__container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.FieldContainer__container_primary {
+  .FieldContainer__error {
+    font-size: $font-size-12;
+    font-weight: $font-weight-500;
+    line-height: $line-height-16;
+  }
+
+  .FieldContainer__label {
+    color: $text-secondary;
+    font-size: $font-size-12;
+    line-height: $line-height-16;
+  }
+
+  .FieldContainer__helpText {
+    font-size: $font-size-12;
+    line-height: $line-height-16;
+  }
+}
+
+.FieldContainer__container_secondary {
+  .FieldContainer__error {
+    font-size: $font-size-14;
+    font-weight: $font-weight-500;
+    line-height: $line-height-22;
+  }
+
+  .FieldContainer__label {
+    color: $text-primary;
+    font-size: $font-size-14;
+    line-height: $line-height-24;
+  }
+
+  .FieldContainer__helpText {
+    font-size: $font-size-14;
+    line-height: $line-height-24;
+  }
+}
+
+.FieldContainer__container_withSpinner {
+  input {
+    padding-right: 42px;
+  }
+}
+
+.FieldContainer__labelWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-weight: $font-weight-600;
+}
+
+.FieldContainer__labelWrapper_noLabel {
+  justify-content: flex-end;
+}
+
+.FieldContainer__label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.FieldContainer__labelDisabled {
+  pointer-events: none;
+}
+
+.FieldContainer__helpText {
+  display: block;
+  color: $text-brand;
+}
+
+.FieldContainer__error {
+  margin-top: 4px;
+  text-align: left;
+}
+
+.FieldContainer__requiredSign {
+  color: $text-error;
+}
+
+.FieldContainer__children {
+  position: relative;
+}
+
+.FieldContainer__spinner {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 12px;
+  padding: 2px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+  color: $text-brand;
+}

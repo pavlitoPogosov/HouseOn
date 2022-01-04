@@ -1,0 +1,40 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.UsualLayout__wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: $background-common-light;
+}
+
+.UsualLayout__content {
+  flex-grow: 1;
+  padding-right: 15px;
+  padding-bottom: 42px;
+  padding-left: 15px;
+
+  @include media-up(md) {
+    padding-right: 32px;
+    padding-bottom: 62px;
+    padding-left: 32px;
+  }
+}
+
+.UsualLayout__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.UsualLayout__searchWrapper {
+  display: flex;
+}
+
+.UsualLayout__search {
+  width: 100%;
+  max-width: 204px;
+  margin-right: 10px;
+}

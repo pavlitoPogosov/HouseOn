@@ -1,0 +1,23 @@
+@import 'styles/_tokens.scss';
+
+.SendCodeAgainText {
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+
+  @media screen and (min-width: 475px) {
+    font-weight: $font-weight-400;
+    line-height: $line-height-18;
+  }
+}
+
+.SendCodeAgain__resendNotification {
+  @extend .SendCodeAgainText;
+  color: $text-tretiary;
+}
+
+.SendCodeAgain__resendBtn {
+  @extend .SendCodeAgainText;
+  cursor: pointer;
+  color: $text-brand;
+}

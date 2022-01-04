@@ -1,0 +1,11 @@
+.PhoneTab__phoneBlock {
+  padding-left: 0;
+
+  & + .PhoneTab__phoneBlock {
+    margin-top: 16px;
+  }
+}
+
+.PhoneTab__marginTop {
+  margin-top: 24px;
+}

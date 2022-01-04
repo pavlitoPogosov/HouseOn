@@ -1,0 +1,25 @@
+@import 'styles/_tokens.scss';
+
+.Controls__container {
+  margin-top: 16px;
+  text-align: left;
+
+  &.year {
+    width: 228px;
+  }
+
+  &.month {
+    width: 224px;
+  }
+}
+
+.Controls_checkboxContainer {
+  margin-bottom: 0;
+}
+
+.Controls__helpText {
+  color: $text-tretiary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}

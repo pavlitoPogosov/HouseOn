@@ -1,0 +1,39 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.SelectUsual__container {
+  position: relative;
+  width: 100%;
+}
+
+.SelectUsual__input {
+  @include inputStylesCommon;
+  @include inputStylesPrimary;
+  padding-right: 44px;
+}
+
+.SelectUsual__icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transition: transform $transition-primary;
+  transform: translateY(-50%);
+
+  &.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+}
+
+.SelectUsual__dropdown {
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+}
+
+.SelectUsual__highlightedText {
+  color: $text-brand;
+}
+
+.SelectUsual__disabled {
+  pointer-events: none;
+}

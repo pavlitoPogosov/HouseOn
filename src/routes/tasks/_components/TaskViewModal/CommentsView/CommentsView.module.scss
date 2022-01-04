@@ -1,0 +1,44 @@
+.CommentsView {
+  display: flex;
+  flex-direction: column;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__avatar {
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+
+  &__content {
+    padding: 12px;
+    border-radius: 12px 12px 12px 0;
+    background: #fff;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  &__dot {
+    width: 3px;
+    height: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: #bbc0d3;
+  }
+}

@@ -1,0 +1,91 @@
+@import 'styles/_vars.scss';
+
+.MainTabMembers__container {
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+.MainTabMembers__title {
+  margin-bottom: 16px;
+}
+
+.MainTabMembers__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  @include media-up(md) {
+    flex-wrap: nowrap;
+    margin-bottom: 32px;
+  }
+}
+
+.MainTabMembers__btn {
+  margin-left: auto;
+
+  @include media-up(md) {
+    margin-left: 0;
+  }
+}
+
+.MainTabMembers__searchInput {
+  order: 1;
+  width: 100%;
+  margin-top: 16px;
+
+  @include media-up(md) {
+    order: 0;
+    width: 340px;
+    margin-top: 0;
+    margin-right: 12px;
+    margin-left: auto;
+  }
+}
+
+.MainTabMembers__card {
+  margin-top: 12px;
+
+  @include media-up(md) {
+    margin-top: 16px;
+  }
+}
+
+.MainTabMembers__cardTitle {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $border-gray-secondary;
+}
+
+.MainTabMembers__tooltip {
+  width: 140px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  text-align: right;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+  box-shadow: $box-shadow-l;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.MainTabMembers__toltipItem {
+  display: block;
+  padding: 6px 16px 6px 12px;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  background-color: #fff;
+
+  &:hover {
+    color: $text-brand;
+    background-color: $brand-secondary-default;
+  }
+
+  &:active {
+    color: $text-brand;
+    background-color: #ceebe3;
+  }
+}

@@ -1,0 +1,83 @@
+@import 'styles/_tokens.scss';
+
+.ToggleSwitch__container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+
+  &.md {
+    width: 36px;
+    min-width: 36px;
+    height: 20px;
+    border-radius: $border-radius-10;
+  }
+
+  &.sm {
+    width: 28px;
+    min-width: 28px;
+    height: 16px;
+    border-radius: $border-radius-8;
+  }
+
+  &_disabled {
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+
+.ToggleSwitch__input {
+  display: none;
+
+  &:checked + .ToggleSwitch__slide {
+    background-color: $brand-primary-default;
+
+    &:hover {
+      background-color: $brand-primary-hover;
+    }
+
+    .ToggleSwitch__circle.md {
+      transform: translateX(16px);
+    }
+
+    .ToggleSwitch__circle.sm {
+      transform: translateX(12px);
+    }
+  }
+}
+
+.ToggleSwitch__slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color $transition-primary;
+  background-color: $text-tretiary;
+
+  &:hover {
+    background-color: $text-secondary;
+  }
+}
+
+.ToggleSwitch__circle {
+  position: absolute;
+  display: block;
+  margin: 0 2px;
+  transition: transform $transition-primary;
+  border-radius: 50%;
+  background-color: #fff;
+
+  &.md {
+    top: 2px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &.sm {
+    top: 2px;
+    width: 12px;
+    height: 12px;
+  }
+}

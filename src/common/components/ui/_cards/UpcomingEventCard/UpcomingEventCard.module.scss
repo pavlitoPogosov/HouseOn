@@ -1,0 +1,237 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+/* container */
+
+.UpcomingEventCard__container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: max-content;
+  border-radius: 12px;
+}
+
+/* content */
+
+.UpcomingEventCard__content {
+  display: flex;
+  width: 100%;
+  height: max-content;
+
+  //@include media-down(xl) {
+  //  flex-direction: column;
+  //}
+  //
+  //@include media-down(lg) {
+  //  flex-direction: initial;
+  //}
+
+  @include media-down(sm) {
+    flex-direction: column;
+  }
+}
+
+/* image container */
+
+.UpcomingEventCard__image_container {
+  display: flex;
+  width: 40%;
+  min-height: 90px;
+  border-radius: 12px 0 0 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include media-down(xl) {
+    width: 100%;
+  }
+
+  @include media-down(lg) {
+    width: 40%;
+  }
+
+  @include media-down(sm) {
+    width: 100%;
+  }
+}
+
+.image_container__content {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  //height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: rgba(#555, 0.7);
+}
+
+.content__icon_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+$icon-size: 24px;
+
+.content__icon {
+  width: $icon-size;
+  min-width: $icon-size;
+  height: $icon-size;
+  min-height: $icon-size;
+  //background-color: white;
+  mask-size: contain !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+
+  * {
+    stroke: white;
+  }
+}
+
+.content__date_container {
+  text-align: center;
+}
+
+.content__date {
+  margin-top: 4px;
+}
+
+/* details container */
+
+.UpcomingEventCard__details_container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: max-content;
+  min-height: 90px;
+  //align-items: center;
+  background: white;
+
+  @include media-down(xl) {
+    width: 100%;
+  }
+
+  @include media-down(lg) {
+    width: 60%;
+  }
+
+  @include media-down(sm) {
+    width: 100%;
+  }
+}
+
+.details_container__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 20px;
+}
+
+.details_content__title_container {
+  display: flex;
+}
+
+.details_content__title {
+}
+
+.details_content__title {
+  display: flex;
+  font-weight: $font-weight-600;
+}
+
+.details_content__footer_container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.details_content__author_container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: max-content;
+  margin-right: 16px;
+}
+
+.author_container__author {
+  margin-top: 8px;
+  margin-right: 4px;
+}
+
+.author_container__name {
+  margin-top: 4px;
+  transition: color $transition-primary, opacity $transition-primary;
+
+  color: $brand-primary-default;
+
+  &:hover,
+  &:focus {
+    color: $brand-primary-hover;
+  }
+
+  &:active {
+    color: $brand-primary-pressed;
+  }
+}
+
+.details_content__icons {
+  display: inline-flex;
+  width: max-content;
+  margin-top: 12px;
+}
+
+$icon-footer-size: 16px;
+
+.content_icons__location,
+.content_icons__images_icon {
+  display: flex;
+  width: $icon-footer-size;
+  min-width: $icon-footer-size;
+  height: $icon-footer-size;
+  min-height: $icon-footer-size;
+  transition: opacity $transition-primary;
+  //background-color: $text-secondary;
+  mask-size: contain !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+
+  * {
+    transition: stroke $transition-primary;
+    stroke: $text-secondary;
+  }
+
+  &:hover,
+  &:focus {
+    * {
+      stroke: $brand-primary-hover;
+    }
+  }
+
+  &:active {
+    * {
+      stroke: $brand-primary-pressed;
+    }
+  }
+}
+
+.content_icons__location {
+  margin-right: 12px;
+  margin-left: -2px;
+}
+
+.content_icons__images {
+  display: inline-flex;
+}
+
+.content_icons__images_icon {
+  margin-right: 8px;
+}
+
+.content_icons__images_number {
+}

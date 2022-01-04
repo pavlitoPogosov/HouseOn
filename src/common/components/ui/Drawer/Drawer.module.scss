@@ -1,0 +1,49 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Drawer__content {
+  @include scrollbar();
+  position: fixed;
+  z-index: $zindex-modal;
+  overflow-y: auto;
+  max-height: 90vh;
+  background-color: #fff;
+
+  &.top,
+  &.bottom {
+    right: 0;
+    left: 0;
+  }
+
+  &.top {
+    top: 0;
+  }
+
+  &.bottom {
+    bottom: 0;
+  }
+
+  &.left,
+  &.right {
+    top: 0;
+    bottom: 0;
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+}
+
+.Drawer__blackout {
+  position: fixed;
+  z-index: $zindex-modal-backdrop;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}

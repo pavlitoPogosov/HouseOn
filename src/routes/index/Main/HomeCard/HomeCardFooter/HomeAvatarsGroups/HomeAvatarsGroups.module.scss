@@ -1,0 +1,74 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HomeAvatarsGroups__container {
+  display: flex;
+  align-items: center;
+}
+
+.HomeAvatarsGroups__persons {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px 4px 12px;
+  border-radius: 100px;
+  background-color: #f9fafb;
+
+  &:nth-child(1) {
+    margin-right: 4px;
+  }
+
+  @include media-up(sm) {
+    &:nth-child(1) {
+      margin-right: 8px;
+    }
+  }
+
+  @include media-up(lg) {
+    padding: 4px 12px;
+
+    &:nth-child(1) {
+      margin-right: 12px;
+    }
+  }
+}
+
+.HomeAvatarsGroups__title {
+  margin-right: 8px;
+  color: $text-primary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.HomeAvatarsGroups__amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  color: $text-secondary;
+  border-radius: 50%;
+  background-color: #e8ebef;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  @include media-up(lg) {
+    width: auto;
+    height: auto;
+    margin-left: 4px;
+    color: $text-tretiary;
+    border-radius: 0;
+    background-color: transparent;
+    font-weight: $font-weight-500;
+  }
+}
+
+.HomeAvatarsGroups__plusSign {
+  display: none;
+
+  @include media-up(lg) {
+    display: block;
+  }
+}

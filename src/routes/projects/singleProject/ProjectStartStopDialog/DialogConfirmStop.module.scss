@@ -1,0 +1,62 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.DialogConfirmStop__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.ConfirmStopDialog__header {
+  box-shadow: none !important;
+}
+
+.DialogConfirmStop__container {
+  padding: 36px 24px;
+}
+
+.DialogConfirmStop__title {
+  font-size: $font-size-18;
+}
+
+.DialogConfirmStop__text {
+  margin-top: 16px;
+  white-space: pre-wrap;
+
+  @include media-down(md) {
+    font-size: $font-size-14;
+  }
+}
+
+.ConfirmStopDialog__footer {
+  @include media-down(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ConfirmStopDialog__btn_cancel,
+.ConfirmStopDialog__btn_save {
+  padding: 12px 24px !important;
+  font-size: $font-size-16;
+
+  @include media-down(md) {
+    width: 100%;
+  }
+}
+
+.ConfirmStopDialog__btn_cancel {
+  @include media-down(md) {
+    order: 2;
+    margin-top: 16px;
+  }
+}
+
+.ConfirmStopDialog__btn_save {
+  @include media-down(md) {
+    order: 1;
+  }
+}

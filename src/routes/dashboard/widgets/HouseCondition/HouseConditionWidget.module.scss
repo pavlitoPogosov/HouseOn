@@ -1,0 +1,177 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+/* container */
+
+.HouseConditionWidget__container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 8px 16px rgba(198, 215, 232, 0.12);
+
+  &.loading {
+    align-items: center;
+    justify-content: center;
+    height: 336px;
+    background: $surface-placeholder;
+  }
+
+  @include media-down(lg) {
+    margin-right: 0;
+  }
+}
+
+/* gradients */
+
+.HouseConditionWidget__layer_gradient {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.HouseConditionWidget__layer_gradient_from_top_left_dark {
+  background: linear-gradient(310deg, rgba(black, 0) 0%, rgba(black, 0.4) 100%);
+}
+
+.HouseConditionWidget__layer_gradient_from_top_right_green {
+  background: radial-gradient(95% 115% at 95% 10%, rgba($green-400, 0.75) 15%, rgba(black, 0) 70%);
+
+  @include media-down(md) {
+    background: radial-gradient(95% 115% at 95% 95%, rgba($green-400, 0.65) 15%, rgba(black, 0) 70%);
+  }
+}
+.HouseConditionWidget__layer_gradient_from_top_right_yellow {
+  background: radial-gradient(95% 115% at 95% 10%, rgba($yellow-400, 0.75) 15%, rgba(black, 0) 70%);
+
+  @include media-down(md) {
+    background: radial-gradient(95% 115% at 95% 95%, rgba($yellow-400, 0.65) 15%, rgba(black, 0) 70%);
+  }
+}
+.HouseConditionWidget__layer_gradient_from_top_right_red {
+  background: radial-gradient(95% 115% at 95% 10%, rgba($red-400, 0.75) 15%, rgba(black, 0) 70%);
+
+  @include media-down(md) {
+    background: radial-gradient(95% 115% at 95% 95%, rgba($red-400, 0.65) 15%, rgba(black, 0) 70%);
+  }
+}
+
+/* content */
+
+.HouseConditionWidget__content {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+  background-color: rgba(black, 0.3);
+
+  @include media-down(lg) {
+    width: 100%;
+  }
+
+  @include media-down(md) {
+    flex-direction: column;
+    justify-content: initial;
+  }
+}
+
+/* details */
+
+.content__details {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.content__details_title {
+  margin-bottom: 12px;
+}
+
+.content__details_location {
+  margin-bottom: 12px;
+}
+
+.content__details_home_status {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 34px;
+
+  @include media-down(md) {
+    min-height: max-content;
+  }
+}
+
+.content__details_button {
+  width: max-content;
+
+  @include media-down(md) {
+    width: 100%;
+  }
+}
+
+/* divider */
+
+.content__divider {
+  width: 1px;
+  height: 100%;
+  margin: 0 24px;
+  background: rgba(white, 0.3);
+
+  @include media-down(md) {
+    width: 100%;
+    height: 1px;
+    margin: 24px 0;
+  }
+}
+
+/* condition */
+
+.content__condition {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__condition_title {
+  margin-bottom: 24px;
+}
+
+.content__condition_progress_container {
+  flex: 1 1 auto;
+  margin-bottom: 34px;
+
+  @include media-down(md) {
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 24px;
+  }
+}
+
+.content__condition_progress {
+  @include media-down(md) {
+    margin-bottom: 0;
+  }
+}
+
+.content__condition_progress_message_container * {
+  @include media-down(md) {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.content__condition_button {
+  width: max-content;
+
+  @include media-down(md) {
+    width: 100%;
+  }
+}

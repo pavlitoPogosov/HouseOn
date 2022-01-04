@@ -1,0 +1,61 @@
+@import 'styles/_tokens.scss';
+
+.RichInputSelect__container {
+  position: relative;
+  color: $text-secondary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-18;
+}
+
+.RichInputSelect__selected {
+  display: flex;
+  justify-content: space-between;
+
+  width: 72px;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.RichInputSelect__dropdown {
+  position: absolute;
+  z-index: $zindex-dropdown;
+  top: calc(100% + 14px);
+  left: -12px;
+  overflow: hidden;
+  width: 96px;
+  border-radius: $border-radius-4;
+  background-color: #fff;
+  box-shadow: $box-shadow-m;
+}
+
+.RichInputSelect__control {
+  padding: 4px 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: all $transition-primary;
+
+  &:hover,
+  &.active {
+    color: #fff;
+    background-color: $brand-primary-default;
+  }
+
+  &.active {
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+
+.RichInputSelect__icon {
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+  margin-left: 2px;
+  transition: transform $transition-primary;
+
+  &.up {
+    transform: rotate(-180deg);
+  }
+}

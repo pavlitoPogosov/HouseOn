@@ -1,0 +1,62 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.HouseDataInboxMain__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 28px;
+  margin-bottom: 24px;
+
+  @include media-up(md) {
+    flex-wrap: nowrap;
+    margin-top: 44px;
+  }
+}
+
+.HouseDataInboxMain__title {
+  display: flex;
+  align-items: center;
+  order: 1;
+
+  @include media-up(md) {
+    order: 0;
+  }
+}
+
+.HouseDataInboxMain__backIcon {
+  margin-right: 16px;
+}
+
+.HouseDataInboxMain__addBtn {
+  width: 100%;
+  margin-bottom: 18px;
+
+  @include media-up(md) {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.HouseDataInboxMain__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+
+  @include media-up(sm) {
+    grid-gap: 18px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-up(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include media-up(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-up(xxl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

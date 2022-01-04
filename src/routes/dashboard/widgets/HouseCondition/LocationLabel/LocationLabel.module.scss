@@ -1,0 +1,21 @@
+@import 'styles/_tokens.scss';
+
+.LocationLabel__container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.LocationLabel__text {
+}
+
+.LocationLabel__icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 7.34px;
+
+  path {
+    stroke: white;
+  }
+}

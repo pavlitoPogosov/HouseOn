@@ -1,0 +1,51 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.SelectedMemberContent__container {
+  margin-top: 44px;
+}
+
+.SelectedMemberContent__backLink {
+  margin-bottom: 8px;
+
+  svg {
+    margin-top: -2px;
+    margin-right: 4px;
+    margin-left: -8px;
+  }
+}
+
+.SelectedMemberContent__emptyMessage {
+  width: 100%;
+  max-width: 252px;
+  margin-top: 162px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  @media screen and (min-height: 620px) {
+    margin-top: 224px;
+  }
+}
+
+.SelectedMemberContent__advice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 342px;
+  margin: 160px auto 0;
+
+  @media screen and (min-height: 620px) {
+    margin-top: 232px;
+  }
+}
+
+.SelectedMemberContent__adviceAvatar {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background-color: #e8ebef;
+}

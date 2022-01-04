@@ -1,0 +1,60 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+/* header */
+
+.TaskModalContentHeader__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  box-shadow: 0 2px 12px rgba(119, 132, 157, 0.1);
+}
+
+.header__button_action_icon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.header__button_action {
+  display: flex;
+  align-items: center;
+}
+
+.header__section_right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header__toggler_wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__toggler_text {
+  margin-left: 10px;
+}
+
+.header__button_edit {
+  margin-left: 24px;
+  background: $surface-button-sircle;
+
+  &:hover {
+    background: $background-common-secondary;
+  }
+}
+
+.header__close {
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+
+  &:hover {
+    background: $background-common-secondary;
+  }
+}
+
+/* ---- */

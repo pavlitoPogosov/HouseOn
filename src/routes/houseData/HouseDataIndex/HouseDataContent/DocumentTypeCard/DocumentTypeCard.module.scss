@@ -1,0 +1,43 @@
+@import 'styles/_tokens.scss';
+
+.DocumentTypeCard__container {
+  display: flex;
+  padding: 16px;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  border-radius: 12px;
+  background-color: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.DocumentTypeCard__iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  margin-right: 12px;
+  color: #9a6fc5;
+  border-radius: 8px;
+  background-color: #f5ecff;
+}
+
+.DocumentTypeCard__title {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.DocumentTypeCard__tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid $border-gray-secondary;
+  border-radius: 8px;
+
+  & + .DocumentTypeCard__tag {
+    margin-left: 4px;
+  }
+}

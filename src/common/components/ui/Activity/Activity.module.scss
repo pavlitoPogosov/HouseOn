@@ -1,0 +1,94 @@
+@import 'styles/_tokens.scss';
+
+.Activity__container {
+  position: relative;
+  display: flex;
+
+  &.isDesktop {
+    margin-bottom: 6px;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      bottom: 0;
+      left: 6px;
+      width: 1.2px;
+      height: 100%;
+      content: '';
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='lightgray' stroke-width='4' stroke-dasharray='2%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+    }
+  }
+
+  &.isMobile {
+    & + .Activity__container {
+      margin-top: 16px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &.disableBorder {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.Activity__iconWrapper {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-width: 14px;
+  height: 14px;
+  margin-top: 5px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: rgba($brand-primary-default, 0.1);
+}
+
+.Activity__icon {
+  z-index: 2;
+  min-width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: $brand-primary-default;
+}
+
+.Activity__content {
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+  line-height: $line-height-22;
+}
+
+.Activity__actorName {
+  color: $text-primary;
+}
+
+.Activity__actionName {
+  color: $text-secondary;
+}
+
+.Activity__time {
+  color: $text-tretiary;
+  font-size: $font-size-12;
+}
+
+.Activity__entityLink {
+  display: inline-block;
+  height: 24px;
+  padding: 0 8px;
+  text-align: center;
+  color: $text-brand;
+  border-radius: $border-radius-4;
+  background-color: #e6f4f1;
+  line-height: 24px;
+
+  &.isMobile {
+    display: block;
+    width: fit-content;
+  }
+}

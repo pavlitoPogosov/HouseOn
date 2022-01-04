@@ -1,0 +1,9 @@
+@import 'styles/_vars.scss';
+
+.Main__container {
+  margin-top: 20px;
+
+  @include media-up(md) {
+    margin-top: 36px;
+  }
+}

@@ -1,0 +1,106 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+@import 'styles/_vars.scss';
+
+.MainTabForm__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @include media-up(md) {
+    flex-direction: row;
+  }
+}
+
+.MainTabForm__dropzone {
+  width: 100%;
+  height: 288px;
+  margin-bottom: 16px;
+
+  @include media-up(md) {
+    width: 312px;
+    height: 260px;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.MainTabForm__fieldsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.MainTabForm__fieldContainer {
+  margin-bottom: 24px;
+}
+
+.MainTabForm__flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-up(xxl) {
+    flex-wrap: nowrap;
+  }
+}
+
+.MainTabForm__selectContainer {
+  width: 100%;
+}
+
+.MainTabForm__deadlineContainer {
+  width: 100%;
+
+  @include media-up(xxl) {
+    max-width: 196px;
+    margin-left: 16px;
+  }
+}
+
+.MainTabForm__fieldLabel {
+  margin-bottom: 4px;
+}
+
+.MainTabForm__dropzoneContent {
+  text-align: center;
+}
+
+.MainTabForm__dropzoneContentTitle {
+  margin-bottom: 4px;
+}
+
+.MainTabForm__dropzoneContentLink {
+  @include caption_m;
+}
+
+.MainTabForm__selectOption {
+  text-transform: lowercase;
+}
+
+.MainTabForm__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+    margin-top: 56px;
+  }
+}
+
+.MainTabForm__controlBtn {
+  width: 100%;
+  min-width: 112px;
+  margin-top: 12px;
+
+  @include media-up(sm) {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.MainTabForm__areaInput {
+  max-width: 196px;
+  margin-top: 24px;
+}

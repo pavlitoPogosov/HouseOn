@@ -1,0 +1,29 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HouseDataIndexPage__inner {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1036px;
+  margin: 44px auto;
+}
+
+.HouseDataIndexPage__header {
+  margin-top: 21px;
+}
+
+// .HouseDataIndexPage__daysLeft {
+//   height: 32px;
+//   margin-left: 31px;
+//   padding: 6px 12px;
+//   border-radius: 4px;
+//   background: $background-day-tetriary;
+//   font-weight: $font-weight-600;
+
+//   position: absolute;
+//   top: 21px;
+// }
+
+// .HouseDataIndexPage__days {
+//   color: $text-brand;
+// }

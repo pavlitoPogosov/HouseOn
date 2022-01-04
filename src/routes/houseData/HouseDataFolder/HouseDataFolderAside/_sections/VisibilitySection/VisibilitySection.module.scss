@@ -1,0 +1,27 @@
+@import 'styles/_tokens.scss';
+
+
+.VisibilitySection__card {
+  & + .VisibilitySection__card {
+    margin-top: 12px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
+}
+
+.VisibilitySection__plusIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $brand-secondary-default;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,46 @@
+@import 'styles/_tokens.scss';
+
+.CircleProgress__background,
+.CircleProgress__progress {
+  fill: none;
+}
+
+.CircleProgress__white {
+  .CircleProgress__background {
+    stroke: $accent-blue-fithy;
+  }
+
+  .CircleProgress__progress {
+    stroke: #fff;
+  }
+
+  .CircleProgress__text {
+    color: #fff;
+  }
+}
+
+.CircleProgress__green {
+  .CircleProgress__background {
+    stroke: $brand-secondary-pressed;
+  }
+
+  .CircleProgress__progress {
+    stroke: $brand-primary-hover;
+  }
+
+  .CircleProgress__text {
+    color: #fff;
+  }
+}
+
+.CircleProgress__progress {
+  transition: stroke-dashoffset 1s ease-in-out;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.CircleProgress__text {
+  font-size: $font-size-10;
+  font-weight: $font-weight-600;
+  line-height: $line-height-12;
+}

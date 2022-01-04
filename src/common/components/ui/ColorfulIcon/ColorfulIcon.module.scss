@@ -1,0 +1,69 @@
+@import 'styles/_tokens.scss';
+
+.ColorfulIcon__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+// variants
+
+.default {
+  color: $text-tretiary;
+  background-color: #e8ebef;
+}
+
+.green {
+  color: #7ebf2f;
+  background-color: #e1f8c6;
+}
+
+.blue {
+  color: $accent-blue-light;
+  background-color: #def5ff;
+}
+
+.brown {
+  color: #c59565;
+  background-color: #f4efea;
+}
+
+.yellow {
+  color: #cea336;
+  background-color: #fff0c8;
+}
+
+.red {
+  color: $text-error;
+  background: $accent-red-primary;
+}
+
+.purple {
+  color: #9a6fc5;
+  background-color: #f5ecff;
+}
+
+.gray {
+  color: $text-secondary;
+  background-color: #e8ebef;
+}
+
+.gray_secondary {
+  color: #646a8c;
+  background-color: #fff;
+  box-shadow: 0 2px 12px rgba(119, 132, 157, 0.1);
+}
+
+.darkGreen {
+  color: $text-brand;
+  background-color: #d6ede7;
+}
+
+.orange {
+  color: #ea5419;
+  background-color: #fdeee8;
+}

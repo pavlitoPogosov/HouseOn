@@ -1,0 +1,63 @@
+@import 'styles/_tokens.scss';
+
+.ButtonsBlock__container {
+  display: flex;
+  margin-top: 24px;
+}
+
+.ButtonsBlock__button {
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 46px;
+  max-width: 48px;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.ButtonsBlock__bigButton {
+  flex-grow: 3;
+}
+
+.ButtonBlock__appleButton {
+  svg {
+    margin-top: -4px;
+  }
+}
+
+.ButtonsBlock__hiddenText {
+  display: none;
+
+  @media screen and (min-width: 440px) {
+    display: block;
+  }
+}
+
+.ButtonsBlock__divider {
+  position: relative;
+  margin-top: 42px;
+  margin-bottom: 34px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    transform: translateY(-50%);
+    background-color: $border-gray;
+  }
+}
+
+.ButtonsBlock__dividerText {
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  padding: 0 13px;
+  color: #bfc5dc;
+  background-color: #fff;
+  font-size: $font-size-14;
+  line-height: $line-height-18;
+}

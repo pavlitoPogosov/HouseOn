@@ -1,0 +1,92 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ActivityCard__container {
+  display: flex;
+  padding: 0 24px 0 40px;
+}
+
+.ActivityCard__point {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  margin-top: 10px;
+  margin-left: -1.5px;
+  border-radius: 5px;
+  background-color: $text-brand;
+  box-shadow: 0 0 0 4px rgba($text-brand, 0.1);
+}
+
+.ActivityCard__content {
+  padding: 0 0 24px 32px;
+  border-left: 3px dotted rgba($text-tretiary, 0.5);
+}
+
+.ActivityCard__header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__author,
+.header__author_link,
+.header__activity,
+.header__activity_target {
+  margin-right: 4px;
+}
+
+.header__author {
+  font-weight: $font-weight-600;
+}
+
+.header__author_link {
+  cursor: pointer;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+}
+
+.header__activity {
+  font-weight: $font-weight-400;
+}
+
+.header__activity_target {
+  cursor: pointer;
+  color: $text-brand;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+}
+
+.ActivityCard__comment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.content__comment_container {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+$avatar-size: 32px;
+
+.comment__avatar {
+  min-width: $avatar-size;
+  min-height: $avatar-size;
+}
+
+.comment__content {
+  div {
+    padding: 10px 16px;
+    color: $text-secondary;
+    font-size: $font-size-12;
+    font-weight: $font-weight-600;
+    line-height: $line-height-16;
+  }
+}
+
+.content__activity_date {
+  margin-top: 8px;
+}
+
+.activity_date__no_margin_top {
+  margin-top: 0;
+}

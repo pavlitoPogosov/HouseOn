@@ -1,0 +1,19 @@
+@import 'styles/_tokens.scss';
+
+.LastActivities__container {
+  margin-top: 48px;
+}
+
+.LastActivities__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 16px;
+}
+
+.LastActivities__content {
+  padding: 14px 16px;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+}

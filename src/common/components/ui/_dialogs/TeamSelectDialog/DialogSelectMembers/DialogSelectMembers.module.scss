@@ -1,0 +1,90 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.DialogSelectMembers__header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding-right: 16px;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+    margin-bottom: 16px;
+  }
+
+  @include media-down(md) {
+    flex-direction: column;
+  }
+}
+
+.DialogSelectMembers__sortPopup {
+  margin: 0 auto;
+  border-radius: $border-radius-8;
+  background-color: $surface-secondary;
+
+  @include media-up(md) {
+    margin-right: 32px;
+  }
+
+  @include media-down(md) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.DialogSelectMembers__searchInput {
+  width: 100%;
+  margin-bottom: 16px;
+
+  input {
+    border-color: $border-gray-secondary;
+  }
+
+  @include media-up(sm) {
+    margin-bottom: 0;
+  }
+
+  @include media-down(md) {
+    order: 2;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.DialogSelectMembers__wrapper {
+  position: relative;
+}
+
+.DialogSelectMembers__content {
+  @include scrollbar;
+  overflow: auto;
+  min-height: 380px;
+  max-height: 380px;
+  margin: 0 -14px;
+  padding: 0 14px;
+
+  @include media-up(sm) {
+    margin: 0 -24px;
+    padding: 0 24px;
+  }
+}
+
+.DialogSelectMembers__teamCard {
+  box-shadow: 0 2px 12px rgba(119, 132, 157, 0.1);
+
+  & + .DialogSelectMembers__teamCard {
+    margin-top: 12px;
+  }
+}
+
+.DialogSelectMembers__background {
+  position: absolute;
+  z-index: 1;
+  top: calc(100% - 35px);
+  right: 0;
+  left: 0;
+  height: 35px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f0f5f9 100%);
+}

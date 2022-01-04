@@ -1,0 +1,35 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.SingleProjectPage__main {
+  @include media-up(sm) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @include media-up(lg) {
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+  }
+}
+
+.SingleProjectPage__aside {
+  width: 100%;
+  background-color: $background-common-light;
+
+  @include media-up(md) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @include media-up(lg) {
+    max-width: 400px;
+    min-height: 100vh;
+    background-color: $background-day-tetriary;
+  }
+
+  @include media-up(xl) {
+    max-width: 452px;
+  }
+}

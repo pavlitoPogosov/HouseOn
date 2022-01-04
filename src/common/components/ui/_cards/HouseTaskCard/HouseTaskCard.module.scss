@@ -1,0 +1,66 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HouseTaskCard__container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color $transition-primary, box-shadow $transition-primary;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 0 1px transparent;
+
+  &:active {
+    background-color: $background-day-tetriary;
+
+    .content__icon {
+      background-color: white !important;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $text-brand;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px $brand-primary-pressed;
+  }
+
+  &.Button__disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
+
+.HouseTaskCard__content {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+.content__icon {
+  margin-right: 12px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__title {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 32px;
+}
+
+.content__button {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

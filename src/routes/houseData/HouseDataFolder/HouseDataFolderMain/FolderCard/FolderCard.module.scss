@@ -1,0 +1,118 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+
+.FolderCard__container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  transition: box-shadow $transition-primary, border-color $transition-primary;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: #fff;
+
+  &.active {
+    border-color: $brand-primary-default;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.FolderCard__icon {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: center;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 8px;
+  background-color: $accent-blue-light;
+}
+
+.FolderCard__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.FolderCard__title {
+
+  @include mltext;
+  flex-grow: 1;
+  max-width: 64%;
+  margin-right: 12px;
+
+  &.mobile {
+    max-width: 90%;
+    margin-right: 0;
+  }
+}
+
+.FolderCard__containInfo {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  width: 26%;
+  margin-right: 12px;
+  white-space: nowrap;
+
+  &.mobile {
+    order: 1;
+    width: 100%;
+    margin-top: 16px;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.FolderCard__eyeIcon {
+  margin-right: 6px;
+  color: $text-secondary;
+
+  svg {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+  }
+}
+
+.FolderCard__menuIcon {
+  align-self: flex-start;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.FolderCard__tagsWrapper {
+  width: 100%;
+
+  &.mobile {
+    order: 2;
+  }
+}
+
+.FolderCard__tag {
+  @include caption_m;
+  display: inline-block;
+  padding: 2px 8px;
+  color: $text-secondary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: 8px;
+  font-weight: $font-weight-500;
+
+  & + .FolderCard__tag {
+    margin-left: 4px;
+  }
+}

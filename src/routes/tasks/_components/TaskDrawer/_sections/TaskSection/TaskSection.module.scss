@@ -1,0 +1,107 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.TaskSection__container {
+  margin-top: 44px;
+  margin-bottom: 32px;
+
+  @include media-up(md) {
+    display: flex;
+    margin-top: 0;
+  }
+
+  @include media-up(lg) {
+    margin-top: 54px;
+  }
+}
+
+.TaskSection__task {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include media-up(md) {
+    align-items: center;
+    margin-right: 24px;
+  }
+}
+
+.TaskSection__content {
+  display: flex;
+  width: 100%;
+
+  @include media-up(md) {
+    align-items: center;
+  }
+}
+
+.TaskSection__text {
+  @include mltext;
+
+  @include media-up(md) {
+    margin-right: 8px;
+  }
+}
+
+.TaskSection__badge {
+  width: 72px;
+  margin-top: 2px;
+  margin-right: 12px;
+  margin-left: 12px;
+
+  @include media-up(md) {
+    width: auto;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.TaskSection__toggle {
+  margin-top: 4px;
+
+  @include media-up(md) {
+    margin-top: 2px;
+  }
+}
+
+.TaskSection__closeIcon {
+  display: none;
+  cursor: pointer;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  @include media-up(md) {
+    display: flex;
+  }
+}
+
+.TaskSection__backIcon {
+  margin-bottom: 24px;
+
+  @include media-up(md) {
+    display: none;
+  }
+}
+
+.TaskSection__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  color: $text-secondary;
+  border-radius: 50%;
+  background-color: #e8ebef;
+
+  @include media-up(sm) {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+}

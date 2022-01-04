@@ -1,0 +1,50 @@
+@import 'styles/_tokens.scss';
+
+.Event__wrapper {
+  overflow: hidden;
+  border-radius: $border-radius-4;
+}
+
+.Event__container {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #c59565;
+  background: transparent;
+}
+
+.Event__inner {
+  margin: 0 4px;
+  padding: 4px 8px;
+  border-radius: $border-radius-4;
+  background: #f4efea;
+}
+
+.Event__titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: $font-size-12;
+  font-weight: $font-weight-500;
+  line-height: $line-height-16;
+}
+
+.Event__title {
+  flex-grow: 1;
+
+  margin-right: 16px;
+  font-weight: $font-weight-600;
+}
+
+.Event__author {
+  span {
+    font-weight: $font-weight-600;
+  }
+}
+
+.Event__date {
+  font-size: $font-size-12;
+  font-weight: $font-weight-500;
+  line-height: $line-height-16;
+}

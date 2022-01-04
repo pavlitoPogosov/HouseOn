@@ -1,0 +1,135 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HouseDataIntro__container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 28px 18px 18px 18px;
+  border-radius: 16px;
+  background-color: #fef4de;
+
+  @include media-up(md) {
+    margin-bottom: 32px;
+    padding: 42px;
+  }
+}
+
+.HouseDataIntro__title {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+
+  margin-bottom: 24px;
+  color: #c25200;
+}
+
+.HouseDataIntro__footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-up(lg) {
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.HouseDataIntro__searchWrapper {
+  z-index: 1;
+  order: 1;
+  width: 100%;
+  padding: 24px 38px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: $box-shadow-xl;
+
+  @include media-up(lg) {
+    order: 0;
+    max-width: 542px;
+    padding: 24px;
+  }
+}
+
+.HouseDataIntro__capacity {
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: $box-shadow-xl;
+
+  @include media-up(lg) {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.HouseDataIntro__barProgress {
+  margin: 8px 0;
+}
+
+// bg ellipsis
+
+.HouseDataIntro__ellipse {
+  position: absolute;
+  width: 127px;
+  height: 127px;
+}
+
+.HouseDataIntro__firstEllipse {
+  @extend .HouseDataIntro__ellipse;
+  bottom: -28px;
+  left: -30px;
+  transform: rotate(168deg);
+}
+
+.HouseDataIntro__secondEllipse {
+  @extend .HouseDataIntro__ellipse;
+  top: 100px;
+  right: 309px;
+  transform: rotate(-160deg);
+}
+
+.HouseDataIntro__thirdEllipse {
+  @extend .HouseDataIntro__ellipse;
+  top: 152px;
+  right: 202px;
+  transform: rotate(-162deg);
+}
+
+.HouseDataIntro__fourthEllipse {
+  @extend .HouseDataIntro__ellipse;
+  top: 0;
+  right: 152px;
+  display: none;
+
+  @include media-up(md) {
+    display: block;
+  }
+}
+
+.HouseDataIntro__fithEllipse {
+  @extend .HouseDataIntro__ellipse;
+  top: 92px;
+  right: 52px;
+  transform: rotate(202deg);
+}
+
+.HouseDataIntro__sixthEllipse {
+  @extend .HouseDataIntro__ellipse;
+  top: -16px;
+  right: -68px;
+
+  @include media-up(md) {
+    right: -48px;
+  }
+}
+
+.HouseDataIntro__seventhEllipse {
+  @extend .HouseDataIntro__ellipse;
+  right: -16px;
+  bottom: 18px;
+}

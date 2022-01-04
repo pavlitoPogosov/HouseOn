@@ -1,0 +1,50 @@
+@import 'styles/_vars';
+@import 'styles/_tokens';
+
+.StatusBadge__container {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px 6px 14px;
+  white-space: nowrap;
+  color: $text-secondary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: $border-radius-20;
+  background-color: #fff;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  svg {
+    margin-right: 4px;
+  }
+
+  &.active {
+    color: $accent-day-green-100;
+    border-color: $accent-day-green-50;
+    background-color: $accent-day-green-50;
+  }
+
+  &.done {
+    color: #7ebf2f;
+    border-color: $accent-day-green-50;
+    background-color: $accent-day-green-50;
+  }
+
+  &.overdue {
+    color: #ee505a;
+    border-color: #fce5e6;
+    background-color: #fce5e6;
+  }
+
+  &.archived {
+    color: $text-secondary;
+    border-color: #e8ebef;
+    background-color: #e8ebef;
+  }
+
+  &.ready {
+    color: $accent-day-yellow-100;
+    border-color: $accent-day-yellow-50;
+    background-color: $accent-day-yellow-50;
+  }
+}

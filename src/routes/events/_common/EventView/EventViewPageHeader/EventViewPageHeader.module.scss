@@ -1,0 +1,80 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.EventViewPageHeader__container {
+  margin-bottom: 40px;
+
+  @include media-up(md) {
+    margin-bottom: 65px;
+  }
+}
+
+.EventViewPageHeader__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.EventViewPageHeader__eventInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  @include media-up(md) {
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.EventViewPageHeader__eventBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 228px !important;
+  height: 38px !important;
+  margin-top: 16px;
+  padding: 0 !important;
+
+  @include media-up(md) {
+    margin-top: 0;
+  }
+}
+
+.EventViewPageHeader__calendar {
+  margin-right: 24px;
+  color: $text-secondary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+
+  svg {
+    margin-right: 12px;
+  }
+}
+
+.EventViewPageHeader__plusIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: $brand-primary-default;
+}
+
+.EventViewPageHeader__alert {
+  width: 100%;
+  margin: 32px auto 0;
+
+  @include media-up(md) {
+    max-width: 898px;
+    margin: 45px auto 0 auto;
+  }
+}

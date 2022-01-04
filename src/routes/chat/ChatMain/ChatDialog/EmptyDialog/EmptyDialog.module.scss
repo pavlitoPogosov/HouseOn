@@ -1,0 +1,19 @@
+@import 'styles/_tokens.scss';
+
+
+.EmptyDialog__container {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.EmptyDialog__avatar {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background-color: #e8ebef;
+}

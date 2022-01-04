@@ -1,0 +1,36 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.PlayerVideo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.PlayerVideo__video_wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+
+  //video {
+  //  width: 100%;
+  //}
+}
+
+.video_preview__player {
+}
+
+.PlayerControls__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 16px 0;
+}

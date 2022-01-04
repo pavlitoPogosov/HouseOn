@@ -1,0 +1,81 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.SubscriptionDaysLeft__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: $box-shadow-l;
+
+  @include media-up(sm) {
+    flex-direction: row;
+    margin-bottom: 16px;
+  }
+}
+
+.SubscriptionDaysLeft__daysLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 144px;
+  margin-right: 16px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+
+  &.primary {
+    background-color: $brand-secondary-default;
+
+    .SubscriptionDaysLeft__daysLeftCount {
+      color: $text-brand;
+      font-size: 52px;
+      line-height: 60px;
+    }
+
+    .SubscriptionDaysLeft__daysLeftLabel {
+      margin-top: 14px;
+    }
+  }
+
+  &.secondary {
+    background-color: #e8ebef;
+
+    .SubscriptionDaysLeft__daysLeftCount {
+      color: $text-secondary;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .SubscriptionDaysLeft__daysLeftLabel {
+      margin-top: 8px;
+    }
+  }
+
+  @include media-up(sm) {
+    height: 112px;
+    margin-bottom: 0;
+  }
+}
+
+.SubscriptionDaysLeft__daysLeftCount {
+  font-weight: $font-weight-700;
+}
+
+.SubscriptionDaysLeft__daysLeftLabel {
+  margin-left: 8px;
+  font-weight: $font-weight-600;
+}
+
+.SubscriptionDaysLeft__title {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.SubscriptionDaysLeft__description {
+  width: 100%;
+  max-width: 402px;
+  font-weight: $font-weight-600;
+}

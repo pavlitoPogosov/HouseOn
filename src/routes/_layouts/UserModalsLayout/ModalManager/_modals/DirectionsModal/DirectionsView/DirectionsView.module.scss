@@ -1,0 +1,30 @@
+@import 'styles/_tokens.scss';
+
+.DirectionsView__address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border-radius: $border-radius-12;
+  background-color: #f7fafc;
+
+  svg {
+    margin-top: -4px;
+    margin-right: 8px;
+  }
+
+  address {
+    margin-right: 12px;
+  }
+}
+
+.DirectionView__map {
+  width: 100%;
+  height: 204px;
+}
+
+.DirectionsView__additional {
+  margin-top: 24px;
+}

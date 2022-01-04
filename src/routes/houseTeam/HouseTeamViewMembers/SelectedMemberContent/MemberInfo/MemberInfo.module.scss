@@ -1,0 +1,161 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.MemberInfo__container {
+  margin-top: 8px;
+  padding-bottom: 54px;
+
+  @include media-up(sm) {
+    padding-bottom: 0;
+  }
+}
+
+.MemberInfo__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  @include media-up(sm) {
+    margin-bottom: 48px;
+  }
+}
+
+.MemberInfo__member {
+  display: flex;
+}
+
+.MemberInfo__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: $surface-primary;
+
+  svg {
+    width: 36px;
+    height: 36px;
+
+    @media screen and (max-width: 362px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media screen and (max-width: 362px) {
+    margin-right: 6px;
+  }
+}
+
+.MemberInfo__title {
+  display: flex;
+  align-items: center;
+
+  > h2 {
+    margin-right: 12px;
+  }
+}
+
+.MemberInfo__role {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+
+  @media screen and (max-width: 362px) {
+    margin-top: 0;
+  }
+
+  @include media-down(sm) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.MemberInfo__spreadRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:first-child {
+    margin-right: 16px;
+  }
+
+  &_mt {
+    margin-top: 16px;
+  }
+}
+
+.MemberInfo__status {
+  display: inline-flex;
+  align-items: center;
+
+  &.online {
+    color: #7ebf2f;
+
+    .MemberInfo__statusCircle {
+      background-color: #7ebf2f;
+    }
+  }
+
+  &.offline {
+    color: $text-error;
+
+    .MemberInfo__statusCircle {
+      background-color: $text-error;
+    }
+  }
+}
+
+.MemberInfo__statusCircle {
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  border-radius: 50%;
+}
+
+.MemberInfo__dot {
+  margin: 0 4px;
+  color: $text-tretiary;
+}
+
+.MemberInfo__editIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-left: 16px;
+  color: $text-brand;
+  border-radius: 50%;
+  background-color: $brand-secondary-default;
+}
+
+.MemberInfo__tabs {
+  margin-bottom: 32px;
+
+  @include media-down(sm) {
+    @include scrollbar();
+
+    overflow: auto;
+    max-width: calc(100vw - 30px);
+  }
+}
+
+.MemberInfo__tab {
+  font-size: $font-size-12 !important;
+
+  @media screen and (min-width: 362px) {
+    font-size: $font-size-14 !important;
+  }
+
+  @include media-up(sm) {
+    font-size: $font-size-18 !important;
+  }
+}

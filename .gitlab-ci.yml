@@ -1,0 +1,117 @@
+image: node:14
+
+variables:
+  NODE_ENV: production
+  DOCKER_TLS_CERTDIR: ""
+  DOCKER_HOST: tcp://docker:2375
+
+stages:
+  - build
+  - deploy
+
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - node_modules
+
+build-staging:
+  only:
+    - master
+    - merge_requests
+  stage: build
+  script:
+    - yarn install --production=false
+    - if [ -e .env.env.staging ]; then cp .env.env.staging .env.local; fi;
+    - CI=false yarn run build
+  artifacts:
+    name: "$CI_COMMIT_REF_SLUG-$CI_JOB_NAME"
+    paths:
+      - build
+      - public
+      - src
+      - .browserslistrc
+      - .env
+      - .prettierrc
+      - package.json
+      - README.md
+      - yarn.lock
+
+deploy-staging:
+  only:
+    - master
+  stage: deploy
+  cache:
+    policy: pull
+  environment:
+    name: staging
+    url: https://houseon.dev.proscom.tech
+  dependencies:
+    - build-staging
+  script:
+    - DATE=$(date +"%Y%m%d_%H%M%S")
+    - echo "date '${DATE}'"
+    - ARCHIVE=${CI_COMMIT_REF_SLUG}-${DATE}.tgz
+    - echo "archive name '${ARCHIVE}'"
+    - tar -czf ${ARCHIVE} * .browserslistrc .env .prettierrc
+    - APP_FOLDER=/app/houseon.front
+    - TARGET=${SSH_DEPLOY_STAGING}:${APP_FOLDER}/archives/${ARCHIVE}
+    - echo "Uploading archive to target ${TARGET}"
+    - scp ${ARCHIVE} ${TARGET}
+    - ssh ${SSH_DEPLOY_STAGING} "cd ${APP_FOLDER} && ./ci-deploy.sh ${ARCHIVE}"
+  before_script:
+    - 'which ssh-agent || ( apt-get update -qq && apt-get install -qq openssh-client )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY_STAGING" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+.base-docker-build:
+  services:
+    - docker:20.10.9-dind-alpine3.14
+  stage: build
+  variables:
+    DOCKER_BUILDKIT: 1
+  image: docker:20.10.9
+  before_script:
+    - apk add --update --no-cache docker-compose
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - cp .env .env.local
+    - sed -E -i "s#REACT_APP_AUTH_API=.*#REACT_APP_AUTH_API=$CI_ENVIRONMENT_URL/api/auth#g" .env.local
+    - sed -E -i "s#REACT_APP_GRAPHQL_API=.+#REACT_APP_GRAPHQL_API=$CI_ENVIRONMENT_URL/api/graphql#g" .env.local
+    - docker-compose build
+    - docker-compose push
+  tags:
+    - docker
+
+build-stage:
+  extends: .base-docker-build
+  environment:
+    name: stage
+    url: https://houseon.stage.proscom.tech
+  only:
+    - staging
+
+.base-docker-deploy:
+  image: docker:20.10.9
+  stage: deploy
+  script:
+    - apk --no-cache add openssh-client
+    - export SERVICE_DOCKER_IMAGE="$CI_REGISTRY_IMAGE:$CI_ENVIRONMENT_NAME"
+    - eval $(ssh-agent -s)
+    - mkdir ~/.ssh && chmod 700 ~/.ssh
+    - ssh-keyscan -t rsa $DEPLOY_HOST >> ~/.ssh/known_hosts
+    - echo "$DEPLOY_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - ssh deploy@$DEPLOY_HOST "docker rmi -f $SERVICE_DOCKER_IMAGE || true"
+    - ssh deploy@$DEPLOY_HOST "docker-compose -f /opt/houseon/docker-compose.yml up -d"
+
+deploy-stage:
+  extends: .base-docker-deploy
+  variables:
+    DEPLOY_HOST: houseon.stage.proscom.tech
+  environment:
+    name: stage
+    url: https://houseon.stage.proscom.tech
+  only:
+    - staging

@@ -1,0 +1,115 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+/* horizontal_menu */
+
+$aside-margin: 32px;
+
+.ChatAside__horizontal_menu_container {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+
+  @include media-down(md) {
+    margin: 24px 0 16px 0 !important;
+  }
+}
+
+/* search */
+
+.ChatAside__search_container {
+}
+
+.ChatAside__search_input {
+  border-color: $border-gray-secondary;
+
+  @include media-down(md) {
+    height: 40px;
+  }
+}
+
+/* controls */
+
+.ChatAside__horizontal_menu_container,
+.ChatAside__search_container,
+.ChatAside__controls {
+  margin-right: $aside-margin;
+  margin-left: $aside-margin;
+
+  @include media-down(md) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.ChatAside__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+/* tabs */
+
+.ChatAside__tabs_container {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.ChatAside__tab {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+
+  @include media-down(lg) {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    font-size: $font-size-14;
+  }
+}
+
+/* add button */
+
+.ChatAside__btn_add {
+  @include media-down(lg) {
+    height: 40px;
+    font-size: $font-size-14;
+  }
+}
+
+/* chats */
+
+.ChatAside__chatsWrapper {
+  height: 100%;
+  margin-top: 16px;
+  padding-right: calc(#{$aside-margin} / 2);
+  padding-left: calc(#{$aside-margin} / 2);
+
+  @include media-down(md) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.ChatAside__chatCard {
+  margin-right: calc(#{$aside-margin} / 2);
+  margin-left: calc(#{$aside-margin} / 2);
+
+  & + .ChatAside__chatCard {
+    margin-top: 12px;
+  }
+
+  @include media-up(lg) {
+    & + .ChatAside__chatCard {
+      margin-top: 8px;
+    }
+  }
+
+  @include media-down(md) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.ChatAside__addTooltip {
+  width: 108px;
+}

@@ -1,0 +1,96 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.StepLine__container {
+  display: flex;
+  align-items: center;
+  margin-top: 52px;
+  margin-bottom: 56px;
+
+  @include media-up(sm) {
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 48px;
+  }
+}
+
+.StepLine__step {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  transition: all 0.3s;
+  white-space: nowrap;
+  font-weight: $font-weight-600;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.StepLine__stepCircle {
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+  transition: all 0.3s;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+
+  @media screen and (min-width: 340px) {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    font-size: $font-size-16;
+    line-height: 34px;
+  }
+}
+
+.StepLine__stepText {
+  font-size: $font-size-14;
+  line-height: $line-height-20;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  span {
+    display: none;
+  }
+
+  @include media-up(sm) {
+    font-size: $font-size-16;
+
+    span {
+      display: inline;
+    }
+  }
+}
+
+// variants
+
+.StepLine__step_active {
+  .StepLine__stepText {
+    color: $text-brand;
+  }
+
+  .StepLine__stepCircle {
+    color: #fff;
+    background-color: $text-brand;
+  }
+}
+
+.StepLine__step_inactive {
+  color: $text-tretiary;
+
+  .StepLine__stepCircle {
+    background-color: $surface-primary;
+  }
+}
+
+.StepLine__step_passed {
+  color: $text-brand;
+
+  .StepLine__stepCircle {
+    background-color: $brand-secondary-default;
+  }
+}

@@ -1,0 +1,42 @@
+.InviteAcception__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  max-width: 372px;
+
+  padding: 0 15px;
+  text-align: center;
+}
+
+.InviteAcception__avatarsWrapper {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.InviteAcception__avatar {
+  border: 2px solid #fff;
+
+  &:first-of-type {
+    z-index: 1;
+    margin-right: -52px;
+  }
+}
+
+.InviteAcception__btns {
+  display: flex;
+  align-items: center;
+
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.InviteAcception__btn {
+  &:first-of-type {
+    margin-right: 16px;
+  }
+}

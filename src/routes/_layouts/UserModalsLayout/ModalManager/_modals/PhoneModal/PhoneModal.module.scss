@@ -1,0 +1,9 @@
+.PhoneModal__form {
+  margin-top: 0;
+}
+
+.PhoneModal__skeleton {
+  & + .PhoneModal__skeleton {
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,142 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+/* container */
+
+.LastActivityWidget__container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  //max-height: 740px;
+  border-radius: 16px;
+  background: white;
+
+  //@include media-down(xl) {
+  //  height: 740px;
+  //  max-height: 740px;
+  //}
+
+  @include media-down(xl) {
+    height: 300px;
+    //max-height: 740px;
+  }
+}
+
+/* content */
+
+.LastActivityWidget__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* header */
+
+.content__header_content {
+  padding: 20px 24px 28px 24px;
+}
+
+/* list */
+
+.content__list_container {
+  display: flex;
+  overflow-x: hidden !important;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  //@include media-down(xl) {
+  //  > div:first-child {
+  //    min-height: 200px !important;
+  //
+  //    > div {
+  //      display: flex;
+  //      flex-direction: column !important;
+  //    }
+  //  }
+  //}
+  //
+  //@include media-down(sm) {
+  //  > div:first-child {
+  //    min-height: 400px !important;
+  //
+  //    > div {
+  //      display: flex;
+  //      flex-direction: column !important;
+  //    }
+  //  }
+  //}
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  > div:first-child {
+    margin-top: -5px;
+  }
+}
+
+/* button */
+
+.new_activity__button_container {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 32px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -17.47%, rgba(255, 255, 255, 0.92) 46.16%);
+}
+
+.new_activity__button {
+  align-items: center;
+  padding: 8px 16px;
+  color: $brand-primary-default;
+  border-radius: 40px;
+  background: $brand-secondary-hover;
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+
+  span {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+    margin-left: 8px !important;
+    transition: background-color $transition-primary;
+    transform: rotate(270deg);
+    color: transparent;
+    background-color: $brand-primary-default;
+    mask: url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 1L1.5 4L4.5 7' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brand-primary-hover;
+
+    span {
+      background-color: $brand-primary-hover;
+    }
+  }
+
+  &:active {
+    color: $brand-primary-pressed;
+
+    span {
+      background-color: $brand-primary-pressed;
+    }
+  }
+
+  &.Button__disabled {
+    opacity: 0.4;
+  }
+}

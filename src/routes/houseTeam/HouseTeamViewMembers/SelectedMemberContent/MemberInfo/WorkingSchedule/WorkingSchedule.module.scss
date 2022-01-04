@@ -1,0 +1,21 @@
+.WorkingSchedule__datepicker {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.WorkingSchedule__dateInput {
+  width: 220px;
+  min-width: 220px;
+
+  &.mobile {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.WorkingSchedule__cell {
+  width: 100%;
+  max-width: none;
+  height: 32px;
+}

@@ -1,0 +1,97 @@
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+@import 'styles/_tokens.scss';
+
+.ProfileHouseholdCard__wrapper {
+  width: 100%;
+  padding: 20px 24px;
+  border-radius: $border-radius-8;
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(192, 199, 212, 0.25);
+}
+
+.ProfileHouseholdCard__header {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.ProfileHouseholdCard__headerInner {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin-right: 12px;
+}
+
+.ProfileHouseholdCard__title {
+  @include mltext;
+  margin: 0;
+  margin-right: 20px;
+
+  @include media-down(md) {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+}
+
+.ProfileHouseholdCard__date {
+  color: $text-secondary;
+}
+
+.ProfileHouseholdCard__avatars {
+  display: flex;
+  align-self: flex-start;
+  white-space: nowrap;
+}
+
+.ProfileHouseholdCard__avatarGroup {
+  margin-right: 4px;
+}
+
+.ProfileHouseholdCard__status {
+  margin-bottom: 32px;
+  transition: box-shadow $transition-primary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: $border-radius-8;
+  background: #f9fafb;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.ProfileHouseholdCard__commentHint {
+  display: block;
+  margin-bottom: 32px;
+
+  @include media-down(md) {
+    margin-bottom: 24px;
+  }
+}
+
+.ProfileHouseholdCard__buttonSave {
+  @include media-down(md) {
+    margin-bottom: 16px;
+  }
+}
+
+.ProfileHouseholdCard__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-down(md) {
+    display: block;
+  }
+}
+
+.ProfileHouseholdCard__footerLink {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.ProfileHouseholdCard__updatedDate {
+  color: $text-secondary;
+  font-weight: $font-weight-500;
+}

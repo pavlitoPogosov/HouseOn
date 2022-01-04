@@ -1,0 +1,63 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Finance {
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    color: $text-secondary;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__time {
+    color: $text-primary;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  &__dot {
+    margin: 0 4px;
+    color: $text-tretiary;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $text-success;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &_spaceBetween {
+      justify-content: space-between;
+    }
+
+    &_column {
+      flex-direction: column;
+    }
+  }
+}

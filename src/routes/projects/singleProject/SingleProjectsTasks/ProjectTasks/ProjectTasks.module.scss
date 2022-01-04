@@ -1,0 +1,122 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+/* nav */
+
+.ProjectTasks__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 28px;
+
+  @include media-down(md) {
+    //align-items: flex-start;
+    //flex-direction: column;
+  }
+}
+
+.nav__title {
+  display: flex;
+
+  //@include media-down(md) {
+  //  margin-bottom: 28px;
+  //}
+}
+
+.nav__counter {
+  margin-left: 8px;
+}
+
+.nav__task_button {
+  display: flex;
+  align-items: center;
+  height: min-content;
+  padding: 12px 32px !important;
+  font-size: $font-size-16;
+  font-weight: $font-weight-500;
+
+  @include media-down(md) {
+    width: 40px;
+    height: 40px;
+    padding: 16px !important;
+
+    span {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.nav__task_button_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* section */
+
+.ProjectTasks__section {
+  &:not(:first-child) {
+    margin-top: 44px;
+  }
+}
+
+.ProjectTasks__sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $border-gray-secondary;
+}
+
+.ProjectTasks__sectionContent {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 1720px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (min-width: 1920px) {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 420px));
+  }
+
+  @media screen and (min-width: 1120px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1441px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-up(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-up(lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ProjectTasks__link {
+  @include body_m;
+}
+
+.ProjectTasks__icon {
+  margin-right: 4px;
+}
+
+.ProjectTasks__button {
+  display: flex;
+  align-items: center;
+}

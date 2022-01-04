@@ -1,0 +1,13 @@
+@import 'styles/_tokens.scss';
+
+.AreaTooltip {
+  width: 180px;
+  padding: 12px 18px;
+  color: $text-secondary;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+  box-shadow: $box-shadow-m;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+}

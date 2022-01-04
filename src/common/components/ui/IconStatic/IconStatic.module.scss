@@ -1,0 +1,26 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+$icon-container-size: 32px;
+
+.IconStatic__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $icon-container-size;
+  min-width: $icon-container-size;
+  height: $icon-container-size;
+  min-height: $icon-container-size;
+  transition: background-color $transition-primary;
+  background-color: $background-day-tetriary;
+
+  span {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.icon_circle {
+  overflow: hidden;
+  border-radius: 50%;
+}

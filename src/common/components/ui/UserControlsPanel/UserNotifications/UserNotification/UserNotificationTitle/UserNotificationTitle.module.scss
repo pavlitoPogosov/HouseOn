@@ -1,0 +1,19 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.UserNotificationTitle {
+  width: 100%;
+  max-width: 220px;
+  margin-right: 16px;
+  color: $text-primary;
+
+  @include media-down(xs) {
+    margin-right: 10px;
+  }
+}
+.UserNotificationTitle_green {
+  color: $text-brand;
+}
+.UserNotificationTitle_red {
+  color: $text-error;
+}

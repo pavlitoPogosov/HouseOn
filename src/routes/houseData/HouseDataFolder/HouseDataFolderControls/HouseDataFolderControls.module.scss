@@ -1,0 +1,60 @@
+@import 'styles/_vars.scss';
+
+.HouseDataFolderControls__controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 28px;
+  margin-bottom: 32px;
+
+  @include media-up(md) {
+    margin-top: 44px;
+  }
+}
+
+.HouseDataFolderControls__title {
+  display: flex;
+  align-items: center;
+  order: 3;
+
+  @include media-up(md) {
+    order: 0;
+  }
+}
+
+.HouseDataFolderControls__backIcon {
+  margin-right: 16px;
+}
+
+.HouseDataFolderControls__sortWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include media-up(md) {
+    flex-wrap: nowrap;
+    width: auto;
+  }
+}
+
+.HouseDataFolderControls__sortContainer {
+  order: 1;
+  margin-right: 12px;
+
+  @include media-up(md) {
+    order: 0;
+  }
+}
+
+.HouseDataFolderControls__addBtn {
+  order: 2;
+  width: 100%;
+  margin: 16px 0 18px 0;
+
+  @include media-up(md) {
+    width: auto;
+    margin: 0;
+  }
+}

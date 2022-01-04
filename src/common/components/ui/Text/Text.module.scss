@@ -1,0 +1,67 @@
+@import 'styles/_text.scss';
+
+// variants
+.Text__h1 {
+  @include heading_h1;
+}
+
+.Text__h2 {
+  @include heading_h2;
+}
+
+.Text__h3 {
+  @include heading_h3;
+}
+
+.Text__h4 {
+  @include heading_h4;
+}
+
+.Text__bodyL {
+  @include body_l;
+}
+
+.Text__bodyM {
+  @include body_m;
+}
+
+.Text__captionM {
+  @include caption_m;
+}
+
+.Text__captionR {
+  @include caption_r;
+}
+
+.Text__captionAllCaps {
+  @include caption_all_caps;
+}
+
+.Text__captionAllCapsS {
+  @include caption_all_caps_small;
+}
+
+// Colors
+.Text__secondary {
+  color: $text-secondary;
+}
+
+.Text__tretiary {
+  color: $text-tretiary;
+}
+
+.Text__brand {
+  color: $text-brand;
+}
+
+.Text__orange {
+  color: $brand-orange-default;
+}
+
+.Text__white {
+  color: #fff;
+}
+
+.Text__gray {
+  color: #bbc0d3;
+}

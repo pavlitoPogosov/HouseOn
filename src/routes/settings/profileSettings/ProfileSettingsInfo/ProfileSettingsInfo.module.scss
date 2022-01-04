@@ -1,0 +1,16 @@
+@import 'styles/_vars.scss';
+
+.ProfileSettingsInfo__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 48px;
+
+  @include media-down(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.ProfileSettingsInfo__title {
+  margin-bottom: 24px;
+}

@@ -1,0 +1,84 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Toast__container {
+  position: relative;
+  z-index: $zindex-offcanvas;
+  margin: 0 20px;
+  padding: 20px 80px 20px 16px;
+  pointer-events: auto;
+  border-radius: $border-radius-12;
+  box-shadow: 0 10px 20px rgba(0, 142, 108, 0.18), 0 2px 6px rgba(0, 142, 108, 0.12), 0 0 1px rgba(0, 0, 0, 0.04);
+
+  & + .Toast__container {
+    margin-top: 12px;
+  }
+
+  @include media-up(sm) {
+    max-width: 350px;
+    margin: 0;
+    margin-left: 26px;
+    padding-right: 56px;
+    border-radius: $border-radius-8;
+  }
+
+  @include media-down(sm) {
+    margin: auto;
+  }
+}
+
+// variants
+
+.Toast__success {
+  background-color: $text-brand;
+}
+
+.Toast__error {
+  background-color: darken($text-error, 20%);
+}
+
+.Toast__success,
+.Toast__error {
+  .Toast__title {
+    color: #fff;
+  }
+
+  .Toast__text {
+    color: #fff;
+  }
+
+  .Toast__closeBtn {
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+// cmps
+.Toast__title {
+  margin-bottom: 4px;
+}
+
+.Toast__text {
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-22;
+}
+
+.Toast__closeBtn {
+  @include buttonReset();
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px;
+  cursor: pointer;
+
+  path {
+    fill: #fff;
+  }
+
+  g {
+    opacity: 1;
+  }
+}

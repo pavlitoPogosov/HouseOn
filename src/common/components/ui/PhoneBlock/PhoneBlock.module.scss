@@ -1,0 +1,79 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.PhoneBlock__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 4px 4px 4px 8px;
+
+  transition: all $transition-primary;
+  border: 1px solid transparent;
+
+  border-radius: $border-radius-4;
+
+  &.enableHover {
+    &:hover {
+      box-shadow: $box-shadow-l;
+    }
+  }
+
+  &.active {
+    border-color: $text-brand;
+  }
+}
+
+.PhoneBlock__content {
+  margin-right: 12px;
+}
+
+.PhoneBlock__description {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  span {
+    margin: 0 4px;
+    color: $text-tretiary;
+    line-height: 16px;
+  }
+}
+
+.PhoneBlock__controls {
+  display: flex;
+  align-items: center;
+
+  align-self: flex-start;
+}
+
+.PhoneBlock__icon {
+  color: $text-secondary;
+
+  g {
+    opacity: 1;
+  }
+
+  & + .PhoneBlock__icon {
+    margin-left: 8px;
+  }
+}
+
+.PhoneBlock__tooltip {
+  z-index: 1;
+  padding: 4px 0;
+  border-radius: $border-radius-4;
+  background-color: #fff;
+  box-shadow: $box-shadow-m;
+}
+
+.PhoneBlock__tooltipRow {
+  padding: 4px 16px;
+  color: $text-secondary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+}
+
+.PhoneBlock__phone {
+  @include body_l;
+}

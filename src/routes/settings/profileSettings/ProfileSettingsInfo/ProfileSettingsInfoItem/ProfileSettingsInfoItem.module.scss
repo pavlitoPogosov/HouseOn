@@ -1,0 +1,48 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ProfileSettingsInfoItem__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  & + .ProfileSettingsInfoItem__container {
+    margin-top: 28px;
+  }
+
+  @include media-up(md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.ProfileSettingsInfoItem__label {
+  width: 100%;
+  white-space: nowrap;
+
+  @include media-up(md) {
+    width: 140px;
+  }
+}
+
+.ProfileSettingsInfoItem__value {
+  @include media-up(md) {
+    width: 100%;
+    margin-left: 45px;
+  }
+}
+
+.ProfileSettingsInfoItem__edit {
+  cursor: pointer;
+  white-space: nowrap;
+  color: $text-brand;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+    margin-left: 4px;
+  }
+}
+
+.ProfileSettingsInfoItem__marginLeft {
+  margin-left: 12px;
+}

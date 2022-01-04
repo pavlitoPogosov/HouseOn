@@ -1,0 +1,82 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+.TaskDrawer__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 18px 15px 32px 15px;
+  background-color: $background-common-light;
+
+  @include media-up(sm) {
+    padding: 18px 32px 46px 32px;
+  }
+
+  @include media-up(md) {
+    width: 558px;
+    padding: 16px 24px 40px 20px;
+    background-color: #fff;
+  }
+}
+
+.TaskDrawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TaskDrawer__closeIcon {
+  cursor: pointer;
+  color: $text-primary;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.TaskDrawer__banner {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.TaskDrawer__bannerTitle {
+  max-width: 152px;
+
+  @media screen and (min-width: 375px) {
+    max-width: 172px;
+  }
+
+  @include media-up(sm) {
+    max-width: 304px;
+  }
+}
+
+.TaskDrawer__bannerLink {
+  @include body_m;
+  display: block;
+  margin-top: 16px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.TaskDrawer__bannerText {
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  font-size: $font-size-18;
+
+  @media screen and (min-width: 375px) {
+    font-size: $font-size-20;
+  }
+
+  @include media-up(sm) {
+    font-size: $font-size-24;
+  }
+}
+
+.TaskDrawer__saveBtn {
+  min-height: 32px;
+  margin-right: auto;
+}

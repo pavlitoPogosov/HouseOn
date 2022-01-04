@@ -1,0 +1,64 @@
+@import 'styles/_tokens.scss';
+
+
+.HouseDataBlock__container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  color: #fff;
+  border-radius: $border-radius-12;
+  background-color: #2e8973;
+
+  &:hover {
+    box-shadow: $box-shadow-xl;
+
+    .HouseDataBlock__circle1 {
+      top: 64px;
+      left: 35px;
+    }
+
+    .HouseDataBlock__circle2 {
+      top: 21px;
+      left: 119px;
+    }
+
+    .HouseDataBlock__circle3 {
+      top: 59px;
+      left: 157px;
+    }
+  }
+}
+
+.HouseDataBlock__circle {
+  position: absolute;
+  transition: top $transition-primary, left $transition-primary;
+  border-radius: 50%;
+  background-color: #2b7f6b;
+}
+
+.HouseDataBlock__circle1 {
+  @extend .HouseDataBlock__circle;
+  top: -16px;
+  left: -15px;
+  width: 88px;
+  height: 88px;
+}
+
+.HouseDataBlock__circle2 {
+  @extend .HouseDataBlock__circle;
+  top: -20px;
+
+  left: 72px;
+  width: 32px;
+  height: 32px;
+}
+
+.HouseDataBlock__circle3 {
+  @extend .HouseDataBlock__circle;
+  top: 92px;
+
+  left: 157px;
+  width: 48px;
+  height: 48px;
+}

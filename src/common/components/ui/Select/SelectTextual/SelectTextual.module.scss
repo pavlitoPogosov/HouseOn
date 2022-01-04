@@ -1,0 +1,44 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.SelectTextual__container {
+  position: relative;
+
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+.SelectTextual__selected {
+  @include body_m;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+
+.SelectTextual__prefix {
+  color: $text-tretiary;
+}
+
+.SelectTextual__value {
+  display: flex;
+  align-items: center;
+  color: $text-secondary;
+}
+
+.SelectTextual__icon {
+  transition: transform $transition-primary;
+
+  &.rotate {
+    transform: rotate(-180deg);
+  }
+}
+
+.SelectTextual__dropdown {
+  right: 0;
+  left: 0;
+  width: 220px;
+  max-height: 420px;
+}

@@ -1,0 +1,11 @@
+.halfInputContainer {
+  display: flex;
+}
+
+.halfInput {
+  width: 50%;
+
+  &:first-of-type {
+    margin-right: 12px;
+  }
+}

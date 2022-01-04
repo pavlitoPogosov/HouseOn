@@ -1,0 +1,26 @@
+@import 'styles/_vars.scss';
+
+.SupportPageForm__formGroup {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+  }
+}
+
+.SupportPageForm__formInput {
+  width: 100%;
+
+  @include media-up(sm) {
+    width: 50%;
+
+    &:first-of-type {
+      margin-right: 24px;
+    }
+  }
+}
+
+.SupportPageForm__textarea {
+  height: 134px;
+}

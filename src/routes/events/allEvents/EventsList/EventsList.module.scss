@@ -1,0 +1,79 @@
+@import 'styles/_vars.scss';
+
+.EventsList__title_wrappper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+
+  @include media-down(sm) {
+    margin-bottom: 20px;
+  }
+}
+
+.EventsList__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-left: 8px;
+  color: $text-secondary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: 50px;
+}
+
+.EventsList__block {
+  display: block;
+  margin-bottom: 52px;
+}
+
+.EventsList__blockTitle {
+  width: 100%;
+  margin-bottom: 24px;
+  padding-bottom: 4px;
+  color: $text-secondary;
+  border-bottom: 1px solid $border-gray-secondary;
+}
+
+.EventsList__eventsContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+
+  @include media-up(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-up(xl) {
+    grid-template-columns: repeat(3, minmax(300px, 480px));
+  }
+}
+
+.EventsList__createEventContainer {
+  @extend .EventsList__eventsContainer;
+
+  @include media-up(md) {
+    margin-bottom: 52px;
+  }
+}
+
+.EventsList__blockTitleLoader {
+  margin-bottom: 28px;
+  border-radius: 4px;
+}
+
+.EventsList__eventLoader {
+  border-radius: 4px;
+}
+
+.EventsList__showMore {
+  width: 100%;
+
+  @include media-up(md) {
+    display: flex;
+    width: auto;
+    min-width: 182px;
+    margin: 0 auto;
+  }
+}

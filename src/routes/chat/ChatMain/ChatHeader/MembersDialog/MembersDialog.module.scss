@@ -1,0 +1,27 @@
+@import 'styles/_vars.scss';
+
+.MembersDialog__card {
+  & + .MembersDialog__card {
+    margin-top: 8px;
+  }
+}
+
+.MembersDialog__cardsContainer {
+  @include scrollbar;
+  overflow: auto;
+  max-height: 400px;
+  margin: 0 -14px;
+  padding: 0 14px 40px 14px;
+
+  @include media-up(sm) {
+    margin: 0 -24px;
+    padding: 0 24px 40px 24px;
+  }
+}
+
+.MembersDialog__children {
+  padding: 24px;
+}
+
+.MembersDialog__headerBtn {
+}

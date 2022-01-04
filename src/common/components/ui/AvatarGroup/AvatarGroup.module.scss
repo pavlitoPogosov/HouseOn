@@ -1,0 +1,14 @@
+.AvatarGroup__container {
+  display: flex;
+  align-items: center;
+
+  padding-left: 4px;
+}
+
+.AvatarGroup__imgWrapper {
+  margin-left: -4px;
+}
+
+.AvatarGroup__img {
+  box-shadow: rgb(255 255 255) 0 0 0 2px;
+}

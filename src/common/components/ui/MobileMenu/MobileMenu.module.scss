@@ -1,0 +1,23 @@
+@import 'styles/_tokens.scss';
+
+.MobileMenu__container {
+  background-color: transparent;
+
+  &.mobileDrawer {
+    z-index: $zindex-tooltip;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    g {
+      opacity: 1;
+    }
+  }
+}
+
+.MobileMenu__icon {
+  color: $text-secondary;
+  border: none;
+}

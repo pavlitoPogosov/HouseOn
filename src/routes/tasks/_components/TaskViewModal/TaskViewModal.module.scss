@@ -1,0 +1,85 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.TaskViewModal {
+  &__modal {
+    padding: 0;
+  }
+
+  &__body {
+    padding: 24px 0 0;
+  }
+
+  &__block {
+    margin-bottom: 40px;
+    padding: 0 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_gray {
+      background: $background-common-light;
+    }
+
+    &_pt {
+      padding-top: 16px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__icon {
+    margin-right: 6px;
+  }
+
+  &__status {
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    color: #bbc0d3;
+  }
+
+  &__highlight {
+    margin-right: 4px;
+    color: #008e6c;
+  }
+
+  &__small_title {
+    margin-bottom: 8px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+
+    &_avatar {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+
+  &__project {
+    display: flex;
+    align-items: center;
+  }
+
+  &__accordion {
+    &_gray {
+      background: #f7f9fb;
+    }
+  }
+
+  &__folderCard {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}

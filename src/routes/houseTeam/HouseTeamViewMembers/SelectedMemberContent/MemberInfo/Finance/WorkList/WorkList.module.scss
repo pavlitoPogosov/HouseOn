@@ -1,0 +1,59 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.WorkList {
+  &__item {
+    position: relative;
+    display: flex;
+
+    &:not(&:last-child) {
+      margin-bottom: 16px;
+
+      &::before {
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        bottom: 0;
+        left: 6px;
+        width: 1px;
+        height: 100%;
+        content: '';
+        border: 1px dashed rgba(187, 192, 211, 0.5);
+      }
+    }
+  }
+
+  &__iconWrapper {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    min-width: 14px;
+    height: 14px;
+    margin-top: 5px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: rgba($brand-primary-default, 0.1);
+  }
+
+  &__icon {
+    z-index: 2;
+    min-width: 6px;
+    height: 6px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: $brand-primary-default;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    color: $text-secondary;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__time {
+    color: $text-primary;
+    font-weight: 600;
+  }
+}

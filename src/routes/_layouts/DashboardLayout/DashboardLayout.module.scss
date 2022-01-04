@@ -1,0 +1,42 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.DashboardLayout__wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: $background-common-light;
+}
+
+.DashboardLayout__content {
+  flex-grow: 1;
+  padding-bottom: 30px;
+
+  @include media-up(md) {
+    padding-right: 20px;
+    padding-bottom: 62px;
+    padding-left: 20px;
+  }
+}
+
+.DashboardLayout__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 44px;
+  padding: 0 15px;
+
+  @include media-up(md) {
+    padding: 0 12px;
+  }
+}
+
+.DashboardLayout__searchWrapper {
+  display: flex;
+}
+
+.DashboardLayout__search {
+  width: 100%;
+  max-width: 204px;
+  margin-right: 10px;
+}

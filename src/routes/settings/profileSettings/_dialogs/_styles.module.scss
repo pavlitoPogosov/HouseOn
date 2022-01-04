@@ -1,0 +1,37 @@
+@import 'styles/_tokens.scss';
+
+.ProfileSettingsDialog__textCenter {
+  width: 100%;
+  text-align: center;
+}
+
+.ProfileSettingsDialog__inputContainer {
+  margin-bottom: 22px;
+}
+
+.ProfileSettingsDialog__text {
+  margin-bottom: 22px;
+}
+
+.ProfileSettingsDialog__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.ProfileSettingsDialog__singleBtn {
+  margin-left: auto;
+}
+
+.ProfileSettingsDialog__link {
+  font-size: $font-size-12;
+  line-height: 100%;
+}
+
+.ProfileSettingsDialog__codeInput {
+  margin: 20px 0;
+}
+
+.ProfileSettingsDialog__marginBottom {
+  margin-bottom: 12px;
+}

@@ -1,0 +1,88 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.AdminsOrGuestsSelect__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.AdminsOrGuestsSelect__searchInput {
+  width: 100%;
+  margin-bottom: 16px;
+
+  @include media-up(sm) {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.AdminsOrGuestsSelect__tabsContainer {
+  order: 1;
+  background-color: $surface-secondary !important;
+
+  @include media-up(sm) {
+    order: 0;
+  }
+}
+
+.AdminsOrGuestsSelect__content {
+  @include scrollbar;
+  overflow-y: auto;
+  min-height: 400px;
+  max-height: 400px;
+
+  margin: 0 -14px;
+  padding: 0 14px 40px 14px;
+
+  @include media-up(sm) {
+    margin: 0 -24px;
+    padding: 18px 24px 18px 24px;
+  }
+}
+
+.AdminsOrGuestsSelect__wrapper {
+  position: relative;
+}
+
+.AdminsOrGuestsSelect__background {
+  position: absolute;
+  z-index: 1;
+  top: calc(100% - 35px);
+  right: 0;
+  left: 0;
+  height: 35px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f0f5f9 100%);
+}
+
+.AdminsOrGuestsSelect__memberCard {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: border-color $transition-primary;
+  border: 1px solid transparent;
+  border-radius: $border-radius-8;
+  box-shadow: $box-shadow-l;
+
+  & + .AdminsOrGuestsSelect__memberCard {
+    margin-top: 8px;
+  }
+
+  &.active {
+    border-color: $brand-primary-default;
+  }
+}
+
+.AdminsOrGuestsSelect__memberAvatar {
+  margin-right: 12px;
+}

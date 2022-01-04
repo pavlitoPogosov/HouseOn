@@ -1,0 +1,22 @@
+@import 'styles/_tokens.scss';
+
+.SafetyTooltip__content {
+  padding-top: 16px;
+}
+
+.SafetyTooltip__item {
+  padding: 24px 0;
+  border-bottom: 1px solid $border-gray;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  @media (max-height: $sm) and (max-width: $sm) {
+    padding: 16px 0;
+  }
+}
+
+.SafetyTooltip__href {
+  margin-top: 8px;
+}

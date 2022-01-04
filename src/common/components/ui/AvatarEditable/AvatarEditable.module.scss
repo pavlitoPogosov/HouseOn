@@ -1,0 +1,74 @@
+@import 'styles/_tokens.scss';
+
+.Avatar__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  &.edit {
+    cursor: pointer;
+    border: 3px solid $brand-primary-default;
+  }
+}
+
+.Avatar__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.Avatar__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  border-radius: 50%;
+  background: $surface-secondary;
+}
+
+.Avatar__placeholder {
+  color: $brand-primary-default;
+  background: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+  }
+}
+
+.Avatar__editWrapper {
+  position: absolute;
+  z-index: 1;
+  right: -2px;
+  bottom: -2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Avatar__editIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  border: 2px solid #0b8164;
+  border-radius: 50%;
+  background-color: $brand-primary-default;
+  box-shadow: $box-shadow-m;
+}
+
+.Avatar__editInput {
+  width: 0;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  border: none;
+}

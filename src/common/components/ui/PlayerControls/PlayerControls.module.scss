@@ -1,0 +1,59 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.PlayerControls__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.PlayerControls__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.PlayerControls__button_play_pause {
+  color: white;
+  background: transparent !important;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+}
+
+.PlayerControls__range_container {
+  display: flex;
+  width: 100%;
+}
+
+.PlayerControls__range {
+  width: 100%;
+  height: 4px;
+  margin: 16px 0;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-appearance: none !important;
+
+  &::-webkit-slider-thumb {
+    height: 6px;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none !important;
+  }
+
+  &::-moz-range-progress {
+    background: white;
+  }
+}
+
+.PlayerControls__range_labels_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+@import 'styles/_tokens.scss';
+
+.Datepicker__container {
+  position: fixed;
+  z-index: $zindex-modal;
+  top: 0;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 284px;
+  padding-bottom: 24px;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+  box-shadow: $box-shadow-xl;
+}

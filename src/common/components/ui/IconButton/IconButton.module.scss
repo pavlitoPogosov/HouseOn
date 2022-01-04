@@ -1,0 +1,34 @@
+@import 'styles/_tokens.scss';
+
+.IconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all $transition-primary;
+
+  white-space: nowrap;
+  color: $text-primary;
+
+  border: none;
+  border-radius: $border-radius-4;
+
+  background-color: #fff;
+
+  &:hover {
+    color: $text-primary;
+    background-color: $surface-secondary;
+  }
+}
+
+.IconButton_selected {
+  color: #fff;
+  background-color: $brand-primary-default;
+
+  &:hover {
+    color: #fff;
+    background-color: $brand-primary-default;
+  }
+}

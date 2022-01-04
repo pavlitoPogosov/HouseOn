@@ -1,0 +1,57 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+$margin-24: 24px;
+
+/* title */
+
+.DashboardPage__title {
+  margin-bottom: 46px;
+  padding: 0 15px;
+
+  @include media-up(md) {
+    padding: 0 12px;
+  }
+}
+
+/* container */
+
+.DashboardPage__widgets_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widgets_container__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* content */
+
+.widgets_container__block,
+.block__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block__item {
+  padding: 12px;
+}
+
+/* width */
+
+.width_100 {
+  width: 100%;
+}
+
+.width_33 {
+  width: calc(100% / 3);
+}
+
+.width_50 {
+  width: 50%;
+}
+
+.width_66 {
+  width: calc(100% / 3 * 2);
+}

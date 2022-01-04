@@ -1,0 +1,14 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ChatMain__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ChatMain__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

@@ -1,0 +1,51 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Finances__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Finances__block {
+  width: 100%;
+
+  & + .Finances__block {
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 360px) {
+    flex-grow: 1;
+    width: auto;
+
+    & + .Finances__block {
+      margin-top: 0;
+    }
+
+    &:first-of-type {
+      margin-right: 12px;
+    }
+
+    &:last-of-type {
+      width: 100%;
+      margin-top: 12px;
+    }
+  }
+
+  @include media-up(xl) {
+    width: 100%;
+
+    &:first-of-type {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+
+  @include media-up(xxl) {
+    width: auto;
+
+    &:first-of-type {
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+  }
+}

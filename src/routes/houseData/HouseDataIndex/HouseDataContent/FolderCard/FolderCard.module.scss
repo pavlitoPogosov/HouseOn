@@ -1,0 +1,45 @@
+@import 'styles/_tokens.scss';
+
+.FolderCard__container {
+  display: flex;
+  padding: 16px;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  border-radius: 12px;
+  background-color: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.FolderCard__iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  color: #5b8dee;
+  border-radius: 8px;
+  background-color: #e8f0ff;
+}
+
+.FolderCard__content {
+  flex-grow: 1;
+}
+
+.FolderCard__title {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.FolderCard__filesCount {
+  display: flex;
+  align-items: center;
+  margin-left: -3px;
+
+  svg {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,12 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.CenteredContainer {
+  margin-top: 38px;
+
+  @include media-up(md) {
+    @media screen and (min-height: $sm) {
+      margin-top: auto;
+    }
+  }
+}

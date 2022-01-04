@@ -1,0 +1,90 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+.TaskModalContent__wrapper {
+}
+
+.TaskModal__children_wrapper {
+  max-width: 864px !important;
+  padding: 0 !important;
+}
+
+.TaskModal__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 18px 15px 32px 15px;
+  background-color: $background-common-light;
+
+  @include media-up(sm) {
+    padding: 18px 32px 46px 32px;
+  }
+
+  @include media-up(md) {
+    width: 558px;
+    padding: 16px 24px 40px 20px;
+    background-color: #fff;
+  }
+}
+
+.TaskModal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TaskModal__closeIcon {
+  cursor: pointer;
+  color: $text-primary;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.TaskModal__banner {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.TaskModal__bannerTitle {
+  max-width: 152px;
+
+  @media screen and (min-width: 375px) {
+    max-width: 172px;
+  }
+
+  @include media-up(sm) {
+    max-width: 304px;
+  }
+}
+
+.TaskModal__bannerLink {
+  @include body_m;
+  display: block;
+  margin-top: 16px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.TaskModal__bannerText {
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  font-size: $font-size-18;
+
+  @media screen and (min-width: 375px) {
+    font-size: $font-size-20;
+  }
+
+  @include media-up(sm) {
+    font-size: $font-size-24;
+  }
+}
+
+.TaskModal__saveBtn {
+  min-height: 32px;
+  margin-right: auto;
+}

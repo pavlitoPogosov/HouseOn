@@ -1,0 +1,80 @@
+@import './tokens';
+
+$font-family-default: system-ui, /* macOS 10.11-10.12 */ -apple-system, /* Windows 6+ */ 'Segoe UI',
+  /* Android 4+ */ 'Roboto', /* Ubuntu 10.10+ */ 'Ubuntu', /* Gnome 3+ */ 'Cantarell', /* KDE Plasma 5+ */ 'Noto Sans',
+  /* fallback */ sans-serif, /* macOS emoji */ 'Apple Color Emoji', /* Windows emoji */ 'Segoe UI Emoji',
+  /* Windows emoji */ 'Segoe UI Symbol', /* Linux emoji */ 'Noto Color Emoji';
+
+@mixin heading_h1 {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-32;
+  font-weight: $font-weight-700;
+  line-height: $line-height-40;
+}
+
+@mixin heading_h2 {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-24;
+  font-weight: $font-weight-700;
+  line-height: $line-height-32;
+}
+
+@mixin heading_h3 {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-18;
+  font-weight: $font-weight-700;
+  line-height: $line-height-24;
+}
+
+@mixin heading_h4 {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-16;
+  font-weight: $font-weight-700;
+  line-height: $line-height-24;
+}
+
+@mixin body_l {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+}
+
+@mixin body_m {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+  line-height: $line-height-20;
+}
+
+@mixin caption_m {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+@mixin caption_r {
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-12;
+  font-weight: $font-weight-400;
+  line-height: $line-height-16;
+}
+
+@mixin caption_all_caps {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+}
+
+@mixin caption_all_caps_small {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: $font-family-main, $font-family-default;
+  font-size: $font-size-10;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+}

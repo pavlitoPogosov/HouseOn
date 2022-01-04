@@ -1,0 +1,107 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+/* container */
+
+.CircleProgressWithMessage__container {
+  display: inline-flex;
+  align-items: center;
+
+  @include media-down(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* progress */
+
+.CircleProgressWithMessage__progress {
+  transition: stroke-dashoffset 1s ease-in-out;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  @include media-down(md) {
+    margin-bottom: 24px;
+  }
+}
+
+.CircleProgressWithMessage__big_green_light,
+.CircleProgressWithMessage__big_yellow_light,
+.CircleProgressWithMessage__big_red_light {
+  svg {
+    border-radius: 50%;
+    background: rgba(205, 211, 221, 0.3);
+    box-shadow: inset 0 4px 8px rgba(white, 0.2), inset 0 5px 10px rgba(white, 0.2);
+    backdrop-filter: blur(39.82px); /* Note: backdrop-filter has minimal browser support */
+  }
+
+  .CircleProgressWithMessage__background {
+    stroke: transparent;
+  }
+
+  .CircleProgressWithMessage__progress {
+  }
+
+  .CircleProgressWithMessage__progress_shadow {
+    color: transparent;
+    stroke: rgba(black, 0.75);
+  }
+
+  .CircleProgressWithMessage__text {
+    color: white;
+  }
+}
+
+.CircleProgressWithMessage__big_green_light {
+  .CircleProgressWithMessage__progress {
+    stroke: $progress-green-light;
+  }
+}
+
+.CircleProgressWithMessage__big_yellow_light {
+  .CircleProgressWithMessage__progress {
+    stroke: $progress-yellow-light;
+  }
+
+  .CircleProgressWithMessage__progress_shadow {
+    stroke: rgba(black, 0.2);
+  }
+}
+
+.CircleProgressWithMessage__big_red_light {
+  .CircleProgressWithMessage__progress {
+    stroke: $progress-red-light;
+  }
+
+  .CircleProgressWithMessage__progress_shadow {
+    stroke: rgba(black, 0.5);
+  }
+}
+
+.CircleProgressWithMessage__background,
+.CircleProgressWithMessage__progress {
+  fill: none;
+}
+
+/* text */
+
+.CircleProgressWithMessage__text {
+  font-size: $font-size-32;
+  font-weight: $font-weight-700;
+  line-height: $line-height-12;
+}
+
+.CircleProgressWithMessage__message_container {
+  max-width: 116px;
+  margin-left: 20px;
+
+  @include media-down(md) {
+    max-width: 100%;
+  }
+}
+
+.CircleProgressWithMessage__message {
+  @include media-down(md) {
+    text-align: center;
+  }
+}

@@ -1,0 +1,55 @@
+@import 'styles/_tokens.scss';
+
+.UsualMap__container {
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  border-radius: $border-radius-12;
+
+  div:global(.gmnoprint), div:global(.gm-style-cc) {
+    display: none !important;
+  }
+}
+
+.UsualMap__map {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.UsualMap__zoomIcon {
+  position: absolute;
+  z-index: 1;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+
+  @media screen and (min-width: 375px) {
+    right: 16px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.UsualMap__zoomIn {
+  @extend .UsualMap__zoomIcon;
+  top: 16px;
+}
+
+.UsualMap__zoomOut {
+  @extend .UsualMap__zoomIcon;
+  top: 56px;
+}
+
+.UsualMap__location {
+  @extend .UsualMap__zoomIcon;
+  bottom: 16px;
+}

@@ -1,0 +1,88 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+/* container */
+
+.GuestsWidget__container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 16px;
+  background: $background-day-tetriary;
+}
+
+/* content */
+
+.GuestsWidget__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px 0;
+}
+
+/* header */
+
+.content__header_container {
+  padding: 0 24px;
+}
+
+.content__header_content {
+}
+
+.header__icon {
+  background-color: white;
+}
+
+/* list */
+
+.content__list_wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+
+  @include media-down(lg) {
+    > div {
+      min-height: 200px !important;
+
+      > div {
+        display: flex;
+        flex-direction: column !important;
+      }
+    }
+  }
+
+  @include media-down(sm) {
+    > div {
+      min-height: 400px !important;
+
+      > div {
+        display: flex;
+        flex-direction: column !important;
+      }
+    }
+  }
+}
+
+.content__list_container {
+  display: flex;
+  flex-direction: column !important;
+  width: 100%;
+  height: max-content;
+  padding: 0 24px;
+}
+
+.content__list_item {
+  display: flex;
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: 8px;
+  }
+}
+
+.list_item__date {
+  font-weight: $font-weight-600;
+}

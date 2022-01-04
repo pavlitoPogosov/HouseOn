@@ -1,0 +1,32 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Banner__container {
+  position: relative;
+  padding: 18px 24px;
+  border-radius: $border-radius-12;
+
+  &.primary {
+    background-color: $accent-blue-fourthy;
+  }
+
+  &.secondary {
+    background-color: #fff;
+  }
+}
+
+.Banner__closeIcon {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Banner__title {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,16 @@
+@import 'styles/_tokens.scss';
+
+.AccountsView__searchInput {
+  margin-bottom: 16px;
+}
+
+.AccountsView__cardMargin {
+  margin-top: 8px;
+}
+
+.AccountsView__title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $border-gray-secondary;
+}

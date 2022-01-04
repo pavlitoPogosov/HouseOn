@@ -1,0 +1,85 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ProjectSettingsDialog__container {
+  max-width: 864px !important;
+
+  &.collapse {
+    max-width: 0 !important;
+  }
+}
+
+.ProjectSettingsDialog__children {
+  padding: 24px 40px 40px 40px;
+
+  @include media-down(md) {
+    padding: 24px;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.ProjectSettingsDialog__header {
+  display: flex;
+  align-items: center;
+  box-shadow: $box-shadow-m;
+}
+
+.ProjectSettingsDialog__header_icon {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  margin-right: 8px;
+  background-color: transparent;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    color: $text-tretiary;
+  }
+}
+
+.ProjectSettingsDialog__title {
+  color: $text-secondary;
+}
+
+.ProjectSettingsDialog__footer {
+  box-shadow: $box-shadow-m;
+
+  @include media-down(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ProjectSettingsDialog__btn_cancel,
+.ProjectSettingsDialog__btn_save {
+  padding: 12px 24px !important;
+  font-size: $font-size-16;
+
+  @include media-down(md) {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+.ProjectSettingsDialog__btn_cancel {
+  @include media-down(md) {
+    order: 2;
+    margin-top: 16px;
+  }
+}
+
+.ProjectSettingsDialog__btn_save {
+  @include media-down(md) {
+    order: 1;
+  }
+}
+
+.ProjectSettingsDialog__TeamSelectDialog_blackout {
+  z-index: $zindex-popover;
+}

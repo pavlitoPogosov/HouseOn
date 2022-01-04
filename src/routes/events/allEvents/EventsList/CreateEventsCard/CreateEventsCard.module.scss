@@ -1,0 +1,48 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.CreateEventsCard__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 110px;
+  margin-bottom: 24px;
+  padding: 16px;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  border: 1px solid $text-tretiary;
+  border-style: dashed;
+  border-radius: 12px;
+
+  &:hover {
+    box-shadow: inset 0 0 12px rgba(177, 185, 198, .16);
+  }
+  
+  &:active {
+    box-shadow: inset 0 0 12px rgba(177, 185, 198, .55)
+  }
+
+  @include media-up(md) {
+    height: 272px;
+    margin-bottom: 0;
+  }
+}
+
+.CreateEventsCard__iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+  color: $accent-orange-primary;
+  border-radius: 50px;
+  background: $brand-orange-secondary;
+}
+
+.CreateEventsCard__plusIcon {
+  width: 20px;
+  height: 20px;
+}

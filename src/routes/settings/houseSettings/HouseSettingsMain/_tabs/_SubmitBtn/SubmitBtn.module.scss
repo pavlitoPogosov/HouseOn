@@ -1,0 +1,9 @@
+.SubmitBtn {
+  min-width: 112px;
+  margin-top: 50px;
+}
+
+.SubmitBtn__skeleton {
+  @extend .SubmitBtn;
+  display: block;
+}

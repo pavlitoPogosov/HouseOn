@@ -1,0 +1,49 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+.EventsControls__container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 28px;
+
+  @include media-down(sm) {
+    display: block;
+  }
+}
+
+.EventsControls__switcher {
+  margin-right: 24px;
+}
+
+.EventsControls__actions {
+  display: flex;
+
+  @include media-down(sm) {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.EventsControls__dateSort {
+  @include caption_m;
+
+  display: flex;
+  align-items: center;
+  width: 128px;
+  padding: 8px 12px 8px 16px;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  color: $text-secondary;
+  border-radius: 8px;
+  background: $surface-tretiary;
+
+  &.active {
+    background-color: $surface-secondary;
+  }
+}
+
+.EventsControls__dateSortIcon {
+  margin-left: 8px;
+}

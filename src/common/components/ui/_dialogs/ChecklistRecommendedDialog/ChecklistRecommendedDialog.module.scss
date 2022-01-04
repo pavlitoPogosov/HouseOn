@@ -1,0 +1,28 @@
+@import 'styles/_tokens.scss';
+
+.ChecklistRecommendedDialog__blackout {
+  z-index: $zindex-modal;
+}
+
+.ChecklistRecommendedDialog__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  padding-bottom: 24px;
+}
+
+.ChecklistRecommendedDialog__option {
+  & + .ChecklistRecommendedDialog__option {
+    margin-top: 8px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+
+.ChecklistRecommendedDialog__btn {
+  margin-top: auto;
+  margin-left: auto;
+}

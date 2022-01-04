@@ -1,0 +1,102 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.HouseTeamDesktop__container {
+  margin-top: 24px;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+}
+
+.HouseTeamDesktop__header {
+  display: flex;
+  border-bottom: 1px solid $border-gray-secondary;
+}
+
+.HouseTeamDesktop__headerCell {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  padding: 12px 10px;
+  white-space: nowrap;
+  color: $text-secondary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  & + .HouseTeamDesktop__headerCell {
+    border-left: 1px solid $border-gray-secondary;
+  }
+
+  &:first-of-type {
+    min-width: 142px;
+
+    @include media-up(xxl) {
+      min-width: 20%;
+    }
+  }
+}
+
+.HouseTeamDesktop__headerDot {
+  margin: 0 4px;
+  color: $text-tretiary;
+}
+
+.HouseTeamDesktop__date {
+  color: $text-tretiary;
+  font-weight: normal;
+}
+
+//
+.HouseTeamDesktop__rowContainer {
+  display: flex;
+  align-items: center;
+  height: 64px;
+
+  & + .HouseTeamDesktop__rowContainer {
+    border-top: 1px solid $border-gray-secondary;
+  }
+}
+
+.HouseTeamDesktop__rowCell {
+  display: flex;
+  align-self: center;
+  flex-basis: 100%;
+  justify-content: center;
+  height: 100%;
+  padding: 12px 10px;
+
+  & + .HouseTeamDesktop__rowCell {
+    border-left: 1px solid $border-gray-secondary;
+  }
+
+  &:first-of-type {
+    justify-content: flex-start;
+    min-width: 142px;
+
+    @include media-up(xxl) {
+      min-width: 20%;
+    }
+  }
+}
+
+.HouseTeamDesktop__rowEmployeeImg {
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.HouseTeamDesktop__rowEmployeeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.HouseTeamDesktop__rowEmployeeTitle {
+  margin-bottom: 4px;
+}
+
+.HouseTeamDesktop__rowEmployeeJob {
+  color: $text-secondary;
+}

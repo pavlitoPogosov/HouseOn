@@ -1,0 +1,27 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.AddCommentsBlock__controlsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AddCommentsBlock__comment {
+  margin-bottom: 16px;
+}
+
+.AddCommentsBlock__fileLink {
+  @include body_m;
+  cursor: pointer;
+  color: $text-brand;
+
+  input {
+    display: none;
+  }
+
+  svg {
+    margin-top: -4px;
+    margin-right: 4px;
+  }
+}

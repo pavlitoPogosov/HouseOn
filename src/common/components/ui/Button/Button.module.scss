@@ -1,0 +1,413 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Button {
+  @include buttonReset();
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color $transition-primary, color $transition-primary, box-shadow $transition-primary,
+  border-color $transition-primary;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: $font-weight-600;
+
+  &:focus {
+    box-shadow: 0 0 0 3px $accent-blue-secondary;
+  }
+}
+
+// colors
+.Button__green {
+  &.Button__primary {
+    color: #fff;
+    border-color: $brand-primary-default;
+    background-color: $brand-primary-default;
+
+    &:hover,
+    &:focus {
+      border-color: $brand-primary-hover;
+      background-color: $brand-primary-hover;
+    }
+
+    &:active {
+      border-color: $brand-primary-pressed;
+      background-color: $brand-primary-pressed;
+    }
+
+    &.Button__disabled {
+      border-color: $brand-primary-disabled;
+      background-color: $brand-primary-disabled;
+    }
+  }
+
+  &.Button__secondary {
+    color: $text-brand;
+    border-color: $brand-secondary-default;
+    background-color: $brand-secondary-default;
+
+    &:hover,
+    &:focus {
+      border-color: $brand-secondary-hover;
+      background-color: $brand-secondary-hover;
+    }
+
+    &:active {
+      border-color: $brand-secondary-pressed;
+      background-color: $brand-secondary-pressed;
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+      color: $text-secondary;
+      border-color: $border-gray-secondary;
+      background-color: #fff;
+    }
+  }
+}
+
+.Button__grey {
+  &.Button__primary {
+    color: $text-secondary;
+    border-color: $brand-grey-default;
+    background-color: $brand-grey-default;
+
+    &:hover,
+    &:focus {
+      border-color: $brand-grey-hover;
+      background-color: $brand-grey-hover;
+    }
+
+    &:active {
+      border-color: $brand-grey-pressed;
+      background-color: $brand-grey-pressed;
+    }
+
+    &.Button__disabled {
+      border-color: $brand-grey-disabled;
+      background-color: $brand-grey-disabled;
+    }
+  }
+}
+
+.Button__orange {
+  &.Button__primary {
+    color: #fff;
+    border-color: $brand-orange-default;
+    background-color: $brand-orange-default;
+
+    &:hover,
+    &:focus {
+      border-color: $brand-orange-hover;
+      background-color: $brand-orange-hover;
+    }
+
+    &:active {
+      border-color: $brand-orange-pressed;
+      background-color: $brand-orange-pressed;
+    }
+
+    &.Button__disabled {
+      border-color: $brand-orange-disabled;
+      background-color: $brand-orange-disabled;
+    }
+  }
+
+  &.Button__secondary {
+    color: $brand-orange-default;
+    border-color: $brand-orange-secondary;
+    background-color: $brand-orange-secondary;
+
+    &:active {
+      border-color: $brand-orange-secondary-pressed;
+      background-color: $brand-orange-secondary-pressed;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: darken($brand-orange-secondary, 2%);
+      background-color: darken($brand-orange-secondary, 2%);
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+      color: $text-secondary;
+      border-color: $border-gray-secondary;
+      background-color: #fff;
+    }
+  }
+}
+
+.Button__blue {
+  &.Button__primary {
+    color: #fff;
+    border-color: $accent-blue-primary;
+    background-color: $accent-blue-primary;
+
+    &:hover,
+    &:focus {
+      border-color: darken($accent-blue-primary, 2%);
+      background-color: darken($accent-blue-primary, 2%);
+    }
+
+    &:active {
+      border-color: darken($accent-blue-primary, 6%);
+      background-color: darken($accent-blue-primary, 6%);
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+    }
+  }
+}
+
+.Button__black {
+  &.Button__primary {
+    color: #fff;
+    border-color: lighten(#000, 18%);
+    background-color: lighten(#000, 18%);
+
+    &:hover,
+    &:focus {
+      border-color: lighten(#000, 14%);
+      background-color: lighten(#000, 14%);
+    }
+
+    &:active {
+      border-color: #000;
+      background-color: #000;
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+    }
+  }
+}
+
+.Button__transparentOutlined {
+  &.Button__primary {
+    color: $text-primary;
+    border-color: $border-gray-secondary;
+    background-color: #fff;
+
+    &:hover,
+    &:focus {
+      border-color: darken($border-gray-secondary, 3%);
+      background-color: darken(#fff, 3%);
+    }
+
+    &:active {
+      border-color: darken($border-gray-secondary, 6%);
+      background-color: darken(#fff, 6%);
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+    }
+  }
+}
+
+.Button__whiteBlue {
+  &.Button__primary {
+    color: $accent-blue-fourthy;
+    border-color: #fff;
+    background-color: #fff;
+
+    &:hover,
+    &:focus {
+      border-color: darken(#fff, 3%);
+      background-color: darken(#fff, 3%);
+    }
+
+    &:active {
+      border-color: darken(#fff, 6%);
+      background-color: darken(#fff, 6%);
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+    }
+  }
+}
+
+.Button__gray {
+  &.Button__primary {
+    color: #646a8c;
+    border-color: #eaecf2;
+    background-color: #eaecf2;
+
+    &:hover,
+    &:focus {
+      border-color: darken(#fff, 3%);
+      background-color: darken(#fff, 3%);
+    }
+
+    &:active {
+      border-color: darken(#fff, 6%);
+      background-color: darken(#fff, 6%);
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+    }
+  }
+}
+
+.Button__transparent_with_circle {
+  &.Button__secondary {
+    width: max-content;
+    height: auto;
+    padding: 0;
+    cursor: pointer;
+    color: $text-tretiary;
+    border: none;
+    background-color: transparent;
+    font-weight: $font-weight-600;
+
+    .Button__leftIcon > div {
+      pointer-events: none;
+      color: $text-secondary;
+      background-color: $brand-grey-default;
+    }
+
+    &:hover,
+    &:focus {
+      color: $text-secondary;
+
+      .Button__leftIcon > div {
+        background-color: $brand-grey-hover;
+      }
+    }
+
+    &:active {
+      color: $text-primary;
+
+      .Button__leftIcon > div {
+        background-color: $brand-grey-pressed;
+      }
+    }
+
+    &.Button__disabled {
+      opacity: 0.4;
+    }
+  }
+}
+
+// disabled
+.Button__disabled {
+  cursor: auto;
+  pointer-events: none;
+}
+
+// sizes
+
+.Button__s {
+  height: 32px;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 16px;
+
+  .Button__leftIcon {
+    margin-right: 4px;
+  }
+
+  .Button__rightIcon {
+    margin-left: 4px;
+  }
+}
+
+.Button__m {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 16px;
+
+  .Button__leftIcon {
+    margin-right: 4px;
+  }
+
+  .Button__rightIcon {
+    margin-left: 4px;
+  }
+}
+
+.Button__xl {
+  height: 44px;
+  padding: 0 32px;
+  font-size: 14px;
+  line-height: 20px;
+
+  .Button__leftIcon {
+    margin-right: 8px;
+  }
+
+  .Button__rightIcon {
+    margin-left: 8px;
+  }
+}
+
+.Button__withLeftIcon {
+  &.Button__s {
+    padding-left: 8px;
+  }
+
+  &.Button__md {
+    padding-left: 12px;
+  }
+
+  &.Button__xl {
+    padding-left: 24px;
+  }
+}
+
+.Button__withRightIcon {
+  &.Button__s {
+    padding-right: 8px;
+  }
+
+  &.Button__md {
+    padding-right: 12px;
+  }
+
+  &.Button__xl {
+    padding-right: 24px;
+  }
+}
+
+.Button__spinner {
+  @extend .Button__leftIcon;
+  margin-top: -2px;
+}
+
+.Button__text_only {
+  height: max-content;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px $accent-blue-secondary;
+  }
+}
+
+.Button__text_green {
+  color: $brand-primary-default;
+
+  &:hover,
+  &:focus {
+    color: $brand-primary-hover;
+  }
+
+  &:active {
+    color: $brand-primary-pressed;
+  }
+
+  &.Button__disabled {
+    opacity: 0.4;
+  }
+}

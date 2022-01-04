@@ -1,0 +1,92 @@
+@import 'styles/_tokens.scss';
+
+.GroupChatDialog__children {
+  padding: 24px;
+}
+
+.GroupChatDialog__titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.GroupChatDialog__title {
+  margin-bottom: 16px;
+}
+
+.GroupChatDialog__avatar_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar__container {
+  border: none !important;
+  background: $brand-secondary-default;
+}
+
+.GroupChatDialog__nav_link {
+  margin-right: 8px;
+  margin-bottom: 6px;
+  padding: 0;
+
+  span {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.GroupChatDialog__nav_link_icon_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $brand-grey-default;
+
+  svg {
+    width: 40%;
+    height: 40%;
+    color: $text-secondary;
+  }
+}
+
+.GroupChatDialog__inputContainer {
+  margin-top: 16px;
+}
+
+.GroupChatDialog__avatarsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  //align-items: center;
+}
+
+.GroupChatDialog__avatar {
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+.GroupChatDialog__cancel {
+  color: $brand-orange-default !important;
+  border: none;
+  background-color: transparent !important;
+
+  &:hover {
+    color: $brand-orange-hover !important;
+  }
+
+  &:focus,
+  &:active {
+    color: $brand-orange-pressed !important;
+  }
+}
+
+.GroupChatDialog__cancel,
+.GroupChatDialog__save {
+  font-size: $font-size-14;
+}

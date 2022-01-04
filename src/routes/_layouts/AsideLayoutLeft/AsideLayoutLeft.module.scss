@@ -1,0 +1,45 @@
+@import 'styles/_tokens.scss';
+
+.AsideLayoutLeft__wrapper {
+  display: flex;
+}
+
+.AsideLayoutLeft__aside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 452px;
+  min-height: 100vh;
+  padding: 23px 32px;
+  background-color: $background-day-tetriary;
+}
+
+.AsideLayoutLeft__main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 23px 32px;
+  background-color: $background-common-light;
+
+  &.mobile {
+    padding: 12px 15px 42px 15px;
+  }
+}
+
+.AsideLayoutLeft__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AsideLayoutLeft__searchWrapper {
+  display: flex;
+  margin-right: 24px;
+}
+
+.AsideLayoutLeft__search {
+  width: 100%;
+  max-width: 204px;
+  margin-right: 10px;
+}

@@ -1,0 +1,84 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.UserControlsPanel__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.UserControlsPanel__menuIcon {
+  margin-right: auto;
+  background-color: transparent;
+}
+
+.UserControlsPanel__iconCircle {
+  color: #6f717f;
+
+  & + .UserControlsPanel__iconCircle {
+    margin-left: 6px;
+  }
+}
+
+.UserControlsPanel__iconCircle_wrapper {
+  position: relative;
+  margin-left: 6px;
+}
+
+.UserControlsPanel__triangle {
+  position: absolute;
+  bottom: -28px;
+  display: none;
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-bottom: 22px solid #fff;
+  border-left: 16px solid transparent;
+}
+
+.UserControlsPanel__triangle_show {
+  display: inline-block;
+}
+
+.UserControlsPanel__divider {
+  width: 1px;
+  height: 24px;
+  margin: 0 14px;
+  background-color: $border-gray;
+}
+
+.UserControlsPanel__infoBlock {
+  h6,
+  div {
+    max-width: 100px;
+  }
+}
+
+.UserControlsPanel__notificationsSlide {
+  position: fixed;
+  z-index: $zindex-modal;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow-y: scroll;
+
+  @include media-down(md) {
+    padding-bottom: 10px;
+  }
+}
+
+.UserControlsPanel__notifications_wrapper {
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.UserControlsPanel__notifications_header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+
+  svg {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,90 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ProjectDataCard__container {
+  overflow: hidden;
+  height: 234px;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  border-radius: 12px;
+  background-color: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.ProjectDataCard__imgWrapper {
+  height: 150px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  &.inbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8f0ff;
+
+    svg {
+      width: 44px;
+      height: 44px;
+      color: #5b8dee;
+    }
+
+    path {
+      stroke-width: 0.7px;
+    }
+  }
+
+  &.placeholder {
+    background-color: $surface-secondary;
+  }
+}
+
+.ProjectDataCard__content {
+  padding: 16px 16px 14px 16px;
+}
+
+.ProjectDataCard__titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  svg {
+    align-self: flex-start;
+  }
+}
+
+.ProjectDataCard__title {
+  @include mltext;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.ProjectDataCard__iconContainer {
+  display: inline-flex;
+  align-items: center;
+
+  &:first-of-type {
+    margin-left: -3px;
+  }
+
+  & + .ProjectDataCard__iconContainer {
+    margin-left: 28px;
+  }
+}
+
+.ProjectDataCard__icon {
+  margin-right: 4px;
+}
+
+.ProjectDataCard__iconText {
+  font-weight: $font-weight-500;
+}

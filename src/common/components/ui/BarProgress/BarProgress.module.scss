@@ -1,0 +1,21 @@
+@import 'styles/_tokens.scss';
+
+.BarProgress__container {
+  display: flex;
+  overflow: hidden;
+  height: 8px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.BarProgress__background {
+  display: flex;
+  flex-grow: 1;
+  background-color: $background-day-tetriary;
+}
+
+.BarProgress__progress {
+  transition: width 0.3s ease-in-out;
+  border-radius: 30px;
+  background-color: $brand-primary-default;
+}

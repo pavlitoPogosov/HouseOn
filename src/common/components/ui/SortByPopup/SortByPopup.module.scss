@@ -1,0 +1,133 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+@import 'styles/_vars.scss';
+
+.SortByPopup__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 34px;
+  transition: background-color $transition-primary;
+  border-radius: 100px;
+  background-color: $surface-tretiary;
+
+  &:hover {
+    background-color: $surface-secondary;
+
+    .SortByPopup__emptyImage {
+      background-color: darken(#fff, 2%);
+    }
+  }
+
+  &.sm {
+    padding: 0 8px;
+
+    .SortByPopup__dropdownOption {
+      padding-left: 8px;
+    }
+  }
+
+  &.md {
+    padding-right: 12px;
+    padding-left: 16px;
+
+    .SortByPopup__dropdownOption {
+      padding-left: 16px;
+    }
+  }
+}
+
+.SortByPopup__selected {
+  @include caption_m;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  color: $text-secondary;
+}
+
+.SortByPopup__text {
+  @include ellipsis;
+  display: block;
+  flex-grow: 1;
+}
+
+.SortByPopup__image {
+  display: inline-block;
+  align-self: start;
+  width: 24px !important;
+  min-width: 24px !important;
+  max-height: 24px !important;
+  margin-right: 8px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.SortByPopup__chevronIcon {
+  margin-left: 4px;
+  transition: transform $transition-primary;
+
+  &.rotate {
+    transform: rotate(-180deg);
+  }
+}
+
+.SortByPopup__dropdown {
+  @include scrollbar();
+
+  position: absolute;
+  z-index: $zindex-dropdown;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  overflow: auto;
+  max-height: 200px;
+  padding: 4px 0;
+  border-radius: $border-radius-8;
+  background-color: #fff;
+  box-shadow: $box-shadow-m;
+}
+
+.SortByPopup__divider {
+  height: 1px;
+  background-color: $border-gray-secondary;
+}
+
+.SortByPopup__dropdownOption {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding: 6px 0;
+  cursor: pointer;
+  transition: all $transition-primary;
+  background-color: #fff;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  &.selected {
+    background-color: $brand-secondary-hover;
+  }
+
+  &:not(.selected) {
+    &:hover {
+      color: $text-brand;
+      background-color: $brand-secondary-default;
+    }
+  }
+}
+
+.SortByPopup__emptyImage {
+  transition: background-color $transition-primary;
+}
+
+.SortByPopup__dropdownOptionText {
+  @include ellipsis;
+  display: block;
+}
+
+.SortByPopup__dropdownIcon {
+  margin-right: 10px;
+}

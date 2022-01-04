@@ -1,0 +1,12 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.SingleProjectsTasks__container {
+  padding-top: 52px;
+}
+
+.SingleProjectsTasks__content {
+  @include media-up(xl) {
+    padding-left: 48px;
+  }
+}

@@ -1,0 +1,74 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.WeekControl__day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+
+  & + .WeekControl__day {
+    margin-top: 12px;
+  }
+
+  &.mobile {
+    flex-direction: column;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $border-gray-secondary;
+  }
+}
+
+.WeekControl__toggleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 156px;
+
+  &.mobile {
+    width: 100%;
+  }
+}
+
+.WeekControl__dayName {
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+}
+
+.WeekControl__timeWrapper {
+  display: flex;
+  margin-left: auto;
+
+  &.mobile {
+    width: 100%;
+    margin-top: 12px;
+    margin-left: 0;
+  }
+}
+
+.WeekControl__timeInputContainer {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 0;
+}
+
+.WeekControl__timeInput {
+  padding: 8px 12px;
+}
+
+.WeekControl__to {
+  align-self: center;
+  margin-right: 4px;
+  margin-left: 12px;
+  white-space: nowrap;
+  color: $text-tretiary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+
+  @media screen and (min-width: 368px) {
+    margin-right: 8px;
+    margin-left: 16px;
+    font-size: $font-size-14;
+  }
+}

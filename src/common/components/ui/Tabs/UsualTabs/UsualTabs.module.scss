@@ -1,0 +1,47 @@
+@import 'styles/_tokens.scss';
+
+.UsualTabs__container {
+  display: flex;
+  width: fit-content;
+  padding: 4px;
+  border-bottom: 1px solid $border-gray-secondary;
+  border-radius: 100px;
+  background-color: #fff;
+
+  &.UsualTabs__m {
+    padding-bottom: 4px;
+  }
+
+  &.UsualTabs__l {
+    padding-bottom: 6px;
+  }
+}
+
+.UsualTabs__tab {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  white-space: nowrap;
+  color: $text-secondary;
+  border-radius: 100px;
+  background-color: transparent;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  &.active {
+    color: #fff;
+    background-color: $brand-primary-default;
+  }
+
+  &.UsualTabs__tab_m {
+    padding: 4px 12px;
+  }
+
+  &.UsualTabs__tab_l {
+    padding: 8px 16px;
+  }
+}

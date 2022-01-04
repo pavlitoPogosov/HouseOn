@@ -1,0 +1,25 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.Comment__info {
+  display: flex;
+  align-items: center;
+}
+
+.Comment__dot {
+  margin: 0 4px;
+  color: $text-secondary;
+}
+
+.Comment__avatar {
+  margin-right: 4px;
+}
+
+.Comment__date {
+  margin-left: 8px;
+}
+
+.Comment__message {
+  @include mltext;
+  margin-top: 4px;
+}

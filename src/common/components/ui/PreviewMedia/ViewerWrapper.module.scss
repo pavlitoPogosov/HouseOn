@@ -1,0 +1,128 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ViewerWrapper__wrapper,
+.header__button_back,
+.header__title,
+.header__button_close,
+.ViewerWrapper__children_container img,
+.header__author,
+.header__date {
+  z-index: 1;
+}
+
+.ViewerWrapper__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.ViewerWrapper__overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(black, 0.95);
+}
+
+.ViewerWrapper__container {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ViewerWrapper__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 36px 56px 16px 56px;
+}
+
+$circle-button-size: 24px !important;
+$circle-button-size-sm: 28px !important;
+
+.header__button_back,
+.header__button_close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $circle-button-size;
+  min-width: $circle-button-size;
+  height: $circle-button-size;
+  min-height: $circle-button-size;
+  margin-left: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $grey-100;
+
+  @include media-down(sm) {
+    width: $circle-button-size-sm;
+    min-width: $circle-button-size-sm;
+    height: $circle-button-size-sm;
+    min-height: $circle-button-size-sm;
+  }
+}
+
+@mixin hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header__button_back {
+  @include media-up(md) {
+    @include hidden;
+  }
+}
+
+.header__title {
+  margin-top: 28px;
+
+  @include media-down(md) {
+    margin-top: 0;
+  }
+}
+
+.header__button_close {
+  @include media-down(md) {
+    @include hidden;
+  }
+}
+
+.ViewerWrapper__children_container {
+  display: flex;
+  align-items: center;
+  flex: max-content;
+  justify-content: center;
+  width: 100%;
+  //padding: 24px 0;
+}
+
+.ViewerWrapper__footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 24px;
+
+  @include media-down(md) {
+    padding-bottom: 36px;
+  }
+}
+
+.header__author {
+  font-weight: $font-weight-600;
+}
+
+.header__date {
+  margin-top: 4px;
+}

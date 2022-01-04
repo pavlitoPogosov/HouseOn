@@ -1,0 +1,32 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.CircleChart__container {
+}
+
+.CircleChart {
+}
+
+.CircleChart__donut {
+}
+
+.CircleChart__donut_hole {
+}
+
+.CircleChart__donut_ring {
+}
+
+.CircleChart__donut_segment {
+  position: relative;
+  transition: stroke-dashoffset 1s ease-in-out;
+  stroke-linecap: round;
+}
+
+.CircleChart__donut_hole {
+}
+
+.CircleChart__children_container {
+}
+
+.CircleChart__children {
+}

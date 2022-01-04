@@ -1,0 +1,184 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+@import 'styles/_text.scss';
+
+.Step__title {
+  margin-bottom: 16px;
+
+  br {
+    display: block;
+  }
+
+  @include media-down(sm) {
+    @include heading_h2;
+
+    margin-bottom: 20px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.Step__text {
+  margin-bottom: 12px;
+
+  br {
+    display: none;
+  }
+
+  @include media-up(sm) {
+    margin-bottom: 16px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.Step__input {
+  width: 100%;
+  max-width: 350px;
+
+  margin: 42px 0 77px 0;
+
+  @include media-up(sm) {
+    margin: 64px auto;
+  }
+}
+
+.Step__nextBtn {
+  width: 160px;
+
+  @include media-up(sm) {
+    width: 185px;
+  }
+}
+
+.Step__bigNextBtn {
+  width: 180px;
+  margin-left: 15px;
+
+  span {
+    display: none;
+  }
+
+  @media screen and (min-width: 375px) {
+    width: 248px;
+
+    span {
+      display: inline;
+    }
+  }
+
+  @include media-up(sm) {
+    width: 280px;
+    margin-left: 30px;
+  }
+}
+
+.Step__backBtn {
+  width: 70px;
+
+  @include media-up(sm) {
+    width: 100px;
+  }
+}
+
+.Step__nameSubmitBtn {
+  width: 160px;
+
+  @include media-up(sm) {
+    width: 185px;
+    margin: 0 auto;
+  }
+}
+
+.Step__buttonsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+
+  @include media-up(sm) {
+    margin: 0 auto;
+  }
+}
+
+.Step__inputBtnsWrapper {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+
+  display: flex;
+  transform: translateY(-50%);
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+
+  input {
+    display: none;
+  }
+}
+
+.Step__inputBtn {
+  // TODO why it's not possible to apply styles without !important ?
+  border: 1px solid $border-gray !important;
+
+  &:first-of-type {
+    margin-right: 6px;
+  }
+}
+
+.Step__cardWrapper {
+  display: flex;
+  width: 100%;
+  max-width: 612px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 19px 24px;
+  border-radius: $border-radius-16;
+  box-shadow: $box-shadow-m;
+
+  @include media-up(sm) {
+    margin-bottom: 80px;
+  }
+}
+
+.Step__cardImage {
+  min-width: 69px;
+  height: 69px;
+  margin-right: 24px;
+  border-radius: $border-radius-8;
+  background: $surface-secondary;
+
+  @include media-up(sm) {
+    min-width: 96px;
+    height: 96px;
+  }
+}
+
+.Step__cardContent {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  font-weight: $font-weight-600;
+
+  h6 {
+    margin-bottom: 4px;
+    font-size: $font-size-16;
+    line-height: $line-height-24;
+  }
+
+  p {
+    margin-bottom: 5px;
+    color: $text-tretiary;
+    font-size: $font-size-14;
+    line-height: $line-height-20;
+  }
+}
+
+.Step__error {
+  margin-top: 12px;
+}

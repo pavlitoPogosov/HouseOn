@@ -1,0 +1,16 @@
+overwrite: true
+schema: "https://houseon.dev.proscom.tech/api/graphql"
+documents: null
+generates:
+  ./src/graphql/graphql.schema.json:
+    plugins:
+      - 'introspection'
+    config:
+      minify: true
+  ./src/graphql/types.ts:
+    plugins:
+      - 'typescript'
+    config:
+      scalars:
+        DateTime: moment.Moment
+        Time: moment.Moment

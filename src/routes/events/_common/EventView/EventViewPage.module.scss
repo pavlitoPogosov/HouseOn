@@ -1,0 +1,30 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.EventEventViewPage__container {
+  min-height: 100vh;
+  padding: 12px 15px 24px 15px;
+  background: linear-gradient($background-day-tetriary 70%, #fff 30%);
+
+  @include media-up(md) {
+    padding: 24px 15px 48px 15px;
+    background: linear-gradient($background-day-tetriary 60%, #fff 40%);
+  }
+}
+
+.EventEventViewPage__inner {
+  width: 100%;
+  max-width: 898px;
+  margin: 0 auto;
+}
+
+.EventEventViewPage__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  @include media-up(md) {
+    margin-top: 96px;
+  }
+}

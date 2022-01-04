@@ -1,0 +1,151 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.TeamMemberForm__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.TeamMemberForm__holdCard {
+  margin-bottom: 64px;
+}
+
+.TeamMemberForm__deleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+
+  @include media-up(md) {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.TeamMemberForm__deleteBtnIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $brand-orange-default;
+
+  svg {
+    width: 10px;
+    height: 10px;
+    color: #fff;
+  }
+
+  g {
+    opacity: 1;
+  }
+}
+
+.TeamMemberForm__title {
+  margin-bottom: 16px;
+}
+
+.TeamMemberForm__block {
+  margin-bottom: 32px;
+
+  @include media-up(md) {
+    margin-bottom: 64px;
+  }
+}
+
+.TeamMemberForm__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  @include media-up(md) {
+    margin-top: 80px;
+  }
+}
+
+.TeamMemberForm__icon {
+  width: 56px;
+  height: 56px;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.TeamMemberForm__paymentInputs {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-up(md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.TeamMemberForm__paymentInput {
+  width: 100%;
+  input {
+    height: 38px;
+    border-radius: 8px;
+  }
+
+  @include media-up(md) {
+    width: auto;
+
+    & + .TeamMemberForm__paymentInput {
+      margin-left: 16px;
+    }
+  }
+}
+
+.TeamMemberForm__rewardContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+    margin-top: 24px;
+  }
+}
+
+.TeamMemberForm__reward {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include media-up(sm) {
+    width: auto;
+    margin-right: 110px;
+  }
+}
+
+.TeamMemberForm__rewardText {
+  margin-right: 16px;
+}
+
+.TeamMemberForm__rewardInput {
+  margin-top: 4px;
+  margin-bottom: -2px;
+
+  input {
+    width: 211px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  @include media-up(sm) {
+    margin-top: 0;
+  }
+}
+
+.TeamMemberForm__rewardCurrency {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}

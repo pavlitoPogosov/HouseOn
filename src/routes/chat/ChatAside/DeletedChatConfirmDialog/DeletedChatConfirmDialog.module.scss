@@ -1,0 +1,26 @@
+@import 'styles/_tokens.scss';
+
+.DeletedChatConfirmDialog__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.DeletedChatConfirmDialog__picture {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background-color: $surface-secondary;
+}
+
+.DeletedChatConfirmDialog__message {
+  width: 100%;
+  max-width: 312px;
+}

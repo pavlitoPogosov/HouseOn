@@ -1,0 +1,27 @@
+@import 'styles/_tokens.scss';
+
+.SignUpLogin__submitBtn {
+  width: 152px;
+  margin-top: 24px;
+}
+
+.SignUpLogin__checkboxContainer {
+  width: 100%;
+  margin-top: 24px;
+
+  a {
+    color: $text-brand;
+  }
+
+  br {
+    display: none;
+
+    @media screen and (min-width: 384px) {
+      display: block;
+    }
+  }
+}
+
+.SignUpLogin__error {
+  margin-top: 24px;
+}

@@ -1,0 +1,20 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.BottomLink__container {
+  margin-top: auto;
+
+  svg {
+    width: 5px;
+    height: 9px;
+    margin-left: 6px;
+  }
+}
+
+.BottomLink__text {
+  margin-right: 2px;
+  color: $text-primary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+}

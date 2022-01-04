@@ -1,0 +1,120 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.SuggestionsWidget__container {
+  display: flex;
+  width: 100%;
+  border-radius: 16px;
+  background-color: #5b8dee;
+
+  @include media-down(lg) {
+    min-width: inherit;
+  }
+}
+
+.SuggestionsWidget__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px 24px;
+
+  @include media-down(lg) {
+    flex-wrap: wrap;
+    height: max-content;
+  }
+}
+
+.SuggestionsWidget__content_details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 26px;
+
+  @include media-up(lg) {
+    min-width: min-content;
+    height: 100%;
+  }
+
+  @include media-down(lg) {
+    height: min-content;
+    margin-bottom: 24px;
+  }
+
+  @include media-down(sm) {
+    order: 2;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.SuggestionsWidget__content_details_greeting {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+$assistant-icon-size: 32px;
+
+.SuggestionsWidget__content_details_greeting_assistant {
+  width: $assistant-icon-size;
+  max-width: $assistant-icon-size;
+  height: $assistant-icon-size;
+  max-height: $assistant-icon-size;
+  margin-right: 8px;
+  filter: drop-shadow(0 22px 18px rgba(0, 0, 0, 0.0417275)) drop-shadow(0 12px 10px rgba(0, 0, 0, 0.035))
+    drop-shadow(0 7px 5px rgba(0, 0, 0, 0.0282725)) drop-shadow(0 3px 2px rgba(0, 0, 0, 0.0196802));
+}
+
+.SuggestionsWidget__content_details_greeting_message {
+  white-space: nowrap;
+  filter: drop-shadow(0 5px 7px rgba(0, 0, 0, 0.05));
+}
+
+.SuggestionsWidget__content_details_suggestion {
+  flex: 1 1 auto;
+  width: 100%;
+
+  @include media-up(lg) {
+    margin-bottom: 24px;
+  }
+}
+
+.SuggestionsWidget__button {
+  width: max-content;
+
+  @include media-down(lg) {
+    width: 100%;
+  }
+
+  @include media-down(sm) {
+    order: 3;
+  }
+}
+
+.SuggestionsWidget__content_image {
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 8px 16px rgba(198, 215, 232, 0.12);
+
+  &.loading {
+    align-items: center;
+    justify-content: center;
+    background: rgba(76, 121, 206, 0.31);
+  }
+
+  @include media-down(lg) {
+    margin-bottom: 24px;
+  }
+
+  @include media-down(sm) {
+    order: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+  }
+}

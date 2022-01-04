@@ -1,0 +1,72 @@
+@import 'styles/_tokens.scss';
+
+.TeamMemberCard__container {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  transition: all $transition-primary;
+  border: 1px solid transparent;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+
+  &.active {
+    border-color: $brand-primary-default;
+  }
+}
+
+.TeamMemberCard__avatar {
+  margin-right: 12px;
+}
+
+.TeamMemberCard__avatarIconWrapper {
+  display: flex;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: darken($surface-primary, 4%);
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.TeamMemberCard__emptyAvatar {
+  background-color: darken($surface-primary, 4%);
+}
+
+.TeamMemberCard__dot {
+  margin: 0 6px;
+  color: #bfc5dc;
+}
+
+.TeamMemberCard__onlineStatusContainerClassName {
+  margin-left: 6px;
+}
+
+.TeamMemberCard__infoWrapper {
+  margin-top: 4px;
+  font-size: $font-size-12;
+  font-weight: $font-weight-500;
+  line-height: $line-height-16;
+}
+
+.TeamMemberCard__infoText {
+  color: $text-secondary;
+}
+
+.TeamMemberCard__infoWarning {
+  color: $text-error;
+}

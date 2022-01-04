@@ -1,0 +1,61 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.UsualTab__container {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-xl;
+  }
+
+  @media screen and (min-width: 360px) {
+    padding: 16px 20px;
+  }
+
+  @include media-up(xl) {
+    padding: 10px 14px;
+  }
+
+  @include media-up(xxl) {
+    padding: 12px 16px;
+  }
+}
+
+.UsualTab__icon {
+  margin-right: 12px;
+
+  @include media-up(xl) {
+    margin-right: 10px;
+  }
+
+  @include media-up(xxl) {
+    margin-right: 12px;
+  }
+}
+
+.UsualTab__text {
+  white-space: nowrap;
+  font-size: $font-size-12;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 360px) {
+    font-size: $font-size-14;
+  }
+
+  @include media-up(xl) {
+    font-size: $font-size-12;
+  }
+
+  @include media-up(xxl) {
+    font-size: $font-size-14;
+  }
+}

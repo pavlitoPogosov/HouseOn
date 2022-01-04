@@ -1,0 +1,51 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+
+.HouseTabs__container {
+  display: flex;
+  padding: 4px;
+  border-radius: 100px;
+  background-color: $surface-secondary;
+}
+
+.HouseTabs__tab {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color $transition-primary;
+  border-radius: 100px;
+  background-color: transparent;
+
+  &.active {
+    background-color: $brand-primary-default;
+  
+    .HouseTabs__tabEmptyImage {
+      background-color: #fff;
+    }
+
+    .HouseTabs__tabText {
+      color: #fff;
+    }
+  }
+}
+
+.HouseTabs__tabText {
+  @include ellipsis;
+  transition: color $transition-primary;
+  color: $text-secondary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.HouseTabs__tabImage {
+  min-width: 24px;
+  margin-right: 8px;
+}
+
+.HouseTabs__tabEmptyImage {
+  background-color: #e8ebef;
+}

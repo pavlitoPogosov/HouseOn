@@ -1,0 +1,24 @@
+@import 'styles/_tokens.scss';
+
+.AreaInput__btns {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+
+  display: flex;
+  transform: translateY(-50%);
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+
+  input {
+    display: none;
+  }
+}
+
+.AreaInput__btn {
+  padding: 2px;
+
+  &:first-of-type {
+    margin-right: 6px;
+  }
+}

@@ -1,0 +1,41 @@
+@import 'styles/_tokens.scss';
+
+.Tasks {
+  &__tabs {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__dividerText {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $border-gray-secondary;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__mr {
+    margin-right: 8px;
+  }
+
+  &__ml {
+    margin-left: auto;
+  }
+}

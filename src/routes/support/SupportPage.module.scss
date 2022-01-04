@@ -1,0 +1,25 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.SupportPage_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.SupportPage__goBack {
+  display: none;
+  margin-right: 12px;
+
+  @include media-down(lg) {
+    display: block;
+  }
+}
+
+.SupportPage__footer {
+  margin-top: 56px;
+}
+
+.SupportPage__text {
+  margin-bottom: 16px;
+}

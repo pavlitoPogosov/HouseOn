@@ -1,0 +1,17 @@
+.TaskCreateModal {
+  &__modal {
+    padding: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    box-shadow: 0 2px 12px rgba(119, 132, 157, 0.1);
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+}

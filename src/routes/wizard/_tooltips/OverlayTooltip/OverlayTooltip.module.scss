@@ -1,0 +1,96 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.OverlayTooltip__container {
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: $border-radius-12;
+  background-color: #fff;
+  box-shadow: $box-shadow-l;
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+
+  @media (max-height: $md) and (max-width: $md) {
+    overflow-y: scroll;
+    max-height: 320px;
+  }
+
+  @media (max-height: $sm) and (max-width: $sm) {
+    overflow-y: scroll;
+    max-height: 280px;
+  }
+
+  @include media-up(sm) {
+    max-width: 490px;
+  }
+}
+
+.OverlayTooltip__overlay {
+  margin: 0 26px;
+}
+
+.OverlayTooltip__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.OverlayTooltip__title {
+  display: flex;
+  align-items: center;
+}
+
+.SafetryTooltip__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.OverlayTooltip__shieldIcon {
+  @extend .SafetryTooltip__icon;
+
+  margin-right: 12px;
+  background-color: $accent-blue-tretiary;
+}
+
+.OverlayTooltip__closeIcon {
+  @extend .SafetryTooltip__icon;
+
+  cursor: pointer;
+  background-color: $surface-secondary;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.OverlayTooltip__item {
+  padding: 24px 0;
+  border-bottom: 1px solid $border-gray;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.OverlayTooltip__href {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: -4px;
+}
+
+.OverlayTooltip__toggler {
+  cursor: pointer;
+}
+
+.OverlayTooltip__footer {
+  position: absolute;
+  z-index: $zindex-tooltip;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

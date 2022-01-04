@@ -1,0 +1,39 @@
+@import 'src/styles/_tokens.scss';
+@import 'src/styles/_vars.scss';
+
+.TextArea__wrapper {
+  position: relative;
+}
+
+.TextArea {
+  @include inputStylesCommon;
+  @include inputStylesPrimary;
+  display: block;
+  overflow-y: hidden;
+  height: auto;
+  min-height: 56px;
+
+  resize: none;
+}
+
+.TextArea__maxLetters {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  white-space: nowrap;
+  color: $text-tretiary;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: $font-size-12;
+  font-weight: $font-weight-500;
+  line-height: $line-height-16;
+
+  &.danger {
+    color: $text-error;
+  }
+}

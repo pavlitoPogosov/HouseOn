@@ -1,0 +1,50 @@
+@import 'styles/_vars.scss';
+
+.SubscriptionPlan__controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 16px;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+    margin-bottom: 28px;
+  }
+}
+
+.SubscriptionPlan__title {
+  width: 100%;
+  margin-bottom: 16px;
+
+  @include media-up(sm) {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.SubscriptionPlan__content {
+  @include scrollbar;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  max-width: calc(100vw - 30px);
+  margin-right: -15px;
+  padding: 12px 0;
+  padding-right: 15px;
+
+  @include media-up(xl) {
+    max-width: calc(100vw - 64px - 68px - 452px);
+    margin-right: -32px;
+    padding-right: 32px;
+  }
+}
+
+.SubscriptionPlan__card {
+  margin-right: 24px;
+
+  @include media-up(sm) {
+    margin-right: 18px;
+  }
+}

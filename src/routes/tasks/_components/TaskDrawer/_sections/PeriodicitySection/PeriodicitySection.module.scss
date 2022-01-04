@@ -1,0 +1,13 @@
+@import 'styles/_vars.scss';
+
+.PeriodicitySelector__content {
+  overflow-x: scroll;
+  margin-right: -15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+
+  @include media-up(sm) {
+    overflow-x: auto;
+    padding-bottom: 0;
+  }
+}

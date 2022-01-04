@@ -1,0 +1,61 @@
+@import 'styles/_vars.scss';
+
+.AboutSection__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 44px;
+  margin-bottom: 18px;
+
+  &.mobile {
+    margin-top: 0;
+  }
+}
+
+.AboutSection__title {
+  @include mltext;
+  margin-right: 24px;
+}
+
+.AboutSection__edit {
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+.AboutSection__editIcon {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.AboutSection__description {
+  margin-bottom: 10px;
+  font-weight: $font-weight-600 !important;
+}
+
+.AboutSection__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.AboutSection__infoItem {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+  white-space: nowrap;
+}
+
+.AboutSection__infoItemLabel {
+  color: $text-tretiary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.AboutSection__infoItemLink {
+  margin-left: 2px;
+  font-size: $font-size-12;
+  font-weight: $font-weight-500 !important;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}

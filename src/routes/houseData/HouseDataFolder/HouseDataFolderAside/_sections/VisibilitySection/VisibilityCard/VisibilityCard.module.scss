@@ -1,0 +1,42 @@
+@import 'styles/_tokens.scss';
+
+
+.VisibilityCard__container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid $border-gray-secondary;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.VisibilityCard__iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 8px;
+  background-color: $surface-secondary;
+}
+
+.VisibilityCard__content {
+  flex-grow: 1;
+}
+
+.VisibilityCard__title {
+  margin-bottom: 2px;
+}
+
+.VisibilityCard__eyeIcon {
+  cursor: pointer;
+  color: $text-secondary;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}

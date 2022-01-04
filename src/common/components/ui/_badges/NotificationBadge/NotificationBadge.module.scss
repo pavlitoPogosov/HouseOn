@@ -1,0 +1,13 @@
+@import 'styles/_tokens.scss';
+
+.NotificationBadge__container {
+  padding: 4px 12px;
+  color: #fff;
+  border-radius: $border-radius-4;
+  background: rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+  backdrop-filter: blur(12px);
+}

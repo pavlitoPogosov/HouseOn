@@ -1,0 +1,79 @@
+@import 'styles/_tokens.scss';
+
+.TextTabs__container {
+  display: flex;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+
+  &.border {
+    border-color: $border-gray-secondary;
+  }
+}
+
+.TextTabs__tab {
+  position: relative;
+  cursor: pointer;
+  transition: color $transition-primary;
+  white-space: nowrap;
+  color: $text-tretiary;
+  font-weight: $font-weight-700;
+
+  &:hover {
+    color: $text-secondary;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 0;
+    content: '';
+    transition: background-color $transition-primary, width $transition-primary;
+    border-radius: 18px;
+    background-color: $text-tretiary;
+  }
+
+  &.TextTabs__tab_m {
+    padding-bottom: 8px;
+    font-size: $font-size-18;
+    line-height: $line-height-24;
+
+    &::after {
+      top: calc(100% - 1px);
+      height: 2px;
+    }
+
+    & + .TextTabs__tab_m {
+      margin-left: 32px;
+    }
+  }
+
+  &.TextTabs__tab_l {
+    padding-bottom: 2px;
+    font-size: $font-size-24;
+    line-height: $line-height-32;
+
+    &::after {
+      top: calc(100% - 2px);
+      height: 3px;
+    }
+
+    & + .TextTabs__tab_l {
+      margin-left: 40px;
+    }
+  }
+
+  &.active {
+    color: $text-primary;
+
+    &:hover {
+      color: $text-brand;
+    }
+
+    &::after {
+      display: block;
+      width: 100%;
+      background-color: $text-brand;
+    }
+  }
+}

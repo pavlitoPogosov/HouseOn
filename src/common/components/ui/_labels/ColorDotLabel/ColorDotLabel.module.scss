@@ -1,0 +1,15 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.ColorDotLabel__container {
+  display: flex;
+  align-items: center;
+}
+
+.ColorDotLabel__text {
+  margin-left: 8px;
+}
+
+.ColorDotLabel__extra_value {
+  margin-left: 8px;
+}

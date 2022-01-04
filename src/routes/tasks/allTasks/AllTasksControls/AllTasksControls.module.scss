@@ -1,0 +1,102 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.AllTasksControls__container {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.AllTasksControls__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AllTasksControls__controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  &:last-of-type {
+    display: none;
+
+    @include media-up(lg) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  @include media-up(md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.AllProjectsSections__control {
+  margin-left: 8px;
+}
+
+.AllProjectsSections__dateinput {
+  width: 100%;
+  margin-top: 16px;
+
+  @media screen and (min-width: 355px) {
+    width: calc(100% - 66px);
+  }
+
+  @include media-up(md) {
+    width: auto;
+    margin-top: 0;
+  }
+
+  @include media-up(lg) {
+    margin-right: 32px;
+    margin-left: 24px;
+  }
+
+  @include media-up(xxl) {
+    margin-left: 8px;
+  }
+}
+
+.AllProjectsSections__searchInput {
+  @include media-up(lg) {
+    width: 280px;
+  }
+
+  @include media-up(xl) {
+    width: 320px;
+  }
+
+  @include media-up(xxl) {
+    width: auto;
+  }
+}
+
+.AllProjectsSections__popupsContainer {
+  display: none;
+
+  .AllProjectsSections__control {
+    margin-top: 24px;
+    margin-right: 8px;
+    margin-left: 0;
+  }
+
+  @include media-up(md) {
+    display: flex;
+  }
+}
+
+.AllTasksControls__tabsContainer {
+  width: 100%;
+
+  @include media-up(md) {
+    width: fit-content;
+  }
+}
+
+.AllProjectsSections__filtersIcon {
+  margin: 0 auto;
+  margin-top: 16px;
+}

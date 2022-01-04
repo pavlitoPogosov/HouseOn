@@ -1,0 +1,139 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.DownloadedFileCard__container {
+  display: flex;
+  width: 172px;
+  min-width: max-content;
+  padding: 8px 12px;
+  transition: background-color $transition-primary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: 8px;
+  background-color: #fff;
+
+  &.includeHover {
+    &:hover {
+      background-color: $surface-tretiary;
+    }
+  }
+}
+
+.DownloadedFileCard__icon {
+  margin-right: 10px;
+}
+
+.DownloadedFileCard__content_media {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.media__content {
+  order: 2;
+
+  &.current_user {
+    order: 1;
+  }
+}
+
+$time-margin: 8px;
+
+.media__message_time_container {
+  order: 1;
+  margin-right: $time-margin;
+
+  &.current_user {
+    order: 2;
+    margin-right: 0;
+    margin-left: $time-margin;
+  }
+}
+
+.media__message_time {
+}
+
+.DownloadedFileCard__content {
+  @include ellipsis;
+  width: 100%;
+}
+
+.DownloadedFileCard__title_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DownloadedFileCard__title_button {
+  box-shadow: none !important;
+
+  &:active,
+  &:focus {
+    color: initial !important;
+  }
+
+  &:hover {
+    color: $brand-primary-hover !important;
+  }
+}
+
+.DownloadedFileCard__title {
+  @include ellipsis;
+  margin-bottom: 2px;
+}
+
+.DownloadedFileCard__dot {
+  margin: 0 4px;
+}
+
+.DownloadedFileCard__format {
+  text-transform: uppercase;
+}
+
+.DownloadedFileCard__delete {
+  cursor: pointer;
+  text-transform: none;
+  color: $text-brand;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.DownloadedFileCard__error_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.DownloadedFileCard__error_question {
+  margin-left: 4px;
+  color: $text-error;
+}
+
+.DownloadedFileCard__error {
+  color: $text-error;
+}
+
+.ChatDialogMessage__messageTooltip {
+  @include caption_r;
+  position: relative;
+  display: flex;
+  max-width: 170px;
+  padding: 8px 12px;
+  text-align: start;
+  color: #fff;
+  border-radius: 8px;
+  background-color: $brand-primary-default;
+}
+
+.ChatDialogMessage__messageTooltipTriangle {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translateX(-50%) rotate(180deg);
+  border-width: 0 6px 5px 6px;
+  border-style: solid;
+  border-color: transparent transparent $brand-primary-default transparent;
+}

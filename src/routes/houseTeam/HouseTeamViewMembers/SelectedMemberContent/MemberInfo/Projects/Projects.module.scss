@@ -1,0 +1,23 @@
+@import 'styles/_vars.scss';
+
+.Projects__section {
+  display: grid;
+  margin-bottom: 16px;
+  grid-auto-rows: auto;
+  grid-gap: 16px;
+
+  @media screen and (min-width: 610px) {
+    grid-template-columns: repeat(auto-fill, minmax(252px, 282px));
+  }
+
+  @media screen and (min-width: 1920px) {
+    grid-template-columns: repeat(4, minmax(270px, 320px));
+  }
+}
+
+.Projects__title {
+  margin-bottom: 12px;
+}
+
+.Projects__item {
+}

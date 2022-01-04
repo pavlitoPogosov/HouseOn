@@ -1,0 +1,14 @@
+.NoMembersLink__container {
+  width: 100%;
+  max-width: 260px;
+  margin: 120px auto auto;
+  text-align: center;
+
+  @media screen and (min-height: 620px) {
+    margin-top: 180px;
+  }
+}
+
+.NoMembersLink__text {
+  margin-bottom: 24px;
+}

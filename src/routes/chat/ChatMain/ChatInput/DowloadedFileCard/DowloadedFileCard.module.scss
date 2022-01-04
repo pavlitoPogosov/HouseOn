@@ -1,0 +1,49 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.DownloadedFileCard__container {
+  display: flex;
+  width: 172px;
+  padding: 8px 12px;
+  transition: background-color $transition-primary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: 8px;
+  background-color: #fff;
+
+  &.includeHover {
+    &:hover {
+      background-color: $surface-tretiary;
+    }
+  }
+}
+
+.DownloadedFileCard__icon {
+  margin-right: 10px;
+}
+
+.DownloadedFileCard__content {
+  @include ellipsis;
+}
+
+.DownloadedFileCard__title {
+  @include ellipsis;
+  margin-bottom: 2px;
+}
+
+.DownloadedFileCard__dot {
+  margin: 0 4px;
+}
+
+.DownloadedFileCard__format {
+  text-transform: uppercase;
+}
+
+.DownloadedFileCard__delete {
+  cursor: pointer;
+  text-transform: none;
+  color: $text-brand;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,238 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+/* container */
+
+.TodayProjectsWidget__container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: white;
+}
+
+/* content */
+
+.TodayProjectsWidget__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+}
+
+/* wrapper */
+
+.content__wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 32px;
+
+  @include media-down(lg) {
+    justify-content: center;
+  }
+
+  @include media-down(sm) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* chart */
+
+.content__chart_container {
+  width: 50%;
+
+  @include media-down(xxl) {
+    width: 40%;
+  }
+
+  @include media-down(xl) {
+    width: 50%;
+  }
+
+  @include media-down(lg) {
+    width: 30%;
+  }
+
+  @include media-down(md) {
+    width: 40%;
+  }
+
+  @include media-down(sm) {
+    width: 50%;
+  }
+}
+
+.chart__children_content_container {
+  text-shadow: rgba(black, 0.5) 0 0 30px;
+}
+
+$min_width: 320;
+$max_width: 1600;
+
+$min_font_total: 24;
+$max_font_total: 56;
+
+@mixin font-total {
+  font-size: calc(
+    #{$min_font_total * 1px} + #{$max_font_total - $min_font_total} * (100vw - #{$min_width * 1px}) / #{$max_width -
+      $min_width}
+  );
+}
+
+$min_font_total_small: 16;
+$max_font_total_small: 200;
+
+@mixin font-total-small {
+  font-size: calc(
+    #{$min_font_total_small * 1px} + #{$max_font_total_small - $min_font_total_small} * (100vw - #{$min_width * 1px}) /
+      #{$max_width - $min_width}
+  );
+}
+
+.chart__children_text {
+  @include media-up(xxl) {
+    @include font-total;
+  }
+
+  @include media-down(xxl) {
+    font-size: 28px;
+  }
+
+  @include media-down(xl) {
+    @include font-total;
+  }
+
+  @include media-down(sm) {
+    @include font-total-small;
+  }
+}
+
+$min_font_extra: 14;
+$max_font_extra: 20;
+
+@mixin font-extra {
+  font-size: calc(
+    #{$min_font_extra * 1px} + #{$max_font_extra - $min_font_extra} * (100vw - #{$min_width * 1px}) / #{$max_width -
+      $min_width}
+  );
+}
+
+$min_font_extra_small: 10;
+$max_font_extra_small: 80;
+
+@mixin font-extra-small {
+  font-size: calc(
+    #{$min_font_extra_small * 1px} + #{$max_font_extra_small - $min_font_extra_small} * (100vw - #{$min_width * 1px}) /
+      #{$max_width - $min_width}
+  );
+}
+
+.chart__children_extra {
+  @include media-up(xxl) {
+    @include font-extra;
+  }
+
+  @include media-down(xxl) {
+    font-size: 14px;
+  }
+
+  @include media-down(xl) {
+    @include font-extra;
+  }
+
+  @include media-down(sm) {
+    @include font-extra-small;
+  }
+}
+
+/* labels */
+
+.content__labels_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: max-content;
+  padding-left: 8%;
+
+  @include media-down(xxl) {
+    padding-left: 16px;
+  }
+
+  @include media-down(md) {
+    justify-content: flex-start;
+  }
+
+  @include media-down(sm) {
+    justify-content: center;
+    width: 100%;
+    margin-top: 24px;
+    padding-left: 0;
+  }
+}
+
+.content__labels_container {
+  width: 100%;
+  height: max-content;
+
+  @include media-down(md) {
+    display: initial;
+    flex-wrap: initial;
+    justify-content: initial;
+  }
+
+  @include media-down(sm) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.labels__button {
+  display: flex;
+  justify-content: flex-start;
+  width: max-content;
+
+  &:not(:first-child) {
+    margin-top: 8px;
+  }
+
+  @include media-down(md) {
+    margin-top: initial;
+    margin-right: initial;
+
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  @include media-down(sm) {
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+}
+
+$dot-size: 9px;
+
+.labels__dot {
+  width: $dot-size;
+  min-width: $dot-size;
+  height: $dot-size;
+  min-height: $dot-size;
+}
+
+.labels__text {
+  text-align: start;
+  white-space: normal !important;
+  word-break: break-word;
+  font-weight: $font-weight-500;
+
+  @include media-down(sm) {
+    width: max-content;
+  }
+}
+
+.labels__extra {
+  font-weight: $font-weight-600;
+}

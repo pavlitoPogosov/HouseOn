@@ -1,0 +1,32 @@
+@import 'styles/_vars.scss';
+
+
+.FilesSection__filesWrapper {
+  display: flex;
+  overflow-x: auto;
+  max-width: calc(100vw - 30px);
+  margin: 24px auto 0 auto;
+  padding-bottom: 12px;
+
+  @include media-up(md) {
+    display: grid;
+    max-width: none;
+    margin: 24px 0 0;
+    grid-gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @include media-up(xl) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.FilesSection__file {
+  min-width: 185px;
+  margin-right: 18px;
+
+  @include media-up(md) {
+    min-width: none;
+    margin-right: 0;
+  }
+}

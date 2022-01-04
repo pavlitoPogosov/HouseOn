@@ -1,0 +1,26 @@
+@import 'styles/_vars.scss';
+
+.HouseDataFolderMain__card {
+  @include media-up(xl) {
+    & + .HouseDataFolderMain__card {
+      margin-top: 12px;
+    }
+  }
+}
+
+.HouseDataFolderMain__content {
+  display: grid;
+  grid-gap: 12px;
+
+  @include media-up(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-up(xl) {
+    display: block;
+  }
+}

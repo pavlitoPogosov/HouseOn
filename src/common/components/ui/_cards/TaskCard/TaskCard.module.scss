@@ -1,0 +1,47 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.TaskCard__container {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 16px;
+  cursor: pointer;
+  transition: box-shadow $transition-primary;
+  border-radius: $border-radius-12;
+  background: #fff;
+
+  &:hover {
+    box-shadow: $box-shadow-m;
+  }
+}
+
+.TaskCard__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.TaskCard__title {
+  @include mltext;
+  display: flex;
+  max-width: 70%;
+}
+
+.TaskCard__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  color: $text-secondary;
+  border-radius: 50%;
+  background-color: #e8ebef;
+}
+
+.TaskCard__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,97 @@
+@import 'styles/_tokens.scss';
+
+.PeriodSelector__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.PeriodSelector__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PeriodSelector__tab {
+  position: relative;
+  padding: 12px 8px;
+  cursor: pointer;
+  color: $text-tretiary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+
+  & + .PeriodSelector__tab {
+    margin-left: 24px;
+  }
+
+  &.active {
+    color: $text-brand;
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      content: '';
+      border-radius: 2px 2px 0 0;
+      background-color: $text-brand;
+    }
+  }
+}
+
+.PeriodSelector__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  padding: 12px 0;
+
+  user-select: none;
+  border-top: 1px solid $border-gray-secondary;
+  border-bottom: 1px solid $border-gray-secondary;
+}
+
+.PeriodSelector__sliderTextWrapper {
+  position: relative;
+
+  &.month {
+    width: 120px;
+  }
+
+  &.year {
+    width: 40px;
+  }
+}
+
+.PeriodSelector__sliderText {
+  position: absolute;
+  z-index: $zindex-modal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  color: $text-primary;
+  font-size: $font-size-16;
+  font-weight: $font-weight-700;
+  line-height: $line-height-24;
+}
+
+// icons
+
+.PeriodSelector__icon {
+  cursor: pointer;
+  color: $text-secondary;
+}
+
+.PeriodSelector__leftIcon {
+  @extend .PeriodSelector__icon;
+  margin-right: 12px;
+}
+
+.PeriodSelector__rightIcon {
+  @extend .PeriodSelector__icon;
+  margin-left: 12px;
+  transform: rotate(180deg);
+}

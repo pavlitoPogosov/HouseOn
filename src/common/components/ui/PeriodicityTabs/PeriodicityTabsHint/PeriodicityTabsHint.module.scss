@@ -1,0 +1,21 @@
+@import 'styles/_vars.scss';
+
+.PeriodicityTabsHint__highlitedText {
+  color: $text-brand;
+}
+
+.PeriodicityTabsHint__link {
+  margin-left: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: $text-brand;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  svg {
+    margin-top: -4px;
+    margin-left: 2px;
+  }
+}

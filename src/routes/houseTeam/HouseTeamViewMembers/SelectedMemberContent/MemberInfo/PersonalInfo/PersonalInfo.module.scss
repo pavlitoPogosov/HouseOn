@@ -1,0 +1,59 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.PersonalInfo__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-gray-secondary;
+
+  .PersonalInfo__rowItem + .PersonalInfo__rowItem {
+    margin-top: 24px;
+  }
+
+  @include media-up(sm) {
+    flex-direction: row;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+
+    .PersonalInfo__rowItem + .PersonalInfo__rowItem {
+      margin-top: 0;
+    }
+  }
+}
+
+.PersonalInfo__rowItem {
+  @include media-up(sm) {
+    width: 25%;
+    margin-bottom: 0;
+
+    & + .PersonalInfo__rowItem {
+      padding-left: 4px;
+    }
+
+    &.PersonalInfo__rowItemLarge {
+      width: 75%;
+      padding-left: 4px;
+    }
+  }
+}
+
+.PersonalInfo__itemName {
+  margin-bottom: 4px;
+}
+
+.PersonalInfo__imagesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PersonalInfo__img {
+  width: 120px;
+  height: 96px;
+  margin-right: 12px;
+  border: 1px solid $border-gray-secondary;
+  border-radius: $border-radius-8;
+  object-fit: cover;
+  object-position: 50% 50%;
+}

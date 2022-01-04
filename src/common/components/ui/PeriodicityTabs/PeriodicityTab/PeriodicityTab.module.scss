@@ -1,0 +1,32 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+.PeriodicityTab__container {
+  @include buttonReset();
+
+  height: 44px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all $transition-primary;
+  white-space: nowrap;
+  color: $text-secondary;
+  border: 1px solid $border-gray-secondary;
+  border-radius: $border-radius-8;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &.active {
+    box-shadow: $box-shadow-m;
+  }
+
+  &.active {
+    color: $text-brand;
+    border-color: $text-brand;
+  }
+}

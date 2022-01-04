@@ -1,0 +1,71 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_text.scss';
+
+.SortModals__flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SortModals__container {
+  overflow-y: hidden;
+  padding: 20px 0;
+  border-radius: 16px 16px 0 0;
+}
+
+.SortModals__header {
+  @extend .SortModals__flexContainer;
+  padding: 0 16px 20px 16px;
+}
+
+.SortModals__closeIcon {
+  width: 14px;
+  height: 14px;
+
+  g {
+    opacity: 1;
+  }
+}
+
+.SortModals__sortOption {
+  @extend .SortModals__flexContainer;
+  padding: 16px;
+  border-top: 1px solid $border-gray-secondary;
+}
+
+.SortModals__chooseText {
+  cursor: pointer;
+
+  svg {
+    margin-top: -2px;
+    margin-left: 8px;
+  }
+}
+
+.SortModals__chevronIcon {
+  margin-right: -4px;
+}
+
+.SortModals__checkIcon {
+  width: 10px;
+  height: 10px;
+
+  path {
+    stroke: #fff;
+  }
+}
+
+.SortModals__cbxContainer {
+  margin-bottom: 0;
+}
+
+.SortModals__cbxText {
+  @include body_m;
+  color: $text-primary;
+}
+
+.SortModals__footer {
+  @extend .SortModals__flexContainer;
+  padding: 16px 16px 0 16px;
+  border-top: 1px solid $border-gray-secondary;
+}

@@ -1,0 +1,232 @@
+@import './tokens';
+@import './text';
+
+@function px($v) {
+  @return $v / 16 * 1em;
+}
+@function rpx($v) {
+  @return $v / 16 * 1rem;
+}
+@function invert($v) {
+  @return calc(-1 * #{$v});
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin mltext {
+  overflow: hidden;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin buttonReset {
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  text-transform: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  text-shadow: none;
+  font: inherit;
+  line-height: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin inputStylesCommon {
+  width: 100%;
+  transition: all $transition-primary;
+  color: $text-primary;
+  border-radius: $border-radius-4;
+  outline: none;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-20;
+
+  &:hover {
+    border-color: $border-gray-secondary;
+    background-color: #fff;
+    box-shadow: $box-shadow-m;
+  }
+
+  // TODO focus-visible
+  &:focus {
+    border-color: $brand-primary-default !important;
+    background-color: #fff;
+    box-shadow: none;
+  }
+
+  &:disabled {
+    cursor: auto;
+    border-color: $border-gray-secondary;
+    background: $surface-tretiary;
+
+    &:focus,
+    &:hover {
+      border-color: $border-gray-secondary;
+      background: $surface-tretiary;
+      box-shadow: none;
+    }
+  }
+
+  @include placeholder {
+    color: $text-tretiary;
+  }
+}
+
+@mixin inputStylesPrimary {
+  height: 40px;
+  padding: 10px 16px;
+  border: 1px solid $border-gray-secondary;
+  background-color: $surface-tretiary;
+}
+
+@mixin inputStylesSecondary {
+  height: 44px;
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  background-color: $surface-secondary;
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+
+    @include media-up(md) {
+      width: 10px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 1px solid transparent;
+    border-radius: $border-radius-20;
+    background-color: lighten($text-tretiary, 10%);
+    background-clip: content-box;
+
+    @include media-up(md) {
+      border: 2px solid transparent;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: lighten($text-tretiary, 10%);
+  }
+}
+
+@mixin hideScrollbar {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+}
+
+// Миксин, который позволяет использовать как нативный :focus-visible, так и с полифиллом.
+// К сожалению postcss-focus-visible, который это сам делает, не работает в create-react-app
+@mixin focusVisible {
+  &:global(.focus-visible) {
+    @content;
+  }
+
+  // Так как используется полифилл, то оригинальное правило не требуется
+  // Убираем его на всякий случай, чтобы не ломать Safari
+  //&:focus-visible {
+  //  @content;
+  //}
+}
+
+@mixin media-up($breakpoint) {
+  @if ($breakpoint == xs) {
+    @media screen and (min-width: $xs) {
+      @content;
+    }
+  } @else if ($breakpoint == sm) {
+    @media screen and (min-width: $sm) {
+      @content;
+    }
+  } @else if ($breakpoint == md) {
+    @media screen and (min-width: $md) {
+      @content;
+    }
+  } @else if ($breakpoint == lg) {
+    @media screen and (min-width: $lg) {
+      @content;
+    }
+  } @else if ($breakpoint == xl) {
+    @media screen and (min-width: $xl) {
+      @content;
+    }
+  } @else if ($breakpoint == xxl) {
+    @media screen and (min-width: $xxl) {
+      @content;
+    }
+  }
+}
+
+@mixin media-down($breakpoint) {
+  @if ($breakpoint == xs) {
+    @media screen and (max-width: $xs) {
+      @content;
+    }
+  } @else if ($breakpoint == sm) {
+    @media screen and (max-width: $sm) {
+      @content;
+    }
+  } @else if ($breakpoint == md) {
+    @media screen and (max-width: $md) {
+      @content;
+    }
+  } @else if ($breakpoint == lg) {
+    @media screen and (max-width: $lg) {
+      @content;
+    }
+  } @else if ($breakpoint == xl) {
+    @media screen and (max-width: $xl) {
+      @content;
+    }
+  } @else if ($breakpoint == xxl) {
+    @media screen and (max-width: $xxl) {
+      @content;
+    }
+  } @else if ($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}

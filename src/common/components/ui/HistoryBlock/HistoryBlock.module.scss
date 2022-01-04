@@ -1,0 +1,21 @@
+@import 'styles/_tokens.scss';
+
+.HistoryBlock__title {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.HistoryBlock__titleLine {
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 12px;
+  background-color: #ebeefe;
+}
+
+.HistoryBlock__section {
+  & + .HistoryBlock__section {
+    margin-top: 36px;
+  }
+}

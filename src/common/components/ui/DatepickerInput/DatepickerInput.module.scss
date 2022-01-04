@@ -1,0 +1,54 @@
+@import 'styles/_tokens.scss';
+
+.DatepickerInput__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 280px;
+  max-height: 32px;
+  padding: 8px 12px;
+  cursor: pointer;
+
+  transition: all $transition-primary;
+  border: 1px solid transparent;
+  border-radius: $border-radius-16;
+  background-color: #fff;
+
+  &.notOpen {
+    &:hover {
+      border-color: darken(#fff, 8%);
+      background-color: darken(#fff, 2%);
+    }
+
+    &:active {
+      background-color: darken(#fff, 4.5%);
+    }
+  }
+
+  &.noArrows {
+    justify-content: center;
+  }
+}
+
+.DatepickerInput__text {
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+.DatepickerInput__icon {
+  margin-right: 8px;
+  color: $text-tretiary;
+}
+
+.DatepickerInput__leftIcon {
+  padding: 2px 8px;
+  user-select: none;
+  transform: rotate(-180deg);
+}
+
+.DatepickerInput__rightIcon {
+  padding: 2px 8px;
+  user-select: none;
+}

@@ -1,0 +1,30 @@
+@import 'styles/_vars.scss';
+
+.SubscriptionMain__container {
+  padding-bottom: 26px;
+
+  @include media-up(sm) {
+    padding-bottom: 42px;
+  }
+}
+
+.SubscriptionMain__title {
+  display: flex;
+  align-items: center;
+  margin-top: 44px;
+  margin-bottom: 32px;
+
+  @include media-up(sm) {
+    margin-bottom: 48px;
+  }
+}
+
+.SubscriptionMain__backIcon {
+  margin-top: -2px;
+  margin-right: 4px;
+
+  @include media-up(sm) {
+    margin-top: -4px;
+    margin-right: 16px;
+  }
+}

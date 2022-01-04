@@ -1,0 +1,46 @@
+@import 'styles/_vars.scss';
+
+.LastActivities {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__link {
+    margin-right: 4px;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  &__dot {
+    width: 3px;
+    height: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: #bbc0d3;
+  }
+
+  &__text {
+    @include media-down($md) {
+      order: 4;
+      margin-left: 4px;
+    }
+  }
+
+  &__icon {
+    margin-left: 4px;
+    transform: rotate(270deg);
+  }
+
+  &__footer {
+    margin-top: 24px;
+  }
+}

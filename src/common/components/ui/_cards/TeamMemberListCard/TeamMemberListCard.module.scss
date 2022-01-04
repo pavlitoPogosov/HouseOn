@@ -1,0 +1,114 @@
+@import 'styles/_vars.scss';
+@import 'styles/_tokens.scss';
+
+/* container */
+
+.TeamMemberListCard__container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+/* content */
+
+.TeamMemberListCard__content {
+  display: flex;
+  align-items: center;
+}
+
+/* avatar */
+
+.TeamMemberListCard__avatar {
+  margin-right: 12px;
+
+  img {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+/* content details */
+
+.content__details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* name */
+
+.TeamMemberListCard__name_container {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.TeamMemberListCard__name {
+  font-weight: $font-weight-600;
+}
+
+/* bullet */
+
+.TeamMemberListCard__bullet {
+  margin: 0 8px;
+  color: $text-tretiary;
+}
+
+/* online_status */
+
+.TeamMemberCard__online_status_container {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+$online-status-size: 8px;
+
+.TeamMemberCard__online_status {
+  width: $online-status-size;
+  min-width: $online-status-size;
+  height: $online-status-size;
+  min-height: $online-status-size;
+  margin: 0 16px 0 8px;
+  border-radius: $online-status-size;
+
+  @include media-down(sm) {
+    //
+  }
+}
+
+/* buttons */
+
+.TeamMemberCard__buttons_container {
+  display: inline-flex;
+  align-items: center;
+
+  > div:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+
+$icon-size: 50%;
+
+.TeamMemberListCard__cardIcon {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-left: 8px;
+  }
+
+  span {
+    width: $icon-size;
+    min-width: $icon-size;
+    height: $icon-size;
+    min-height: $icon-size;
+    background-color: $text-secondary;
+    mask-repeat: no-repeat !important;
+    mask-position: center !important;
+    mask-size: contain !important;
+  }
+}

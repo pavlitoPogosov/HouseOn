@@ -1,0 +1,76 @@
+@import 'styles/_tokens.scss';
+@import 'styles/_vars.scss';
+
+.RichInput__container {
+  height: 100%;
+}
+
+.RichInput__unsetContainer {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.RichInput__disabled {
+  cursor: auto;
+}
+
+// variants
+.RichInput__unset {
+  display: flex;
+  flex-direction: column;
+
+  div:global(.public-DraftEditor-content),
+  div:global(.DraftEditor-root),
+  div:global(.DraftEditor-editorContainer) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+  }
+}
+
+.RichInput__primary {
+  div:global(.public-DraftEditor-content) {
+    @include inputStylesCommon;
+    @include inputStylesPrimary;
+
+    height: auto;
+    min-height: 56px;
+  }
+}
+
+// Editor options styles
+:global(.RichInput__style__headline) {
+  color: $text-primary;
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+}
+
+:global(.RichInput__style__text) {
+  color: $text-secondary;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+:global(.RichInput__style__caption) {
+  color: $text-tretiary;
+  font-size: $font-size-12;
+  font-weight: $font-weight-600;
+  line-height: $line-height-16;
+}
+
+// placeholder style
+:global(.public-DraftEditorPlaceholder-root) {
+  height: 100%;
+  color: $text-tretiary;
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+  line-height: $line-height-24;
+}
+
+// Style to remove toolbar plugin border
+:global(.tukdd6b) {
+  border: none !important;
+}

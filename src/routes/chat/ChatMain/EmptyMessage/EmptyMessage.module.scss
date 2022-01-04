@@ -1,0 +1,28 @@
+@import 'styles/_tokens.scss';
+
+.EmptyMessage__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 142px;
+
+  @media screen and (min-height: 420px) {
+    margin-top: 232px;
+  }
+}
+
+.EmptyMessage__avatar {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background-color: #e8ebef;
+}
+
+.EmptyMessage__text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}

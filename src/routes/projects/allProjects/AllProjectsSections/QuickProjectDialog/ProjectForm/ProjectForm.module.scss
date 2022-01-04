@@ -1,0 +1,220 @@
+@import 'styles/_vars.scss';
+
+.TaskProjectCard__status {
+  display: flex;
+  width: max-content;
+  margin-top: 24px;
+}
+
+.ProjectForm__title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.ProjectForm__flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include media-up(sm) {
+    flex-wrap: nowrap;
+  }
+}
+
+.ProjectForm__placeInput {
+  width: 100%;
+}
+
+.ProjectForm__timeInput {
+  width: 100%;
+
+  @include media-up(sm) {
+    min-width: 124px;
+    max-width: 124px;
+    margin-left: 16px;
+  }
+}
+
+.ProjectForm__teamInputWrapper {
+  display: flex;
+}
+
+.ProjectForm__teamInput {
+  flex-grow: 1;
+}
+
+.ProjectForm__closeIcon {
+  margin-left: 12px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+
+    g {
+      opacity: 1;
+    }
+  }
+}
+
+.ProjectForm__teamInputLabel {
+  margin-bottom: 4px;
+}
+
+/* time and who */
+
+.ProjectForm__time_who_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+
+  @include media-down(md) {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+}
+
+.ProjectForm__time,
+.ProjectForm__who {
+  width: 50%;
+
+  @include media-down(md) {
+    width: 100%;
+  }
+}
+
+.ProjectForm__time {
+}
+
+.ProjectForm__time_title {
+}
+
+.ProjectForm__time_text {
+  margin-top: 10px;
+}
+
+.ProjectForm__who {
+  @include media-down(md) {
+    margin-top: 16px;
+  }
+}
+
+.ProjectForm__who_title {
+}
+
+.ProjectForm__who_memberCard {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.ProjectForm__who_memberAvatar {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.ProjectForm__who_name {
+  margin-left: 8px;
+}
+
+/* controls */
+
+.ProjectForm__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+
+  @include media-down(md) {
+    flex-direction: column;
+  }
+}
+
+.controls__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  //margin-top: 16px;
+
+  @include media-down(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.controls__cancel,
+.controls__submit {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.controls__cancel {
+  //color: $brand-primary-default !important;
+  border-color: $background-common-light !important;
+  background-color: $background-common-light !important;
+  font-size: $font-size-14;
+  font-weight: $font-weight-400;
+
+  @include media-down(md) {
+    order: 2;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+.controls__submit_container {
+  position: relative;
+  display: flex;
+  width: min-content;
+
+  @include media-down(md) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.controls__submit {
+  display: flex;
+  align-items: center;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+
+  span {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 8px !important;
+  }
+
+  &.disabled {
+    cursor: initial;
+    border-color: $brand-primary-disabled;
+    background-color: $brand-primary-disabled;
+
+    &:hover,
+    &:focus {
+      border-color: $brand-primary-disabled;
+      background-color: $brand-primary-disabled;
+      box-shadow: none;
+    }
+  }
+
+  &.started {
+    span {
+      margin-left: 0 !important;
+    }
+  }
+
+  @include media-down(md) {
+    width: 100%;
+  }
+}
+
+.controls__submit_icon {
+}
+
+.submit_icon__pause {
+  margin: 0 8px 0 0 !important;
+}
